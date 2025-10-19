@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CompanyApp.Client.Farmers",
   "resources": {
-    "hash": "sha256-4cwioVehSEy1hF2ZHpNdyHBPTpIi7VGQoAmZe1yaCu8=",
+    "hash": "sha256-g2R5pOjTltpgRg1Ic2SHIrOiTtZOP7yEce5fTc7I5Qs=",
     "fingerprinting": {
       "BlazorApplicationInsights.yvt0eqji2d.wasm": "BlazorApplicationInsights.wasm",
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
@@ -90,7 +90,7 @@
       "CompanyApp.Clients.Services.kgyw6e0t0v.wasm": "CompanyApp.Clients.Services.wasm",
       "CompanyApp.Common.Model.j1rkouyf1f.wasm": "CompanyApp.Common.Model.wasm",
       "CompanyApp.Component.Map.m9dyt5d8rr.wasm": "CompanyApp.Component.Map.wasm",
-      "CompanyApp.Client.Farmers.empgnvprrm.wasm": "CompanyApp.Client.Farmers.wasm",
+      "CompanyApp.Client.Farmers.5opp7wn0kd.wasm": "CompanyApp.Client.Farmers.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.9ih887ebfz.js": "dotnet.native.js",
       "dotnet.native.21mns4qp4i.wasm": "dotnet.native.wasm",
@@ -203,7 +203,7 @@
       "CompanyApp.Clients.Services.kgyw6e0t0v.wasm": "sha256-dHQfny4jJVQyCRD3yTIaf+xiXtmdo+bDYXga2172FMA=",
       "CompanyApp.Common.Model.j1rkouyf1f.wasm": "sha256-5/WHH8kS+0Z/UM7ijQ/dMOkB5O3zvGlKkbI4WLLp0K0=",
       "CompanyApp.Component.Map.m9dyt5d8rr.wasm": "sha256-Vkc+8UiiD16dhsKlIwOfxvtl6LAgMFyPmJagdjSQE34=",
-      "CompanyApp.Client.Farmers.empgnvprrm.wasm": "sha256-toiPjlwMVi1VQzyEYne8jXOa2wIMGNCP8nPgIH1E6iA="
+      "CompanyApp.Client.Farmers.5opp7wn0kd.wasm": "sha256-NaVMqiRTHVYVbjlZljqjaX88BnN+b3YJ+jtYDAHDSQQ="
     },
     "libraryInitializers": {
       "_content/BlazorApplicationInsights/BlazorApplicationInsights.lib.module.js": "sha256-Kgj9EWgQXcSKk1PV9pEZy6rOPJf5V8KfADKNf3IZfBs="
