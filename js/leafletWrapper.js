@@ -421,6 +421,35 @@ function setupMapClick(dotNetReference) {
     });
 }
 
+// Export all functions for ES6 module usage
+export {
+    createMap,
+    setMapType,
+    addMarker,
+    addCircle,
+    addPolygon,
+    addPolyline,
+    addStructure,
+    addRectangleStructure,
+    addGeoJson,
+    addGeoJsonWithPopup,
+    removeLayer,
+    clearMap,
+    initDrawTools,
+    initDrawToolsAdvanced,
+    updateDrawToolsStyle,
+    enableDrawing,
+    disableDrawing,
+    clearAllDrawn,
+    getDrawnGeoJson,
+    addDrawnFromGeoJson,
+    addMiniMap,
+    removeMiniMap,
+    toggleMiniMap,
+    setupMapClick
+};
+
+// Also expose to window for backward compatibility
 window.createMap = createMap;
 window.setMapType = setMapType;
 window.addMarker = addMarker;
