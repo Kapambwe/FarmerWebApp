@@ -1,0 +1,43 @@
+﻿.summary-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .summary-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.action-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+    .action-card:hover {
+        transform: translateY(-2px);
+    }
+
+.alert-item {
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .alert-item:hover {
+        background-color: var(--rz-base-100);
+    }
+
+/* Custom scrollbar for alerts */
+.alert-scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: var(--rz-border-light) transparent;
+}
+
+    .alert-scroll-container::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .alert-scroll-container::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .alert-scroll-container::-webkit-scrollbar-thumb {
+        background-color: var(--rz-border-light);
+        border-radius: 3px;
+    }
