@@ -5,8 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmers App</title>
-    <base href="/FarmerWebApp/" id="dynamic-base">
-    <link href="_framework/dotnet.j78sgmgv4w.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" />
+    <script>
+        // Set base path immediately
+        (function () {
+            var path = window.location.pathname.includes('/FarmerWebApp')
+                ? '/FarmerWebApp/'
+                : '/';
+            document.write('<base href="/FarmerWebApp/" />');
+        })();
+    </script>
+    <link href="_framework/dotnet.mno9x34x7z.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="CompanyApp.Client.Farmers.styles.css" />
@@ -20,7 +28,7 @@
     <script type="importmap">{
   "imports": {
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.66stpp682q.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.j78sgmgv4w.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.mno9x34x7z.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.iizqdaooi1.js",
     "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.peu2mfb29t.js"
   },
@@ -28,8 +36,8 @@
   "integrity": {
     "./_framework/blazor.webassembly.66stpp682q.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
     "./_framework/blazor.webassembly.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
-    "./_framework/dotnet.j78sgmgv4w.js": "sha256-cf8otT+v+3SlZ6oahjsAQKwJO9yHSQFdg5F3Com3s4U=",
-    "./_framework/dotnet.js": "sha256-cf8otT+v+3SlZ6oahjsAQKwJO9yHSQFdg5F3Com3s4U=",
+    "./_framework/dotnet.js": "sha256-EhKq/l1zBc9FvagZPyzvTs1ubrVWugRdEd+Erl/HcI8=",
+    "./_framework/dotnet.mno9x34x7z.js": "sha256-EhKq/l1zBc9FvagZPyzvTs1ubrVWugRdEd+Erl/HcI8=",
     "./_framework/dotnet.native.iizqdaooi1.js": "sha256-trRPYs1LiZHo8Tdyibj7A6K+GtYuAFUS/OVVdYmyR5s=",
     "./_framework/dotnet.native.js": "sha256-trRPYs1LiZHo8Tdyibj7A6K+GtYuAFUS/OVVdYmyR5s=",
     "./_framework/dotnet.runtime.js": "sha256-cajUr4vA/MpLPWj3omULUOwEQw3i8CE2n8AmDheqWBM=",
@@ -58,7 +66,6 @@
     <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
-    <!-- Add these AFTER Leaflet JS -->
     <script src="leaflet/Control.MiniMap.js"></script>
 
     <script>
@@ -67,7 +74,9 @@
             const params = new URLSearchParams(window.location.search);
             const path = params.get('path');
             if (path) {
-                window.history.replaceState(null, '', '/FarmerWebApp' + decodeURIComponent(path));
+                // Ensure we handle the base path correctly on redirect
+                var base = window.location.pathname.includes('/FarmerWebApp') ? '/FarmerWebApp' : '';
+                window.history.replaceState(null, '', base + decodeURIComponent(path));
             }
         })();
     </script>
