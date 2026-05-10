@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "NOi2S0OQ",
+  "version": "zsRluoXI",
   "assets": [
     {
       "hash": "sha256-ffxp0VtNgOYIVWpNIAzTz94KL3sO72hxotHLda+QUpU=",
@@ -178,8 +178,8 @@ self.assetsManifest = {
       "url": "_content/Toolbelt.Blazor.LoadingBar/style.min.css"
     },
     {
-      "hash": "sha256-Ku3HTgOX7EeHcRCtLnsIgnUCx5e0tlr515pX/QIfxvg=",
-      "url": "_framework/CompanyApp.Client.Farmers.arclrtpnom.wasm"
+      "hash": "sha256-3bCsRpLfHcjJFjo6yPLorlpZ4lxVWfJONkK81p63OUc=",
+      "url": "_framework/CompanyApp.Client.Farmers.rm371guy6f.wasm"
     },
     {
       "hash": "sha256-vFSb4gopO/GzuyILbe+FQ5NFX5+az7kHyhYb6h+6BPc=",
@@ -494,7 +494,7 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-MyNKNveMQz+hOv5P10Rojm0jGGpq6wKgxMFk8FD4wxk=",
+      "hash": "sha256-8Fe/aRVZ9+oq2eSVFjeOQ4kH9yOYA48p/W46l0jke+E=",
       "url": "_framework/dotnet.js"
     },
     {
@@ -882,7 +882,7 @@ self.assetsManifest = {
       "url": "sample-data/global/MockConsentService.json"
     },
     {
-      "hash": "sha256-eXshlTWiOFyXyndl1lLixH57Bqoo2TAOcmRxxuSTHOc=",
+      "hash": "sha256-Ak9qy7h6gx68gPscg7HCTcVpADEcdU+5GI0rMG2jvNg=",
       "url": "sample-data/global/MockContractDetailsService.json"
     },
     {
@@ -906,11 +906,11 @@ self.assetsManifest = {
       "url": "sample-data/global/MockDashboardService.json"
     },
     {
-      "hash": "sha256-/yxqKgKcbSznekA5/dnYJde38VuVkr7s44mWUD/YQvE=",
+      "hash": "sha256-/kpH0j39YmVHIKAI3hyL1fXBVVPCxwvcPRtBvLlekrY=",
       "url": "sample-data/global/MockEquipmentListingService.json"
     },
     {
-      "hash": "sha256-C3gpUgWITzy/kxQQL3Zn/8aRsLStkWePatEKP3vpohs=",
+      "hash": "sha256-YPat2abNUQCLAR/RSblndNHpWaxphtpMxDyob0ipP4o=",
       "url": "sample-data/global/MockEquipmentService.json"
     },
     {

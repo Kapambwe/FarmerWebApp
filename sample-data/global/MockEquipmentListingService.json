@@ -3,7 +3,7 @@
     {
       "Id": 1, "Type": "Tractor", "BrandModel": "John Deere 8R 370", "Condition": "Excellent",
       "Availability": "Available from 2026-05-20 to 2026-06-15", "Pricing": "$100/hour",
-      "Location": "Farm A District", "Photos": [ "/sample-data/tractor1.jpg" ],
+      "Location": "Farm A District", "Photos": [ "sample-data/tractor1.jpg" ],
       "ServiceHistory": "Regularly serviced, last service on 2026-04-01", "Earnings": 1500.0
     }
   ]
