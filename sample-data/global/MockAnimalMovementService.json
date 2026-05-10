@@ -1,0 +1,66 @@
+{
+  "Locations": [
+    { "Id": 1, "Name": "North Barn", "Type": "Barn", "Description": "Main barn for dairy cows", "Area": 500, "Capacity": 50, "CurrentOccupancy": 35, "Status": "Available", "AnimalLocationId": 101, "FieldId": 1001 },
+    { "Id": 2, "Name": "South Pasture", "Type": "Field", "Description": "Primary grazing field", "Area": 20, "Capacity": 100, "CurrentOccupancy": 75, "Status": "Available", "AnimalLocationId": 102, "FieldId": 1002 },
+    { "Id": 3, "Name": "Quarantine Pen", "Type": "Pen", "Description": "Isolation area for sick animals", "Area": 100, "Capacity": 10, "CurrentOccupancy": 2, "Status": "Available", "AnimalLocationId": 103, "FieldId": 1003 },
+    { "Id": 4, "Name": "East Grazing Field", "Type": "Field", "Description": "Secondary grazing area", "Area": 15, "Capacity": 80, "CurrentOccupancy": 40, "Status": "Available", "AnimalLocationId": 104, "FieldId": 1004 },
+    { "Id": 5, "Name": "West Pasture", "Type": "Field", "Description": "Rotational grazing pasture", "Area": 25, "Capacity": 120, "CurrentOccupancy": 60, "Status": "Available", "AnimalLocationId": 105, "FieldId": 1005 },
+    { "Id": 6, "Name": "Winter Barn", "Type": "Barn", "Description": "Sheltered barn for winter", "Area": 600, "Capacity": 60, "CurrentOccupancy": 20, "Status": "Available", "AnimalLocationId": 106, "FieldId": 1006 },
+    { "Id": 7, "Name": "Breeding Pen", "Type": "Pen", "Description": "Special area for breeding", "Area": 200, "Capacity": 15, "CurrentOccupancy": 8, "Status": "Available", "AnimalLocationId": 107, "FieldId": 1007 },
+    { "Id": 8, "Name": "Nursery Barn", "Type": "Barn", "Description": "Area for young animals", "Area": 300, "Capacity": 30, "CurrentOccupancy": 12, "Status": "Available", "AnimalLocationId": 108, "FieldId": 1008 },
+    { "Id": 9, "Name": "Central Paddock", "Type": "Field", "Description": "Multi-purpose grazing area", "Area": 18, "Capacity": 90, "CurrentOccupancy": 45, "Status": "Available", "AnimalLocationId": 109, "FieldId": 1009 },
+    { "Id": 10, "Name": "Hill Pasture", "Type": "Field", "Description": "Upland grazing area", "Area": 30, "Capacity": 150, "CurrentOccupancy": 80, "Status": "Available", "AnimalLocationId": 110, "FieldId": 1010 },
+    { "Id": 11, "Name": "Medical Bay", "Type": "Pen", "Description": "Treatment and recovery area", "Area": 150, "Capacity": 12, "CurrentOccupancy": 3, "Status": "Available", "AnimalLocationId": 111, "FieldId": 1011 },
+    { "Id": 12, "Name": "Maternity Barn", "Type": "Barn", "Description": "Special care for pregnant animals", "Area": 400, "Capacity": 25, "CurrentOccupancy": 8, "Status": "Available", "AnimalLocationId": 112, "FieldId": 1012 }
+  ],
+  "Animals": [
+    { "Id": 1, "AssetNumber": "A1001", "Name": "Bessie", "AnimalType": "Cow", "Breed": "Holstein", "DateOfBirth": "2022-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 1, "CurrentLocationName": "North Barn", "HealthStatus": "Excellent" },
+    { "Id": 2, "AssetNumber": "A1002", "Name": "Daisy", "AnimalType": "Cow", "Breed": "Jersey", "DateOfBirth": "2023-05-09T10:00:00", "Gender": "Female", "Status": "Pregnant", "CurrentLocationId": 1, "CurrentLocationName": "North Barn", "HealthStatus": "Good" },
+    { "Id": 3, "AssetNumber": "A1003", "Name": "Spot", "AnimalType": "Cow", "Breed": "Angus", "DateOfBirth": "2021-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 1, "CurrentLocationName": "North Barn", "HealthStatus": "Very Good" },
+    { "Id": 4, "AssetNumber": "A1004", "Name": "Rosie", "AnimalType": "Cow", "Breed": "Hereford", "DateOfBirth": "2024-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 2, "CurrentLocationName": "South Pasture", "HealthStatus": "Excellent" },
+    { "Id": 5, "AssetNumber": "A1005", "Name": "Buttercup", "AnimalType": "Cow", "Breed": "Guernsey", "DateOfBirth": "2023-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 2, "CurrentLocationName": "South Pasture", "HealthStatus": "Good" },
+    { "Id": 6, "AssetNumber": "S2001", "Name": "Woolly", "AnimalType": "Sheep", "Breed": "Merino", "DateOfBirth": "2024-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 2, "CurrentLocationName": "South Pasture", "HealthStatus": "Good" },
+    { "Id": 7, "AssetNumber": "S2002", "Name": "Fluffy", "AnimalType": "Sheep", "Breed": "Dorset", "DateOfBirth": "2023-05-09T10:00:00", "Gender": "Female", "Status": "Injured", "CurrentLocationId": 3, "CurrentLocationName": "Quarantine Pen", "HealthStatus": "Poor" },
+    { "Id": 8, "AssetNumber": "S2003", "Name": "Snowball", "AnimalType": "Sheep", "Breed": "Suffolk", "DateOfBirth": "2024-05-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 4, "CurrentLocationName": "East Grazing Field", "HealthStatus": "Excellent" },
+    { "Id": 9, "AssetNumber": "S2004", "Name": "Cotton", "AnimalType": "Sheep", "Breed": "Romney", "DateOfBirth": "2025-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 4, "CurrentLocationName": "East Grazing Field", "HealthStatus": "Very Good" },
+    { "Id": 10, "AssetNumber": "S2005", "Name": "Lambchop", "AnimalType": "Sheep", "Breed": "Merino", "DateOfBirth": "2025-09-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 8, "CurrentLocationName": "Nursery Barn", "HealthStatus": "Good" },
+    { "Id": 11, "AssetNumber": "G3001", "Name": "Billy", "AnimalType": "Goat", "Breed": "Boer", "DateOfBirth": "2024-05-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 4, "CurrentLocationName": "East Grazing Field", "HealthStatus": "Excellent" },
+    { "Id": 12, "AssetNumber": "G3002", "Name": "Nanny", "AnimalType": "Goat", "Breed": "Nubian", "DateOfBirth": "2023-05-09T10:00:00", "Gender": "Female", "Status": "Pregnant", "CurrentLocationId": 7, "CurrentLocationName": "Breeding Pen", "HealthStatus": "Good" },
+    { "Id": 13, "AssetNumber": "G3003", "Name": "Gruff", "AnimalType": "Goat", "Breed": "Alpine", "DateOfBirth": "2022-05-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 5, "CurrentLocationName": "West Pasture", "HealthStatus": "Very Good" },
+    { "Id": 14, "AssetNumber": "G3004", "Name": "Bella", "AnimalType": "Goat", "Breed": "Saanen", "DateOfBirth": "2024-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 5, "CurrentLocationName": "West Pasture", "HealthStatus": "Excellent" },
+    { "Id": 15, "AssetNumber": "C4001", "Name": "Clucky", "AnimalType": "Chicken", "Breed": "Rhode Island Red", "DateOfBirth": "2025-09-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 5, "CurrentLocationName": "West Pasture", "HealthStatus": "Good" },
+    { "Id": 16, "AssetNumber": "C4002", "Name": "Feathers", "AnimalType": "Chicken", "Breed": "Leghorn", "DateOfBirth": "2025-07-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 5, "CurrentLocationName": "West Pasture", "HealthStatus": "Excellent" },
+    { "Id": 17, "AssetNumber": "C4003", "Name": "Henrietta", "AnimalType": "Chicken", "Breed": "Plymouth Rock", "DateOfBirth": "2025-11-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 9, "CurrentLocationName": "Central Paddock", "HealthStatus": "Good" },
+    { "Id": 18, "AssetNumber": "C4004", "Name": "Nugget", "AnimalType": "Chicken", "Breed": "Sussex", "DateOfBirth": "2025-08-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 9, "CurrentLocationName": "Central Paddock", "HealthStatus": "Very Good" },
+    { "Id": 19, "AssetNumber": "P5001", "Name": "Porky", "AnimalType": "Pig", "Breed": "Large White", "DateOfBirth": "2025-05-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 6, "CurrentLocationName": "Winter Barn", "HealthStatus": "Very Good" },
+    { "Id": 20, "AssetNumber": "P5002", "Name": "Petunia", "AnimalType": "Pig", "Breed": "Duroc", "DateOfBirth": "2024-05-09T10:00:00", "Gender": "Female", "Status": "Pregnant", "CurrentLocationId": 12, "CurrentLocationName": "Maternity Barn", "HealthStatus": "Good" },
+    { "Id": 21, "AssetNumber": "P5003", "Name": "Hamlet", "AnimalType": "Pig", "Breed": "Hampshire", "DateOfBirth": "2025-11-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 6, "CurrentLocationName": "Winter Barn", "HealthStatus": "Excellent" },
+    { "Id": 22, "AssetNumber": "P5004", "Name": "Wilbur", "AnimalType": "Pig", "Breed": "Berkshire", "DateOfBirth": "2025-09-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 8, "CurrentLocationName": "Nursery Barn", "HealthStatus": "Good" },
+    { "Id": 23, "AssetNumber": "H6001", "Name": "Thunder", "AnimalType": "Horse", "Breed": "Thoroughbred", "DateOfBirth": "2020-05-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 10, "CurrentLocationName": "Hill Pasture", "HealthStatus": "Excellent" },
+    { "Id": 24, "AssetNumber": "H6002", "Name": "Spirit", "AnimalType": "Horse", "Breed": "Arabian", "DateOfBirth": "2021-05-09T10:00:00", "Gender": "Female", "Status": "Healthy", "CurrentLocationId": 10, "CurrentLocationName": "Hill Pasture", "HealthStatus": "Very Good" },
+    { "Id": 25, "AssetNumber": "H6003", "Name": "Blaze", "AnimalType": "Horse", "Breed": "Quarter Horse", "DateOfBirth": "2022-05-09T10:00:00", "Gender": "Male", "Status": "Healthy", "CurrentLocationId": 9, "CurrentLocationName": "Central Paddock", "HealthStatus": "Excellent" }
+  ],
+  "MovementRecords": [
+    {
+      "Id": 1,
+      "MoveDate": "2026-03-10T10:00:00",
+      "SourceLocationId": 1,
+      "SourceLocationName": "North Barn",
+      "DestinationLocationId": 2,
+      "DestinationLocationName": "South Pasture",
+      "NumberOfAnimals": 5,
+      "Reason": "Seasonal grazing",
+      "Notes": "Moved dairy cows to pasture for summer grazing season",
+      "PerformedBy": "John Farmer",
+      "RecordedDate": "2026-03-10T10:00:00",
+      "AnimalMovementId": 1001,
+      "MovedAnimals": [
+        { "AnimalId": 1, "AssetNumber": "A1001", "Name": "Bessie", "AnimalType": "Cow" },
+        { "AnimalId": 2, "AssetNumber": "A1002", "Name": "Daisy", "AnimalType": "Cow" },
+        { "AnimalId": 3, "AssetNumber": "A1003", "Name": "Spot", "AnimalType": "Cow" },
+        { "AnimalId": 4, "AssetNumber": "A1004", "Name": "Rosie", "AnimalType": "Cow" },
+        { "AnimalId": 5, "AssetNumber": "A1005", "Name": "Buttercup", "AnimalType": "Cow" }
+      ]
+    }
+  ]
+}

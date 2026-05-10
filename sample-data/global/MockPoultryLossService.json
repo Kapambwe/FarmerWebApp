@@ -1,0 +1,5 @@
+{
+  "Losses": [
+    { "Id": 1, "PoultryId": 1, "LossDate": "2026-05-04T10:00:00", "Quantity": 5, "Reason": "Disease", "Description": "High mortality due to avian flu outbreak.", "EstimatedValue": 100.0, "CreatedDate": "2026-05-04T10:00:00" }
+  ]
+}

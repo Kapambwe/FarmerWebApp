@@ -1,0 +1,15 @@
+{
+  "Menus": [
+    {
+      "MenuId": 1, "Name": "Dashboard", "Url": "/dashboard", "MenuTypeId": 1, "IsVisible": true,
+      "MenuChildViewModels": []
+    },
+    {
+      "MenuId": 2, "Name": "Farm", "Url": "/farm", "MenuTypeId": 1, "IsVisible": true,
+      "MenuChildViewModels": [
+        { "MenuId": 21, "ParentMenuId": 2, "Name": "Crops", "MenuTypeId": 1 },
+        { "MenuId": 22, "ParentMenuId": 2, "Name": "Livestock", "MenuTypeId": 1 }
+      ]
+    }
+  ]
+}

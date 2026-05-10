@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "Bcv9VZe3",
+  "version": "NOi2S0OQ",
   "assets": [
     {
       "hash": "sha256-ffxp0VtNgOYIVWpNIAzTz94KL3sO72hxotHLda+QUpU=",
@@ -178,8 +178,8 @@ self.assetsManifest = {
       "url": "_content/Toolbelt.Blazor.LoadingBar/style.min.css"
     },
     {
-      "hash": "sha256-B4302eAq4oSJ9ZCftyCedDZuOi1X3dhzukcl20X9R3E=",
-      "url": "_framework/CompanyApp.Client.Farmers.t723pz63jf.wasm"
+      "hash": "sha256-Ku3HTgOX7EeHcRCtLnsIgnUCx5e0tlr515pX/QIfxvg=",
+      "url": "_framework/CompanyApp.Client.Farmers.arclrtpnom.wasm"
     },
     {
       "hash": "sha256-vFSb4gopO/GzuyILbe+FQ5NFX5+az7kHyhYb6h+6BPc=",
@@ -338,8 +338,8 @@ self.assetsManifest = {
       "url": "_framework/System.ComponentModel.TypeConverter.phrqa0tynl.wasm"
     },
     {
-      "hash": "sha256-C1T69Fwb/RUfYXXst1n8E7bmKYdoEDJvxJ5qU1PWZhA=",
-      "url": "_framework/System.Console.nlknot2j1g.wasm"
+      "hash": "sha256-k9JYoCWsfi7+2p5uZPXLpYcOvFRwWoAGCO/9JpNTF3U=",
+      "url": "_framework/System.Console.91ghigz8mf.wasm"
     },
     {
       "hash": "sha256-JWX8kg5a1bdki34c2JubUAkq3UP3Fbin+V/OX1/Izpk=",
@@ -398,8 +398,8 @@ self.assetsManifest = {
       "url": "_framework/System.ObjectModel.rovovu1ykb.wasm"
     },
     {
-      "hash": "sha256-t8PLNCIe26ELpbL1vwiurhmnvuTmTeF5xIPsiZYtfbU=",
-      "url": "_framework/System.Private.CoreLib.ngmsflgmd8.wasm"
+      "hash": "sha256-GziKVIuIj5hriSo2qHSdwIJ0oSajS5s0CM/lvSkQiaU=",
+      "url": "_framework/System.Private.CoreLib.7toe38oh2g.wasm"
     },
     {
       "hash": "sha256-Tvw/cKTObcK4uxxsyyxqJn2nKz6Iwt+O7btrMtknad4=",
@@ -494,7 +494,7 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-TLuFSG4gCRmLVPk8bU3uVCz3gvBxkhSL2qo6hcLhlmA=",
+      "hash": "sha256-MyNKNveMQz+hOv5P10Rojm0jGGpq6wKgxMFk8FD4wxk=",
       "url": "_framework/dotnet.js"
     },
     {
@@ -502,8 +502,8 @@ self.assetsManifest = {
       "url": "_framework/dotnet.native.iizqdaooi1.js"
     },
     {
-      "hash": "sha256-A/ZpIYqdfuktfFW6kaBPA+4QwhIQw2SofxaJsOsIOcc=",
-      "url": "_framework/dotnet.native.rak1hacsjd.wasm"
+      "hash": "sha256-qJ6GqX7X2Pb88BzhzjtdJ0a4ln7lyCBf4teqiZmscXc=",
+      "url": "_framework/dotnet.native.o8i4keen6k.wasm"
     },
     {
       "hash": "sha256-cajUr4vA/MpLPWj3omULUOwEQw3i8CE2n8AmDheqWBM=",
@@ -566,7 +566,7 @@ self.assetsManifest = {
       "url": "index.html"
     },
     {
-      "hash": "sha256-Hwy+wwEIvIlRRNOhZlWwCA7K8UxEKBHK/LsVVivm/IE=",
+      "hash": "sha256-zwNY1aawUgbk5RdOxuvuSt1QUKIG293qMAfFfiMx5Js=",
       "url": "js/leafletWrapper.js"
     },
     {
@@ -832,6 +832,198 @@ self.assetsManifest = {
     {
       "hash": "sha256-37kOg3HquknjlqsM1xKsFdMqgP8Epp13yN2g6MRiVv0=",
       "url": "manifest.webmanifest"
+    },
+    {
+      "hash": "sha256-t56RT8dPO4mR+3lywHlfQ8R0tT+hcAVC6hixFQHCRSM=",
+      "url": "sample-data/global/FarmFeedingMockService.json"
+    },
+    {
+      "hash": "sha256-dLEkKbv8rT3G00PyOwtM7ewbQtNW9eVSdgLoD0RyfSU=",
+      "url": "sample-data/global/MockAnalyticsService.json"
+    },
+    {
+      "hash": "sha256-ajcSDTdlbnHsKnlkd4iIfPqvpf0Oli0yuBrhq1JaGZc=",
+      "url": "sample-data/global/MockAnimalActivitiesService.json"
+    },
+    {
+      "hash": "sha256-af2hN5XEE+Z9KqCGnqYsx4exVb9E+0PLp/XaBkoDpFM=",
+      "url": "sample-data/global/MockAnimalBirthService.json"
+    },
+    {
+      "hash": "sha256-OrztHSo5bxL6Ml8qR4pv7LU0vyqxZQvE6trC7sRaKfk=",
+      "url": "sample-data/global/MockAnimalHarvestService.json"
+    },
+    {
+      "hash": "sha256-ef0O9ei4gRDiK7VchIE1RQa8Lt69FZmTPVLMiJXg5DM=",
+      "url": "sample-data/global/MockAnimalMovementService.json"
+    },
+    {
+      "hash": "sha256-z8xGc2DirWth6XeNShuHpb//tQNPgoCfYkbpk/R1D6E=",
+      "url": "sample-data/global/MockAnimalService.json"
+    },
+    {
+      "hash": "sha256-GNJJQaat/7Mhjxclavi+CxUkrqSsQy2kyxItX2QkFYM=",
+      "url": "sample-data/global/MockBillingServiceManager.json"
+    },
+    {
+      "hash": "sha256-/LKGUAvoh8VW5sWdRpFC45Ustyj9EtQhSPFMCWxjfTk=",
+      "url": "sample-data/global/MockBreedingService.json"
+    },
+    {
+      "hash": "sha256-cEeg009YpcYkJoqtmxPSaJ/WaBB5h4H6MyFh1wQiuqs=",
+      "url": "sample-data/global/MockCircularEconomyService.json"
+    },
+    {
+      "hash": "sha256-Arqq/0ve47MBxDyyAMTDUHted8zHgie6qXOXU0Pbodo=",
+      "url": "sample-data/global/MockCompanyServiceManager.json"
+    },
+    {
+      "hash": "sha256-3mcY9c3WwUHaShsmAjzDOUHo6srAeRcyATjDLx2Nka0=",
+      "url": "sample-data/global/MockConsentService.json"
+    },
+    {
+      "hash": "sha256-eXshlTWiOFyXyndl1lLixH57Bqoo2TAOcmRxxuSTHOc=",
+      "url": "sample-data/global/MockContractDetailsService.json"
+    },
+    {
+      "hash": "sha256-z9SIrSX+cPwwM5Azrhb3mggxFo8uUQktIh99UJIUXY4=",
+      "url": "sample-data/global/MockContractService.json"
+    },
+    {
+      "hash": "sha256-vJkIWbt/izZU4F8hYVQdIhVbstohJCh8AMTl3TuzHO8=",
+      "url": "sample-data/global/MockCrewManagementService.json"
+    },
+    {
+      "hash": "sha256-eMXOSC7vxrD4dFRbPy1+y7YpYWSpHX3nnOCWE5rC8yE=",
+      "url": "sample-data/global/MockCropHarvestService.json"
+    },
+    {
+      "hash": "sha256-6hTY4OCc21LWIABNPOAPaNJEMTD+ORdlqropEOQciEI=",
+      "url": "sample-data/global/MockCropPlanningService.json"
+    },
+    {
+      "hash": "sha256-KrB7ljuIT0IxJVOeVhbqGPLpxJ27EPr0yDE68RManWY=",
+      "url": "sample-data/global/MockDashboardService.json"
+    },
+    {
+      "hash": "sha256-/yxqKgKcbSznekA5/dnYJde38VuVkr7s44mWUD/YQvE=",
+      "url": "sample-data/global/MockEquipmentListingService.json"
+    },
+    {
+      "hash": "sha256-C3gpUgWITzy/kxQQL3Zn/8aRsLStkWePatEKP3vpohs=",
+      "url": "sample-data/global/MockEquipmentService.json"
+    },
+    {
+      "hash": "sha256-5vqOmdYBXsfussWOuVfO4qL+O0+bIO7u8l/8KU3pO+M=",
+      "url": "sample-data/global/MockFarmLeaseCostManager.json"
+    },
+    {
+      "hash": "sha256-CrHDzY5oChUeFU+o1cr2n4waBeA4CAiZPJLdy3r5a60=",
+      "url": "sample-data/global/MockFarmServiceManager.json"
+    },
+    {
+      "hash": "sha256-qkq8/UIM+bAC4qXrRdQgHjHWeVZZXt/HKQaP4TIDNXM=",
+      "url": "sample-data/global/MockFarmerAccountsPayableService.json"
+    },
+    {
+      "hash": "sha256-ZhCxtQXlAR7WgYDhXGca54U/WWfG9efVH450My0BjeY=",
+      "url": "sample-data/global/MockFarmerAccountsReceivableService.json"
+    },
+    {
+      "hash": "sha256-cQyZZ5/bmtGaomWf+saus3d6rqwAFnFgcai7OaoNWkw=",
+      "url": "sample-data/global/MockFarmerChartOfAccountsService.json"
+    },
+    {
+      "hash": "sha256-2fW+mXC1IQdtcjIQQUNQiBF08e6jBJgqsJLvqSUm7SA=",
+      "url": "sample-data/global/MockFarmerFixedAssetsService.json"
+    },
+    {
+      "hash": "sha256-go3qm5zoK1gNBSHen5xQ9auzy0Up5yVvbOFpbPxHiNo=",
+      "url": "sample-data/global/MockFarmerJournalEntryService.json"
+    },
+    {
+      "hash": "sha256-TC4OH2wqf8QulTz2CyY7fyk5TI1jkIxJEJD4kA4bVOg=",
+      "url": "sample-data/global/MockFieldMonitoringService.json"
+    },
+    {
+      "hash": "sha256-LwK0yWmCyyOBCmbOMsOJdosvCDFll9I/m3wUbk4LRqo=",
+      "url": "sample-data/global/MockFinancialAnalyticsService.json"
+    },
+    {
+      "hash": "sha256-e8ceWj/4YXVZ+J6t8tsVoVhYQUOHE60iJjL5ah9L/aI=",
+      "url": "sample-data/global/MockFishService.json"
+    },
+    {
+      "hash": "sha256-BtIIEeABXyxGwIyD3X3BMhSAbyV8XfF2uYN7utB/pzk=",
+      "url": "sample-data/global/MockForwardContractService.json"
+    },
+    {
+      "hash": "sha256-NysOkU7AxcUUhbJM4ap/OsJm90XfhVmfA5z3kIB0Zso=",
+      "url": "sample-data/global/MockInventoryService.json"
+    },
+    {
+      "hash": "sha256-rBxiQ9u8yVytvCn8qElo4khktB5XJkjpOA+ncqnpyZA=",
+      "url": "sample-data/global/MockIrrigationService.json"
+    },
+    {
+      "hash": "sha256-M2DS/eM6iAZoLgVIU8Ek4c/RkN6mMyNnYViey9wRBwA=",
+      "url": "sample-data/global/MockIrrigationServiceManager.json"
+    },
+    {
+      "hash": "sha256-d+NCWXuSgkUar03+ArJgFBgcFwNSelOU8M2p37ixUSY=",
+      "url": "sample-data/global/MockLaborService.json"
+    },
+    {
+      "hash": "sha256-lEEjPKCUY9j2/A+C3O+Z88bGWeS7SVy2gt/F4Ok0OVQ=",
+      "url": "sample-data/global/MockLookupLiveStockClientService.json"
+    },
+    {
+      "hash": "sha256-P3sJsTPewKVfm5ceTOWksp03ji4z/USBjHINKbkQ6oo=",
+      "url": "sample-data/global/MockMarketService.json"
+    },
+    {
+      "hash": "sha256-nOH7kuaqnLMOxAGVptS5J7oPKvnZifOQuVMRz1QpC/k=",
+      "url": "sample-data/global/MockMenuServiceManager.json"
+    },
+    {
+      "hash": "sha256-hJ7AE5Y7xGtlOT69qEAUKUcvx4nC5rhtsRglspRXlaw=",
+      "url": "sample-data/global/MockPoultryHarvestService.json"
+    },
+    {
+      "hash": "sha256-aa9LCxMK2amBJtGRFm826kHEsSr3lklqyG3FKpJ+rhg=",
+      "url": "sample-data/global/MockPoultryLossService.json"
+    },
+    {
+      "hash": "sha256-z/w5s2pBLet/MeX9f+rKoTEfFyrC5VEcYdVQgagcdxs=",
+      "url": "sample-data/global/MockPoultryTreatmentService.json"
+    },
+    {
+      "hash": "sha256-5AwVlUmhf+tJ+cgKnM6ZRTHytWwkC/teMkA1tHT23to=",
+      "url": "sample-data/global/MockPurchaseOrderService.json"
+    },
+    {
+      "hash": "sha256-nC7fB6BWRZLNAfDsUkjzTAWlsrFZS1zbbGf9wWcZAok=",
+      "url": "sample-data/global/MockRepairHistoryService.json"
+    },
+    {
+      "hash": "sha256-rGdwW7/N3UbLhq++xg0/3hm4Q/+pCnLwdko1syZsTLk=",
+      "url": "sample-data/global/MockSoilAnalysisService.json"
+    },
+    {
+      "hash": "sha256-6ES6G5NNbLywgc286WUDophPEEx4S52PpUIO5O08AP8=",
+      "url": "sample-data/global/MockWaterResourceService.json"
+    },
+    {
+      "hash": "sha256-49KOxOFyJT+/QWV194S9IEnf8t/BtX06RFNaDx1sRaM=",
+      "url": "sample-data/global/MockWeatherService.json"
+    },
+    {
+      "hash": "sha256-95WC0iiyKFdplXbMjT+yiqkL0h42pY/3iyqmtcLxunY=",
+      "url": "sample-data/global/MockWorkOrderServiceManager.json"
+    },
+    {
+      "hash": "sha256-gmvuNtCbyBGNNLM8AJwhFvijAtbMTwVvZnSSHHVmWJw=",
+      "url": "sample-data/global/MockYieldAnalyticsService.json"
     },
     {
       "hash": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU=",

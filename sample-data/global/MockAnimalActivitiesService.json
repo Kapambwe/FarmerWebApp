@@ -1,0 +1,50 @@
+{
+  "Activities": [
+    { "ActivityId": 1, "Title": "Breeding", "Description": "Animal breeding and reproduction management", "PositionId": 3, "PositionName": "Breeding Specialist", "CreatedAt": "2026-04-09T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 2, "Title": "Birth Recording", "Description": "Recording new animal births and details", "PositionId": 4, "PositionName": "Animal Caretaker", "CreatedAt": "2026-04-14T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 3, "Title": "Registration of Animal", "Description": "Registering new animals in the system", "PositionId": 1, "PositionName": "Farm Manager", "CreatedAt": "2026-04-19T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 4, "Title": "Health Encounter Recording", "Description": "Recording animal health checks and treatments", "PositionId": 2, "PositionName": "Veterinarian", "CreatedAt": "2026-04-24T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 5, "Title": "Harvesting of Animals", "Description": "Animal harvesting and processing", "PositionId": 5, "PositionName": "Harvesting Technician", "CreatedAt": "2026-04-29T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 6, "Title": "Monitoring of Animal Growth", "Description": "Tracking animal growth and development", "PositionId": 4, "PositionName": "Animal Caretaker", "CreatedAt": "2026-05-04T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 7, "Title": "Moving Animal", "Description": "Animal relocation and transportation", "PositionId": 1, "PositionName": "Farm Manager", "CreatedAt": "2026-05-06T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 8, "Title": "Killing Animal", "Description": "Humane animal euthanasia and processing", "PositionId": 5, "PositionName": "Harvesting Technician", "CreatedAt": "2026-05-07T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 9, "Title": "Registering Animal For Tracking", "Description": "Setting up animal tracking and monitoring", "PositionId": 1, "PositionName": "Farm Manager", "CreatedAt": "2026-05-08T10:00:00", "CreatedBy": 1 },
+    { "ActivityId": 10, "Title": "Feeding Animals", "Description": "Animal feeding schedule and nutrition management", "PositionId": 4, "PositionName": "Animal Caretaker", "CreatedAt": "2026-05-09T10:00:00", "CreatedBy": 1 }
+  ],
+  "Tasks": [
+    { "TaskId": 1, "ActivityId": 1, "Title": "Schedule breeding for dairy cows", "Description": "Schedule artificial insemination for 15 dairy cows in sector B.", "DueDate": "2026-05-16T10:00:00", "PriorityId": 2, "IsRecurring": true, "TaskStatusId": 1, "CreatedAt": "2026-05-04T10:00:00", "CreatedBy": 1 },
+    { "TaskId": 4, "ActivityId": 2, "Title": "Record new calf births from overnight", "Description": "Document all new births, including weight, gender, and mother identification.", "DueDate": "2026-05-09T10:00:00", "PriorityId": 3, "IsRecurring": true, "TaskStatusId": 1, "CreatedAt": "2026-05-08T10:00:00", "CreatedBy": 1 },
+    { "TaskId": 7, "ActivityId": 3, "Title": "Register new shipment of pigs", "Description": "Register 25 new piglets arrived from supplier.", "DueDate": "2026-05-09T10:00:00", "PriorityId": 3, "IsRecurring": false, "TaskStatusId": 1, "CreatedAt": "2026-05-08T10:00:00", "CreatedBy": 1 },
+    { "TaskId": 10, "ActivityId": 4, "Title": "Vaccinate new calves", "Description": "Administer vaccines to all calves born in the last month.", "DueDate": "2026-05-12T10:00:00", "PriorityId": 3, "IsRecurring": false, "TaskStatusId": 1, "CreatedAt": "2026-05-07T10:00:00", "CreatedBy": 1 },
+    { "TaskId": 12, "ActivityId": 4, "Title": "Treat sick animals in isolation", "Description": "Administer antibiotics to 3 cows in isolation pen.", "DueDate": "2026-05-09T10:00:00", "PriorityId": 4, "IsRecurring": false, "TaskStatusId": 1, "CreatedAt": "2026-05-09T08:00:00", "CreatedBy": 1 },
+    { "TaskId": 28, "ActivityId": 10, "Title": "Morning feeding round", "Description": "Feed all animals according to their dietary requirements.", "DueDate": "2026-05-09T10:00:00", "PriorityId": 3, "IsRecurring": true, "TaskStatusId": 1, "CreatedAt": "2026-05-08T10:00:00", "CreatedBy": 1 }
+  ],
+  "Positions": [
+    { "PositionId": 1, "Name": "Farm Manager" },
+    { "PositionId": 2, "Name": "Veterinarian" },
+    { "PositionId": 3, "Name": "Breeding Specialist" },
+    { "PositionId": 4, "Name": "Animal Caretaker" },
+    { "PositionId": 5, "Name": "Harvesting Technician" }
+  ],
+  "Priorities": [
+    { "PriorityId": 1, "Name": "Low", "Color": "#4CAF50" },
+    { "PriorityId": 2, "Name": "Medium", "Color": "#FFC107" },
+    { "PriorityId": 3, "Name": "High", "Color": "#F44336" },
+    { "PriorityId": 4, "Name": "Critical", "Color": "#9C27B0" }
+  ],
+  "Persons": [
+    { "PersonId": 1, "FirstName": "John", "LastName": "Doe", "MiddleName": "A", "IDNumber": "1234567890" },
+    { "PersonId": 2, "FirstName": "Jane", "LastName": "Smith", "MiddleName": "B", "IDNumber": "0987654321" },
+    { "PersonId": 3, "FirstName": "Mike", "LastName": "Johnson", "MiddleName": "C", "IDNumber": "1122334455" },
+    { "PersonId": 4, "FirstName": "Sarah", "LastName": "Wilson", "MiddleName": "D", "IDNumber": "5566778899" },
+    { "PersonId": 5, "FirstName": "Tom", "LastName": "Brown", "MiddleName": "E", "IDNumber": "6677889900" }
+  ],
+  "TaskStatuses": [
+    { "TaskStatusId": 1, "StatusName": "Pending", "Description": "Task is pending assignment" },
+    { "TaskStatusId": 2, "StatusName": "Assigned", "Description": "Task has been assigned" },
+    { "TaskStatusId": 3, "StatusName": "In Progress", "Description": "Task is being worked on" },
+    { "TaskStatusId": 4, "StatusName": "Completed", "Description": "Task has been completed" },
+    { "TaskStatusId": 5, "StatusName": "On Hold", "Description": "Task is temporarily on hold" },
+    { "TaskStatusId": 6, "StatusName": "Cancelled", "Description": "Task has been cancelled" }
+  ]
+}

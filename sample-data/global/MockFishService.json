@@ -1,0 +1,15 @@
+{
+  "Fishes": [
+    {
+      "Id": 1, "Species": "Tilapia", "PondName": "Pond A", "StockingDate": "2026-02-09T10:00:00",
+      "Quantity": 1000, "Status": "Healthy", "Notes": "Main pond",
+      "HealthRecords": [ { "Date": "2026-05-04T10:00:00", "Observation": "No issues", "Treatment": "None" } ],
+      "FeedingSchedule": [ { "Date": "2026-05-08T10:00:00", "FeedType": "Pellets", "AmountKg": 5.0 } ],
+      "GrowthData": [ { "Date": "2026-04-09T10:00:00", "AverageWeightGrams": 80, "AverageLengthCm": 12 } ]
+    }
+  ],
+  "FishTypes": [
+    { "FishTypeId": 1, "Name": "Tilapia (Nile)" },
+    { "FishTypeId": 2, "Name": "Tilapia (Bream / Oreochromis)" }
+  ]
+}

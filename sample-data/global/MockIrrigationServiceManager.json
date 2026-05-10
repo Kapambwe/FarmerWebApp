@@ -1,0 +1,24 @@
+{
+  "WaterSources": [
+    { "WaterSourceId": 1, "Name": "Main Borehole — North Field", "SourceName": "Main Borehole — North Field", "Type": "Borehole", "SourceType": "Borehole", "Location": "North Field, -15.4123, 28.2891", "Latitude": -15.4123, "Longitude": 28.2891, "Capacity": 50000.0, "CostPerLiter": 0.05, "CostPerUnit": 0.05, "Status": "Active", "WaterQuality": "Good", "Ownership": "Farm-owned", "Description": "150m deep borehole, submersible pump 3.5 kW, yield 5 L/s" },
+    { "WaterSourceId": 2, "Name": "South Reservoir — Earthen Dam", "SourceName": "South Reservoir — Earthen Dam", "Type": "Dam", "SourceType": "Dam", "Location": "South Paddock, -15.4287, 28.2756", "Latitude": -15.4287, "Longitude": 28.2756, "Capacity": 800000.0, "CostPerLiter": 0.02, "CostPerUnit": 0.02, "Status": "Active", "WaterQuality": "Moderate", "Ownership": "Farm-owned", "Description": "Earthen dam, 800 kL capacity, fed by seasonal stream — used in rainy season" }
+  ],
+  "Setups": [
+    {
+      "IrrigationSetupId": 1, "FieldId": 1, "FieldName": "North Field",
+      "SetupName": "North Field — Centre Pivot",
+      "Method": "Centre Pivot Sprinkler",
+      "PrimaryWaterSourceId": 1, "WaterSourceName": "Main Borehole — North Field",
+      "EquipmentUsed": "Reinke M6500 Centre Pivot (7-span, 415m radius)",
+      "CoverageArea": 54.0, "FlowRate": 55.0, "OperatingPressure": 3.5,
+      "WateringDuration": 480, "FrequencyDays": 3,
+      "PreferredStartTime": "05:00:00",
+      "AutomationLevel": "Fully Automated — remote phone control",
+      "Status": "Active",
+      "Notes": "Covers 54 ha maize block. Rotation speed 100% = 8 hr cycle. Speed reduced to 70% during critical pollination."
+    }
+  ],
+  "Sessions": [
+    { "WateringSessionId": 1, "IrrigationSetupId": 1, "SetupName": "North Field — Centre Pivot", "SessionDate": "2026-05-07T10:00:00", "WaterSourceId": 1, "WaterSourceName": "Main Borehole", "DurationMinutes": 480, "FlowRate": 55.0, "WaterUsed": 15840.0, "WaterVolume": 15840.0, "PreMoisture": 28.0, "PostMoisture": 42.0, "TargetMoisture": 40.0, "Temperature": 31.0, "Humidity": 45.0, "WindSpeed": 12.0, "Efficiency": 88.5, "TotalCost": 792.0, "CropId": 1, "Notes": "Smooth run — no stoppages. Soil moisture sensor triggered auto-stop at 42%." }
+  ]
+}

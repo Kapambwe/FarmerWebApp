@@ -1,0 +1,24 @@
+{
+  "AnimalGroups": [
+    { "Id": 1, "Name": "Dairy Cows", "Description": "Milk-producing cows", "AnimalTypeId": 1 },
+    { "Id": 2, "Name": "Beef Cattle", "Description": "Meat-producing cattle", "AnimalTypeId": 1 },
+    { "Id": 3, "Name": "Calves", "Description": "Young cattle under 1 year", "AnimalTypeId": 1 },
+    { "Id": 4, "Name": "Laying Hens", "Description": "Egg-producing chickens", "AnimalTypeId": 2 },
+    { "Id": 5, "Name": "Broilers", "Description": "Meat chickens", "AnimalTypeId": 2 },
+    { "Id": 6, "Name": "Sheep Flock", "Description": "Wool and meat sheep", "AnimalTypeId": 3 },
+    { "Id": 7, "Name": "Goat Herd", "Description": "Milk and meat goats", "AnimalTypeId": 4 }
+  ],
+  "FeedTypes": [
+    { "Id": 1, "Name": "Hay", "Description": "Dried grass forage", "StandardUnitCost": 2.50 },
+    { "Id": 2, "Name": "Silage", "Description": "Fermented grass", "StandardUnitCost": 1.80 },
+    { "Id": 3, "Name": "Grain Mix", "Description": "Mixed grains for energy", "StandardUnitCost": 3.20 },
+    { "Id": 4, "Name": "Protein Pellets", "Description": "High-protein supplement", "StandardUnitCost": 4.50 },
+    { "Id": 5, "Name": "Mineral Block", "Description": "Salt and mineral supplement", "StandardUnitCost": 8.00 },
+    { "Id": 6, "Name": "Layer Mash", "Description": "Feed for laying hens", "StandardUnitCost": 2.80 },
+    { "Id": 7, "Name": "Starter Feed", "Description": "For young animals", "StandardUnitCost": 3.50 }
+  ],
+  "FeedRecords": [
+    { "Id": 1, "FeedDate": "2026-05-01T08:00:00", "AnimalGroupId": 1, "AnimalGroupName": "Dairy Cows", "FeedTypeId": 1, "FeedTypeName": "Hay", "Quantity": 150.0, "UnitCost": 2.5, "TotalCost": 375.0, "BatchNumber": "BATCH-1001", "HospitalId": 1 },
+    { "Id": 2, "FeedDate": "2026-05-02T08:30:00", "AnimalGroupId": 2, "AnimalGroupName": "Beef Cattle", "FeedTypeId": 3, "FeedTypeName": "Grain Mix", "Quantity": 200.0, "UnitCost": 3.2, "TotalCost": 640.0, "BatchNumber": "BATCH-2002", "HospitalId": 1 }
+  ]
+}

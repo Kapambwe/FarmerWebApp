@@ -1,0 +1,14 @@
+{
+  "Conditions": [ "Sunny", "Partly Cloudy", "Cloudy", "Overcast", "Light Rain", "Clear" ],
+  "Descriptions": [
+    "Clear skies with mild temperatures",
+    "Partly cloudy with a chance of showers",
+    "Mostly sunny and warm",
+    "Overcast with possible light rain",
+    "Clear and pleasant conditions",
+    "Scattered clouds throughout the day",
+    "Sunny intervals with light winds"
+  ],
+  "IconCodes": [ "01d", "02d", "03d", "04d", "09d", "10d", "11d" ],
+  "CardinalDirections": [ "N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW" ]
+}

@@ -1,0 +1,322 @@
+{
+  "Fields": [
+    { "FieldId": 1, "AssetId": 1, "AssetName": "North Field",   "FieldType": "Crop",     "FieldArea": "12.5 ha", "FieldDateAdded": "2025-11-09T10:00:00" },
+    { "FieldId": 2, "AssetId": 2, "AssetName": "South Paddock", "FieldType": "Grazing",  "FieldArea": "8.3 ha",  "FieldDateAdded": "2026-01-09T10:00:00" },
+    { "FieldId": 3, "AssetId": 3, "AssetName": "East Orchard",  "FieldType": "Orchard",  "FieldArea": "5.0 ha",  "FieldDateAdded": "2026-03-09T10:00:00" },
+    { "FieldId": 4, "AssetId": 4, "AssetName": "West Nursery",  "FieldType": "Nursery",  "FieldArea": "2.1 ha",  "FieldDateAdded": "2026-04-09T10:00:00" }
+  ],
+  "LiveStocks": [
+    { "Id": 1,  "AssetId": 1,  "Name": "Bova",      "Species": "Cattle", "AnimalType": "Cattle", "Breed": "Brahman",      "BreedType": "Brahman",      "Sex": "Female", "Gender": "Female", "Color": "Light Grey",  "Weight": 480, "TagNumber": "ZM-CTL-001", "TagColor": "Yellow", "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2021-03-12T00:00:00",  "CurrentEnclosure": "North Paddock",   "FieldId": 1, "IsBreedingStock": true,  "FeedType": "Pasture + Supplement", "FeedCost": 85,  "EstimatedRevenue": 4200, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chanda Mumba",  "HarvestIn": "8 months",  "Description": "High-yield breeding cow, excellent temperament" },
+    { "Id": 2,  "AssetId": 2,  "Name": "Simba",     "Species": "Cattle", "AnimalType": "Cattle", "Breed": "Angus",        "BreedType": "Angus",        "Sex": "Male",   "Gender": "Male",   "Color": "Black",       "Weight": 620, "TagNumber": "ZM-CTL-002", "TagColor": "Red",    "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2020-07-05T00:00:00",   "CurrentEnclosure": "South Paddock",   "FieldId": 1, "IsBreedingStock": true,  "IsSire": true, "SireQuality": "Premium", "FeedType": "Hay + Grain", "FeedCost": 110, "EstimatedRevenue": 6500, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chanda Mumba",  "HarvestIn": "Ready",     "Description": "Prime bull, used for natural service breeding" },
+    { "Id": 3,  "AssetId": 3,  "Name": "Makena",    "Species": "Cattle", "AnimalType": "Cattle", "Breed": "Hereford",     "BreedType": "Hereford",     "Sex": "Female", "Gender": "Female", "Color": "Red & White", "Weight": 510, "TagNumber": "ZM-CTL-003", "TagColor": "Yellow", "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2021-11-20T00:00:00", "CurrentEnclosure": "North Paddock",   "FieldId": 1, "IsBreedingStock": true,  "FeedType": "Pasture",              "FeedCost": 75,  "EstimatedRevenue": 4800, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chanda Mumba",  "HarvestIn": "6 months",  "Description": "Docile, good mother, twins history" },
+    { "Id": 4,  "AssetId": 4,  "Name": "Changa",    "Species": "Cattle", "AnimalType": "Cattle", "Breed": "Brahman",      "BreedType": "Brahman",      "Sex": "Male",   "Gender": "Male",   "Color": "Dark Grey",   "Weight": 390, "TagNumber": "ZM-CTL-004", "TagColor": "Blue",   "Status": "Active",   "HealthStatus": "Under Treatment", "DateOfBirth": "2022-05-08T00:00:00",   "CurrentEnclosure": "Isolation Pen",   "FieldId": 1, "IsBreedingStock": false, "FeedType": "Hay",                  "FeedCost": 60,  "EstimatedRevenue": 3200, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chanda Mumba",  "HarvestIn": "12 months", "Description": "Recovering from foot-and-mouth — under observation" },
+    { "Id": 5,  "AssetId": 5,  "Name": "Lulu",      "Species": "Cattle", "AnimalType": "Cattle", "Breed": "Simmental",    "BreedType": "Simmental",    "Sex": "Female", "Gender": "Female", "Color": "Tan & White", "Weight": 540, "TagNumber": "ZM-CTL-005", "TagColor": "Green",  "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2020-02-14T00:00:00",  "CurrentEnclosure": "East Field",      "FieldId": 2, "IsBreedingStock": true,  "FeedType": "Pasture + Silage",     "FeedCost": 90,  "EstimatedRevenue": 5100, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chanda Mumba",  "HarvestIn": "4 months",  "Description": "High milk producer, currently in calf" },
+    { "Id": 6,  "AssetId": 6,  "Name": "Wooly",     "Species": "Sheep",  "AnimalType": "Sheep",  "Breed": "Dorper",       "BreedType": "Dorper",       "Sex": "Female", "Gender": "Female", "Color": "White & Black", "Weight": 68,  "TagNumber": "ZM-SHP-001", "TagColor": "Orange", "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2022-04-02T00:00:00",   "CurrentEnclosure": "Sheep Kraal A",   "FieldId": 2, "IsBreedingStock": true,  "FeedType": "Pasture",              "FeedCost": 22,  "EstimatedRevenue": 850,  "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Bwalya Tembo",   "HarvestIn": "3 months",  "Description": "Excellent meat breed, fast-growing lambs" },
+    { "Id": 7,  "AssetId": 7,  "Name": "Fleece",    "Species": "Sheep",  "AnimalType": "Sheep",  "Breed": "Merino",       "BreedType": "Merino",       "Sex": "Female", "Gender": "Female", "Color": "White",         "Weight": 55,  "TagNumber": "ZM-SHP-002", "TagColor": "Orange", "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2021-09-15T00:00:00",  "CurrentEnclosure": "Sheep Kraal A",   "FieldId": 2, "IsBreedingStock": true,  "FeedType": "Pasture + Lucerne",    "FeedCost": 28,  "EstimatedRevenue": 920,  "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Bwalya Tembo",   "HarvestIn": "Shearing due", "Description": "Fine wool producer, shearing scheduled next month" },
+    { "Id": 8,  "AssetId": 8,  "Name": "Kabo",      "Species": "Sheep",  "AnimalType": "Sheep",  "Breed": "Dorper",       "BreedType": "Dorper",       "Sex": "Male",   "Gender": "Male",   "Color": "White",         "Weight": 82,  "TagNumber": "ZM-SHP-003", "TagColor": "Red",    "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2020-12-20T00:00:00", "CurrentEnclosure": "Ram Pen",         "FieldId": 2, "IsBreedingStock": true,  "IsSire": true, "SireQuality": "Good", "FeedType": "Hay + Grain", "FeedCost": 35,  "EstimatedRevenue": 1100, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Bwalya Tembo",   "HarvestIn": "Ready",     "Description": "Active breeding ram, sired 28 lambs last season" },
+    { "Id": 9,  "AssetId": 9,  "Name": "Nzou",      "Species": "Goat",   "AnimalType": "Goat",   "Breed": "Boer",         "BreedType": "Boer",         "Sex": "Female", "Gender": "Female", "Color": "White & Brown",  "Weight": 52,  "TagNumber": "ZM-GT-001",  "TagColor": "Pink",   "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2022-01-18T00:00:00",  "CurrentEnclosure": "Goat Pen",        "FieldId": 3, "IsBreedingStock": true,  "FeedType": "Browse + Hay",         "FeedCost": 18,  "EstimatedRevenue": 650,  "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Bwalya Tembo",   "HarvestIn": "5 months",  "Description": "Productive Boer doe, raises twins regularly" },
+    { "Id": 10, "AssetId": 10, "Name": "Chikoti",   "Species": "Goat",   "AnimalType": "Goat",   "Breed": "Saanen",       "BreedType": "Saanen",       "Sex": "Female", "Gender": "Female", "Color": "White",          "Weight": 46,  "TagNumber": "ZM-GT-002",  "TagColor": "Pink",   "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2021-06-30T00:00:00",  "CurrentEnclosure": "Dairy Goat Pen",  "FieldId": 3, "IsBreedingStock": false, "FeedType": "Pasture + Concentrate", "FeedCost": 25, "EstimatedRevenue": 480,  "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Bwalya Tembo",   "HarvestIn": "Daily milk", "Description": "High milk yield — 3.2 L/day, used for artisan cheese" },
+    { "Id": 11, "AssetId": 11, "Name": "Fikile",    "Species": "Pig",    "AnimalType": "Pig",    "Breed": "Large White",  "BreedType": "Large White",  "Sex": "Female", "Gender": "Female", "Color": "Pink",           "Weight": 180, "TagNumber": "ZM-PIG-001", "TagColor": "White",  "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2022-08-10T00:00:00",  "CurrentEnclosure": "Pig Sty 1",      "FieldId": 3, "IsBreedingStock": true,  "FeedType": "Commercial Pellets",   "FeedCost": 45,  "EstimatedRevenue": 2800, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chanda Mumba",  "HarvestIn": "2 months",  "Description": "Sow, currently pregnant — litter of 10 expected" },
+    { "Id": 12, "AssetId": 12, "Name": "Ngulube",   "Species": "Pig",    "AnimalType": "Pig",    "Breed": "Landrace",     "BreedType": "Landrace",     "Sex": "Male",   "Gender": "Male",   "Color": "White",          "Weight": 210, "TagNumber": "ZM-PIG-002", "TagColor": "White",  "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2021-04-05T00:00:00",   "CurrentEnclosure": "Pig Sty 2",      "FieldId": 3, "IsBreedingStock": true,  "IsSire": true, "SireQuality": "Premium", "FeedType": "Commercial Pellets + Grain", "FeedCost": 55, "EstimatedRevenue": 3500, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chanda Mumba", "HarvestIn": "Ready", "Description": "Prime boar, excellent conformation and growth rate" },
+    { "Id": 13, "AssetId": 13, "Name": "Ndlela",    "Species": "Horse",  "AnimalType": "Horse",  "Breed": "Thoroughbred", "BreedType": "Thoroughbred", "Sex": "Male",   "Gender": "Male",   "Color": "Bay",            "Weight": 520, "TagNumber": "ZM-HRS-001", "TagColor": "Blue",   "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2019-10-03T00:00:00",  "CurrentEnclosure": "Stable 1",       "FieldId": 4, "IsBreedingStock": false, "FeedType": "Hay + Oats",           "FeedCost": 120, "EstimatedRevenue": 18000, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chilufya Phiri", "HarvestIn": "N/A",      "Description": "Farm work horse, also used for agri-tourism rides" },
+    { "Id": 14, "AssetId": 14, "Name": "Zawadi",    "Species": "Horse",  "AnimalType": "Horse",  "Breed": "Arabian",      "BreedType": "Arabian",      "Sex": "Female", "Gender": "Female", "Color": "Grey",           "Weight": 450, "TagNumber": "ZM-HRS-002", "TagColor": "Blue",   "Status": "Active",   "HealthStatus": "Healthy",  "DateOfBirth": "2020-05-22T00:00:00",  "CurrentEnclosure": "Stable 2",       "FieldId": 4, "IsBreedingStock": true,  "FeedType": "Hay + Supplement",     "FeedCost": 105, "EstimatedRevenue": 22000, "CurrencySymbol": "ZMW", "Veterinarian": "Dr. Chilufya Phiri", "HarvestIn": "N/A",      "Description": "Breeding mare, last foal sold for ZMW 15,000" }
+  ],
+  "Crops": [
+    {
+      "AssetId": 1, "AssetNumber": "ZM-CROP-001", "AssetName": "Maize Block A — North Field",
+      "CropType": "Maize", "FieldId": 1, "FieldName": "North Field",
+      "PlantDate": "2024-11-15T00:00:00", "HarvestDate": "2025-04-20T00:00:00",
+      "PlantCount": 28000, "ExpectedHarvest": 8400,
+      "PlantingMethod": "Row Planting", "SeedType": "Hybrid SC403",
+      "SeedCompany": "Seed Co Zambia", "SeedOrigin": "Zimbabwe",
+      "SeedStartDateTime": "2024-11-10T00:00:00",
+      "PlantingInstruction": "Row spacing 75cm, plant spacing 25cm, depth 5cm",
+      "MarketValue": 126000.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "42 kg/ha", "Phosphorus": "18 kg/ha", "Potassium": "20 kg/ha", "PH": "6.2", "DateRecorded": "2024-11-15T00:00:00", "EnteredBy": "Bwalya Tembo" },
+        { "Nitrogen": "60 kg/ha", "Phosphorus": "0",        "Potassium": "0",         "PH": "6.4", "DateRecorded": "2025-01-10T00:00:00",  "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [
+        { "TreatmentType": "Herbicide", "ProductUsed": "Atrazine 500 SC", "AmountApplied": "2.5 L/ha", "TreatmentApplication": "Broadcast spray", "DateRecorded": "2024-11-22T00:00:00", "EnteredBy": "Kapambwe Mutale" },
+        { "TreatmentType": "Pesticide", "ProductUsed": "Karate 5% EC",    "AmountApplied": "0.5 L/ha", "TreatmentApplication": "Foliar spray",    "DateRecorded": "2025-01-08T00:00:00",  "EnteredBy": "Kapambwe Mutale" }
+      ],
+      "HarvestViewModels": [
+        { "CropAssetId": 1, "QuantityProduced": 7980, "UnitOfMeasure": "kg", "Grade": "A", "EstimatedRevenue": 119700.0, "HarvestMethod": "Mechanical", "EquipmentUsed": "Combine Harvester", "NumberOfPeople": 4, "HarvestDuration": 16, "YieldPerAcre": 2200, "DateRecorded": "2025-04-18T00:00:00", "EnteredBy": "Bwalya Tembo", "FieldName": "North Field", "CropName": "Maize Block A" }
+      ]
+    },
+    {
+      "AssetId": 2, "AssetNumber": "ZM-CROP-002", "AssetName": "Soya Bean Plot B — South Paddock",
+      "CropType": "Soya Bean", "FieldId": 2, "FieldName": "South Paddock",
+      "PlantDate": "2024-12-01T00:00:00", "HarvestDate": "2025-05-10T00:00:00",
+      "PlantCount": 350000, "ExpectedHarvest": 3500,
+      "PlantingMethod": "Narrow Row Planting", "SeedType": "Okavango",
+      "SeedCompany": "Pannar Seed Zambia", "SeedOrigin": "South Africa",
+      "SeedStartDateTime": "2024-11-28T00:00:00",
+      "PlantingInstruction": "Row spacing 45cm, inoculate seed before planting",
+      "MarketValue": 157500.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "0 kg/ha", "Phosphorus": "22 kg/ha", "Potassium": "18 kg/ha", "PH": "6.5", "DateRecorded": "2024-12-01T00:00:00", "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [
+        { "TreatmentType": "Fungicide", "ProductUsed": "Bravo 500 SC", "AmountApplied": "1.5 L/ha", "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-02-14T00:00:00", "EnteredBy": "Kapambwe Mutale", "Comment": "Applied at R3 pod fill stage" }
+      ],
+      "HarvestViewModels": []
+    },
+    {
+      "AssetId": 3, "AssetNumber": "ZM-CROP-003", "AssetName": "Wheat Plot C — East Orchard",
+      "CropType": "Wheat", "FieldId": 3, "FieldName": "East Orchard",
+      "PlantDate": "2024-05-20T00:00:00", "HarvestDate": "2024-10-05T00:00:00",
+      "PlantCount": 600000, "ExpectedHarvest": 4800,
+      "PlantingMethod": "Broadcast + Incorporate", "SeedType": "Kanchan",
+      "SeedCompany": "Seed Co Zambia", "SeedOrigin": "Zambia",
+      "SeedStartDateTime": "2024-05-15T00:00:00",
+      "PlantingInstruction": "Seed rate 120 kg/ha, irrigate immediately after planting",
+      "MarketValue": 192000.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "80 kg/ha", "Phosphorus": "25 kg/ha", "Potassium": "15 kg/ha", "PH": "6.8", "DateRecorded": "2024-05-20T00:00:00", "EnteredBy": "Bwalya Tembo" },
+        { "Nitrogen": "40 kg/ha", "Phosphorus": "0",        "Potassium": "0",         "PH": "6.9", "DateRecorded": "2024-07-18T00:00:00",  "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [
+        { "TreatmentType": "Herbicide", "ProductUsed": "Hussar OD",       "AmountApplied": "0.75 L/ha", "TreatmentApplication": "Foliar spray",    "DateRecorded": "2024-06-10T00:00:00", "EnteredBy": "Kapambwe Mutale" },
+        { "TreatmentType": "Fungicide", "ProductUsed": "Tilt 250 EC",     "AmountApplied": "0.5 L/ha",  "TreatmentApplication": "Foliar spray",    "DateRecorded": "2024-08-05T00:00:00",  "EnteredBy": "Kapambwe Mutale", "Comment": "Rust prevention — flag leaf stage" },
+        { "TreatmentType": "Pesticide", "ProductUsed": "Decis 2.5% EC",   "AmountApplied": "0.3 L/ha",  "TreatmentApplication": "Foliar spray",    "DateRecorded": "2024-08-20T00:00:00", "EnteredBy": "Kapambwe Mutale" }
+      ],
+      "HarvestViewModels": [
+        { "CropAssetId": 3, "QuantityProduced": 4650, "UnitOfMeasure": "kg", "Grade": "A", "EstimatedRevenue": 186000.0, "HarvestMethod": "Mechanical", "EquipmentUsed": "Combine Harvester", "NumberOfPeople": 3, "HarvestDuration": 12, "YieldPerAcre": 1850, "DateRecorded": "2024-10-03T00:00:00", "EnteredBy": "Bwalya Tembo", "FieldName": "East Orchard", "CropName": "Wheat Plot C" }
+      ]
+    },
+    {
+      "AssetId": 4, "AssetNumber": "ZM-CROP-004", "AssetName": "Groundnut Plot D — West Nursery",
+      "CropType": "Groundnut", "FieldId": 4, "FieldName": "West Nursery",
+      "PlantDate": "2024-12-10T00:00:00", "HarvestDate": "2025-05-20T00:00:00",
+      "PlantCount": 120000, "ExpectedHarvest": 1800,
+      "PlantingMethod": "Ridge Planting", "SeedType": "Chalimbana",
+      "SeedCompany": "Golden Valley Agri Research Trust", "SeedOrigin": "Zambia",
+      "SeedStartDateTime": "2024-12-05T00:00:00",
+      "PlantingInstruction": "Ridge spacing 75cm, plant spacing 10cm, depth 4–5cm",
+      "MarketValue": 108000.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "10 kg/ha", "Phosphorus": "30 kg/ha", "Potassium": "20 kg/ha", "PH": "5.8", "DateRecorded": "2024-12-10T00:00:00", "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [
+        { "TreatmentType": "Pesticide", "ProductUsed": "Dimethoate 40% EC", "AmountApplied": "1.0 L/ha", "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-02-20T00:00:00", "EnteredBy": "Kapambwe Mutale", "Comment": "Aphid control" }
+      ],
+      "HarvestViewModels": []
+    },
+    {
+      "AssetId": 5, "AssetNumber": "ZM-CROP-005", "AssetName": "Sweet Potato Block E — South Paddock",
+      "CropType": "Sweet Potato", "FieldId": 2, "FieldName": "South Paddock",
+      "PlantDate": "2024-10-05T00:00:00", "HarvestDate": "2025-01-15T00:00:00",
+      "PlantCount": 40000, "ExpectedHarvest": 24000,
+      "PlantingMethod": "Raised Bed / Vine Cutting", "SeedType": "Naspot 11",
+      "SeedCompany": "ZARI (Zambia Agriculture Research Institute)", "SeedOrigin": "Zambia",
+      "SeedStartDateTime": "2024-09-25T00:00:00",
+      "PlantingInstruction": "Bed height 30cm, vine cutting 30cm long, plant at 30cm spacing",
+      "MarketValue": 96000.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "30 kg/ha", "Phosphorus": "60 kg/ha", "Potassium": "80 kg/ha", "PH": "5.5", "DateRecorded": "2024-10-05T00:00:00", "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [],
+      "HarvestViewModels": [
+        { "CropAssetId": 5, "QuantityProduced": 23200, "UnitOfMeasure": "kg", "Grade": "A", "EstimatedRevenue": 92800.0, "HarvestMethod": "Manual", "EquipmentUsed": "Hand Hoe", "NumberOfPeople": 12, "HarvestDuration": 8, "YieldPerAcre": 8200, "DateRecorded": "2025-01-14T00:00:00", "EnteredBy": "Kapambwe Mutale", "FieldName": "South Paddock", "CropName": "Sweet Potato Block E" }
+      ]
+    },
+    {
+      "AssetId": 6, "AssetNumber": "ZM-CROP-006", "AssetName": "Tomato Greenhouse — West Nursery",
+      "CropType": "Tomato", "FieldId": 4, "FieldName": "West Nursery",
+      "PlantDate": "2025-01-08T00:00:00", "HarvestDate": "2025-04-30T00:00:00",
+      "PlantCount": 3200, "ExpectedHarvest": 19200,
+      "PlantingMethod": "Transplant — Drip Irrigated", "SeedType": "Rodade F1",
+      "SeedCompany": "Stark Ayres Zambia", "SeedOrigin": "Netherlands",
+      "SeedStartDateTime": "2024-12-20T00:00:00",
+      "PlantingInstruction": "Transplant at 5–6 leaf stage; stake at 30cm, trellis at 60cm",
+      "MarketValue": 288000.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "120 kg/ha", "Phosphorus": "80 kg/ha", "Potassium": "160 kg/ha", "PH": "6.0", "DateRecorded": "2025-01-08T00:00:00",  "EnteredBy": "Bwalya Tembo" },
+        { "Nitrogen": "60 kg/ha",  "Phosphorus": "0",         "Potassium": "80 kg/ha",  "PH": "6.2", "DateRecorded": "2025-02-20T00:00:00", "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [
+        { "TreatmentType": "Fungicide", "ProductUsed": "Ridomil Gold MZ 68 WP", "AmountApplied": "2.5 kg/ha", "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-02-05T00:00:00",  "EnteredBy": "Kapambwe Mutale", "Comment": "Early blight prevention" },
+        { "TreatmentType": "Pesticide", "ProductUsed": "Confidor 200 SL",         "AmountApplied": "0.5 L/ha",  "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-02-25T00:00:00", "EnteredBy": "Kapambwe Mutale", "Comment": "Whitefly control" },
+        { "TreatmentType": "Fungicide", "ProductUsed": "Mancozeb 80 WP",          "AmountApplied": "2.0 kg/ha", "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-03-18T00:00:00", "EnteredBy": "Kapambwe Mutale" }
+      ],
+      "HarvestViewModels": [
+        { "CropAssetId": 6, "QuantityProduced": 9600,  "UnitOfMeasure": "kg", "Grade": "A", "EstimatedRevenue": 144000.0, "HarvestMethod": "Manual", "EquipmentUsed": "Hand Picking", "NumberOfPeople": 8, "HarvestDuration": 4, "YieldPerAcre": 3200, "DateRecorded": "2025-03-28T00:00:00", "EnteredBy": "Kapambwe Mutale", "FieldName": "West Nursery", "CropName": "Tomato Greenhouse", "Notes": "First pick — premium grade" },
+        { "CropAssetId": 6, "QuantityProduced": 7200,  "UnitOfMeasure": "kg", "Grade": "B", "EstimatedRevenue": 86400.0,  "HarvestMethod": "Manual", "EquipmentUsed": "Hand Picking", "NumberOfPeople": 8, "HarvestDuration": 4, "YieldPerAcre": 2400, "DateRecorded": "2025-04-12T00:00:00", "EnteredBy": "Kapambwe Mutale", "FieldName": "West Nursery", "CropName": "Tomato Greenhouse", "Notes": "Second pick" }
+      ]
+    }
+  ],
+  "Equipments": [
+    {
+      "AssetId": 1, "AssetNumber": "ZM-EQP-001",
+      "Name": "John Deere 5075E Utility Tractor",
+      "EquipmentType": "Tractor", "EquipmentTypeId": 1,
+      "Brand": "John Deere", "Model": "5075E",
+      "SerialNumber": "1PY5075EPAM123456",
+      "Engine": "3-cylinder John Deere PowerTech 2.9L diesel, 75 HP",
+      "Transmission": "9F/3R SynchroPlus",
+      "TrackUsage": "Hours", "CurrentHours": "1,842 hrs",
+      "PurchaseDate": "2021-03-15", "Price": "ZMW 485,000",
+      "PlateNumber": "ZM-TRK-001", "Mileage": "N/A",
+      "PrimaryContact": "Bwalya Tembo — 0977-111-222",
+      "CurrencySymbol": "ZMW",
+      "Description": "Primary field tractor — used for ploughing, ridging and boom sprayer operations on North Field",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 1, "EquipmentTreatmentAssetId": 1, "TreatmentType": "Service", "Type": "Oil & Filter Change",        "ProductUsed": "Shell Rimula R4 X 15W40 — 9L", "ServicePerformedBy": "Bwalya Tembo",        "DateRecorded": "2024-10-05T00:00:00",  "CurrentHours": "1,500 hrs", "Cost": "ZMW 1,850", "Comment": "Engine oil + oil filter replaced at 1,500 hr service interval" },
+        { "FarmTreatmentId": 2, "EquipmentTreatmentAssetId": 1, "TreatmentType": "Service", "Type": "Air & Fuel Filter Replace",  "ProductUsed": "John Deere OEM filters",         "ServicePerformedBy": "Bwalya Tembo",        "DateRecorded": "2025-01-20T00:00:00",  "CurrentHours": "1,750 hrs", "Cost": "ZMW 1,200", "Comment": "250 hr service — air filter, fuel filter, hydraulic strainer" },
+        { "FarmTreatmentId": 3, "EquipmentTreatmentAssetId": 1, "TreatmentType": "Repair",  "Type": "Front Axle Seal Replacement", "ProductUsed": "John Deere seal kit RE282506",   "ServicePerformedBy": "Farm Fix Auto — Lusaka", "DateRecorded": "2025-03-08T00:00:00", "CurrentHours": "1,810 hrs", "Cost": "ZMW 4,200", "Comment": "Oil leak from front axle — seal worn; 2-day downtime" }
+      ]
+    },
+    {
+      "AssetId": 2, "AssetNumber": "ZM-EQP-002",
+      "Name": "Massey Ferguson 385 4WD Tractor",
+      "EquipmentType": "Tractor", "EquipmentTypeId": 1,
+      "Brand": "Massey Ferguson", "Model": "385 4WD",
+      "SerialNumber": "MF385ZM2019004421",
+      "Engine": "Perkins 1004.4 4-cylinder diesel, 85 HP",
+      "Transmission": "8F/2R gearbox with creeper",
+      "TrackUsage": "Hours", "CurrentHours": "3,210 hrs",
+      "PurchaseDate": "2019-07-01", "Price": "ZMW 390,000",
+      "PlateNumber": "ZM-TRK-002", "Mileage": "N/A",
+      "PrimaryContact": "Kapambwe Mutale — 0966-333-444",
+      "CurrencySymbol": "ZMW",
+      "Description": "Secondary tractor — used for ridging, planting and livestock feed transport. Higher hours; scheduled for major overhaul.",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 4, "EquipmentTreatmentAssetId": 2, "TreatmentType": "Service", "Type": "Full 500-Hour Service",      "ProductUsed": "Castrol RX Super 15W40 — 12L + OEM filters", "ServicePerformedBy": "Kapambwe Mutale", "DateRecorded": "2024-08-12T00:00:00", "CurrentHours": "3,000 hrs", "Cost": "ZMW 2,800", "Comment": "500 hr major service — oil, all filters, coolant top-up, belt check" },
+        { "FarmTreatmentId": 5, "EquipmentTreatmentAssetId": 2, "TreatmentType": "Repair",  "Type": "Clutch Plate Replacement",   "ProductUsed": "MF OEM clutch kit 3599851M92",               "ServicePerformedBy": "AgriMech Zambia",  "DateRecorded": "2025-02-03T00:00:00",  "CurrentHours": "3,150 hrs", "Cost": "ZMW 8,500", "Comment": "Clutch slipping under load — replaced pressure plate and disc; 4-day downtime" }
+      ]
+    },
+    {
+      "AssetId": 3, "AssetNumber": "ZM-EQP-003",
+      "Name": "John Deere S440 Combine Harvester",
+      "EquipmentType": "Combine Harvester", "EquipmentTypeId": 2,
+      "Brand": "John Deere", "Model": "S440",
+      "SerialNumber": "1H0S440SXM0001234",
+      "Engine": "John Deere PowerTech 6.8L, 240 HP",
+      "Transmission": "HydroStatic Drive",
+      "TrackUsage": "Hours", "CurrentHours": "892 hrs",
+      "PurchaseDate": "2022-09-20", "Price": "ZMW 3,200,000",
+      "PlateNumber": "ZM-HVT-001", "Mileage": "N/A",
+      "PrimaryContact": "Bwalya Tembo — 0977-111-222",
+      "CurrencySymbol": "ZMW",
+      "Description": "Used for maize and wheat harvesting. Fitted with 6-row maize header and 20ft grain platform. Seasonal use only.",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 6, "EquipmentTreatmentAssetId": 3, "TreatmentType": "Service", "Type": "Pre-Season Service",         "ProductUsed": "Shell Rimula R3 30W — 16L + OEM filters",    "ServicePerformedBy": "John Deere Zambia", "DateRecorded": "2024-10-01T00:00:00", "CurrentHours": "820 hrs", "Cost": "ZMW 5,600", "Comment": "Annual pre-harvest service — all filters, belts, sieves, concave clearance set" },
+        { "FarmTreatmentId": 7, "EquipmentTreatmentAssetId": 3, "TreatmentType": "Repair",  "Type": "Feeder House Chain Replace", "ProductUsed": "JD feeder chain kit AH206551",               "ServicePerformedBy": "John Deere Zambia", "DateRecorded": "2024-11-05T00:00:00", "CurrentHours": "855 hrs", "Cost": "ZMW 3,100", "Comment": "Feeder house chain stretched and skipping — replaced during maize harvest" }
+      ]
+    },
+    {
+      "AssetId": 4, "AssetNumber": "ZM-EQP-004",
+      "Name": "Grundfos CM5-5 Centrifugal Irrigation Pump",
+      "EquipmentType": "Irrigation Pump", "EquipmentTypeId": 3,
+      "Brand": "Grundfos", "Model": "CM5-5 A-R-G-E-AQQE",
+      "SerialNumber": "GF98765432",
+      "Engine": "Single-phase 2.2 kW electric motor, 2850 RPM",
+      "Transmission": "Direct drive",
+      "TrackUsage": "Hours", "CurrentHours": "4,120 hrs",
+      "PurchaseDate": "2020-01-10", "Price": "ZMW 38,000",
+      "PlateNumber": "N/A", "Mileage": "N/A",
+      "PrimaryContact": "Kapambwe Mutale — 0966-333-444",
+      "CurrencySymbol": "ZMW",
+      "Description": "Primary irrigation pump for tomato greenhouse and horticulture beds. Connected to 5,000L header tank fed from borehole.",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 8,  "EquipmentTreatmentAssetId": 4, "TreatmentType": "Service", "Type": "Impeller & Seal Service",  "ProductUsed": "Grundfos OEM service kit 96526060",          "ServicePerformedBy": "Kapambwe Mutale",   "DateRecorded": "2024-06-15T00:00:00",  "CurrentHours": "3,800 hrs", "Cost": "ZMW 2,200", "Comment": "Reduced flow rate detected — impeller worn, mechanical seal replaced" },
+        { "FarmTreatmentId": 9,  "EquipmentTreatmentAssetId": 4, "TreatmentType": "Repair",  "Type": "Motor Bearing Replacement", "ProductUsed": "SKF 6205-2RS1 bearing × 2",                  "ServicePerformedBy": "Sparks Electrical — Lusaka", "DateRecorded": "2025-01-08T00:00:00", "CurrentHours": "4,050 hrs", "Cost": "ZMW 1,800", "Comment": "Bearing noise — motor overheating; 1-day repair, no crop loss" }
+      ]
+    },
+    {
+      "AssetId": 5, "AssetNumber": "ZM-EQP-005",
+      "Name": "Honda WX10 Water Pump (Portable)",
+      "EquipmentType": "Irrigation Pump", "EquipmentTypeId": 3,
+      "Brand": "Honda", "Model": "WX10",
+      "SerialNumber": "GCAJ-1234567",
+      "Engine": "Honda GX25 4-stroke, 25cc, 1.0 HP",
+      "Transmission": "Direct drive",
+      "TrackUsage": "Hours", "CurrentHours": "680 hrs",
+      "PurchaseDate": "2023-02-14", "Price": "ZMW 6,500",
+      "PlateNumber": "N/A", "Mileage": "N/A",
+      "PrimaryContact": "Kapambwe Mutale — 0966-333-444",
+      "CurrencySymbol": "ZMW",
+      "Description": "Portable pump used for spot irrigation, livestock watering and emergency backup. Runs on petrol.",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 10, "EquipmentTreatmentAssetId": 5, "TreatmentType": "Service", "Type": "Spark Plug & Oil Change",   "ProductUsed": "NGK BPR6ES spark plug + Honda 10W30 0.1L",   "ServicePerformedBy": "Kapambwe Mutale",   "DateRecorded": "2025-02-20T00:00:00", "CurrentHours": "650 hrs",   "Cost": "ZMW 280",   "Comment": "Routine 50 hr service — hard starting resolved after plug change" }
+      ]
+    },
+    {
+      "AssetId": 6, "AssetNumber": "ZM-EQP-006",
+      "Name": "Hardi Commander 2000L Boom Sprayer",
+      "EquipmentType": "Boom Sprayer", "EquipmentTypeId": 4,
+      "Brand": "Hardi", "Model": "Commander 2000",
+      "SerialNumber": "HC200ZM2021009",
+      "Engine": "Tractor PTO driven (540 RPM)",
+      "Transmission": "PTO shaft",
+      "TrackUsage": "Hours", "CurrentHours": "310 hrs",
+      "PurchaseDate": "2021-10-05", "Price": "ZMW 185,000",
+      "PlateNumber": "N/A", "Mileage": "N/A",
+      "PrimaryContact": "Bwalya Tembo — 0977-111-222",
+      "CurrencySymbol": "ZMW",
+      "Description": "Mounted boom sprayer — 18m boom width, 110-litre boom, used for herbicide and fungicide application on maize, wheat and soya fields.",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 11, "EquipmentTreatmentAssetId": 6, "TreatmentType": "Service", "Type": "End-of-Season Flush & Store", "ProductUsed": "Clean water flush + nozzle inspection kit",  "ServicePerformedBy": "Bwalya Tembo",      "DateRecorded": "2025-05-02T00:00:00",  "CurrentHours": "310 hrs",   "Cost": "ZMW 450",   "Comment": "Post-season: boom flushed with clean water, nozzles cleaned, stored dry" },
+        { "FarmTreatmentId": 12, "EquipmentTreatmentAssetId": 6, "TreatmentType": "Repair",  "Type": "Nozzle Replacement (18 off)", "ProductUsed": "Hardi ISO F-110-03 flat fan nozzles × 18",   "ServicePerformedBy": "Bwalya Tembo",      "DateRecorded": "2024-11-03T00:00:00", "CurrentHours": "285 hrs",   "Cost": "ZMW 1,260", "Comment": "Worn nozzles causing uneven spray pattern — replaced full set" }
+      ]
+    },
+    {
+      "AssetId": 7, "AssetNumber": "ZM-EQP-007",
+      "Name": "Toyota Land Cruiser 79 Series Single Cab",
+      "EquipmentType": "Farm Vehicle", "EquipmentTypeId": 5,
+      "Brand": "Toyota", "Model": "Land Cruiser 79 SC 4.2D",
+      "SerialNumber": "JTFHX028X00123456",
+      "Engine": "1HZ 4.2L inline-6 diesel, 96 HP",
+      "Transmission": "5-speed manual, 4WD part-time",
+      "TrackUsage": "Kilometres", "CurrentHours": "N/A",
+      "PurchaseDate": "2020-11-22", "Price": "ZMW 520,000",
+      "PlateNumber": "BAA 7823 ZM", "Mileage": "78,450 km",
+      "PrimaryContact": "Situmbeko Musokotwane — 0955-000-111",
+      "CurrencySymbol": "ZMW",
+      "Description": "Farm utility vehicle — used for supply runs to Lusaka, field supervision and livestock transport. Tow bar fitted for trailer.",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 13, "EquipmentTreatmentAssetId": 7, "TreatmentType": "Service", "Type": "10,000 km Service",           "ProductUsed": "Castrol GTX Diesel 15W40 8L + Ryco Z418 filter", "ServicePerformedBy": "Toyota Zambia — Lusaka", "DateRecorded": "2025-01-15T00:00:00", "CurrentHours": "N/A", "Cost": "ZMW 2,600", "Comment": "75,000 km service — oil, filter, air filter, tyre rotation" },
+        { "FarmTreatmentId": 14, "EquipmentTreatmentAssetId": 7, "TreatmentType": "Repair",  "Type": "Front Brake Pad Replacement",  "ProductUsed": "Bendix DB1280 HD brake pad set",                 "ServicePerformedBy": "Toyota Zambia — Lusaka", "DateRecorded": "2025-03-20T00:00:00", "CurrentHours": "N/A", "Cost": "ZMW 1,950", "Comment": "Brake pad wear — replaced front axle both sides; 1-day turnaround" }
+      ]
+    },
+    {
+      "AssetId": 8, "AssetNumber": "ZM-EQP-008",
+      "Name": "Almaco Plot Thresher / Sheller",
+      "EquipmentType": "Thresher", "EquipmentTypeId": 6,
+      "Brand": "Almaco", "Model": "PT — PTO Drive",
+      "SerialNumber": "ALMC-PT-ZM-2022-007",
+      "Engine": "Tractor PTO driven (540 RPM) or 7.5 kW electric motor",
+      "Transmission": "Belt drive",
+      "TrackUsage": "Hours", "CurrentHours": "195 hrs",
+      "PurchaseDate": "2022-06-30", "Price": "ZMW 95,000",
+      "PlateNumber": "N/A", "Mileage": "N/A",
+      "PrimaryContact": "Kapambwe Mutale — 0966-333-444",
+      "CurrencySymbol": "ZMW",
+      "Description": "Multi-crop thresher — handles maize, sorghum, groundnuts and soya. Capacity 500–800 kg/hr. Used post-harvest before bagging.",
+      "EquipmentTreatmentViewModels": [
+        { "FarmTreatmentId": 15, "EquipmentTreatmentAssetId": 8, "TreatmentType": "Service", "Type": "Post-Season Clean & Inspect",  "ProductUsed": "Grease + belt tension kit",                  "ServicePerformedBy": "Kapambwe Mutale",   "DateRecorded": "2025-05-10T00:00:00", "CurrentHours": "195 hrs",   "Cost": "ZMW 380",   "Comment": "Threshing cylinder cleaned, sieve replaced, drive belts tensioned for storage" }
+      ]
+    }
+  ],
+  "PlantTypes": [
+    { "Id": 1,  "PlantTypeId": 1,  "Name": "Maize — SC403 Hybrid",       "PlantType": "Cereal",       "Variety": "SC403",       "CropNumber": "ZM-PT-001", "StartSeeds": 1, "DaysToEmerge": 7,  "DaysToMature": 120, "PlantSpacing": 25,  "RowSpacing": 75,  "PlantingDepth": 5  },
+    { "Id": 2,  "PlantTypeId": 2,  "Name": "Maize — SC513 Hybrid",       "PlantType": "Cereal",       "Variety": "SC513",       "CropNumber": "ZM-PT-002", "StartSeeds": 1, "DaysToEmerge": 7,  "DaysToMature": 130, "PlantSpacing": 25,  "RowSpacing": 75,  "PlantingDepth": 5  },
+    { "Id": 3,  "PlantTypeId": 3,  "Name": "Wheat — Kanchan",            "PlantType": "Cereal",       "Variety": "Kanchan",     "CropNumber": "ZM-PT-003", "StartSeeds": 1, "DaysToEmerge": 6,  "DaysToMature": 110, "PlantSpacing": 5,   "RowSpacing": 20,  "PlantingDepth": 4  },
+    { "Id": 4,  "PlantTypeId": 4,  "Name": "Sorghum — Gadam",            "PlantType": "Cereal",       "Variety": "Gadam",       "CropNumber": "ZM-PT-004", "StartSeeds": 1, "DaysToEmerge": 8,  "DaysToMature": 100, "PlantSpacing": 20,  "RowSpacing": 60,  "PlantingDepth": 3  },
+    { "Id": 5,  "PlantTypeId": 5,  "Name": "Soya Bean — Okavango",       "PlantType": "Legume",       "Variety": "Okavango",    "CropNumber": "ZM-PT-005", "StartSeeds": 1, "DaysToEmerge": 6,  "DaysToMature": 115, "PlantSpacing": 5,   "RowSpacing": 45,  "PlantingDepth": 4  },
+    { "Id": 6,  "PlantTypeId": 6,  "Name": "Groundnut — Chalimbana",     "PlantType": "Legume",       "Variety": "Chalimbana",  "CropNumber": "ZM-PT-006", "StartSeeds": 1, "DaysToEmerge": 8,  "DaysToMature": 105, "PlantSpacing": 10,  "RowSpacing": 75,  "PlantingDepth": 5  },
+    { "Id": 7,  "PlantTypeId": 7,  "Name": "Cowpea — Bubebe",            "PlantType": "Legume",       "Variety": "Bubebe",      "CropNumber": "ZM-PT-007", "StartSeeds": 2, "DaysToEmerge": 5,  "DaysToMature": 70,  "PlantSpacing": 30,  "RowSpacing": 60,  "PlantingDepth": 3  },
+    { "Id": 8,  "PlantTypeId": 8,  "Name": "Common Bean — Lyamungu 85",  "PlantType": "Legume",       "Variety": "Lyamungu 85", "CropNumber": "ZM-PT-008", "StartSeeds": 1, "DaysToEmerge": 6,  "DaysToMature": 80,  "PlantSpacing": 15,  "RowSpacing": 50,  "PlantingDepth": 4  },
+    { "Id": 9,  "PlantTypeId": 9,  "Name": "Sweet Potato — Naspot 11",   "PlantType": "Root & Tuber", "Variety": "Naspot 11",   "CropNumber": "ZM-PT-009", "StartSeeds": 0, "DaysToEmerge": 10, "DaysToMature": 105, "PlantSpacing": 30,  "RowSpacing": 90,  "PlantingDepth": 0  },
+    { "Id": 10, "PlantTypeId": 10, "Name": "Cassava — Bangweulu",        "PlantType": "Root & Tuber", "Variety": "Bangweulu",   "CropNumber": "ZM-PT-010", "StartSeeds": 0, "DaysToEmerge": 14, "DaysToMature": 270, "PlantSpacing": 100, "RowSpacing": 100, "PlantingDepth": 0  },
+    { "Id": 11, "PlantTypeId": 11, "Name": "Tomato — Rodade F1",         "PlantType": "Vegetable",    "Variety": "Rodade F1",   "CropNumber": "ZM-PT-011", "StartSeeds": 3, "DaysToEmerge": 7,  "DaysToMature": 75,  "PlantSpacing": 50,  "RowSpacing": 100, "PlantingDepth": 1  },
+    { "Id": 12, "PlantTypeId": 12, "Name": "Tomato — Heinz 1370",        "PlantType": "Vegetable",    "Variety": "Heinz 1370",  "CropNumber": "ZM-PT-012", "StartSeeds": 3, "DaysToEmerge": 7,  "DaysToMature": 80,  "PlantSpacing": 50,  "RowSpacing": 100, "PlantingDepth": 1  },
+    { "Id": 13, "PlantTypeId": 13, "Name": "Cabbage — Pruktor F1",       "PlantType": "Vegetable",    "Variety": "Pruktor F1",  "CropNumber": "ZM-PT-013", "StartSeeds": 3, "DaysToEmerge": 5,  "DaysToMature": 90,  "PlantSpacing": 45,  "RowSpacing": 60,  "PlantingDepth": 1  },
+    { "Id": 14, "PlantTypeId": 14, "Name": "Onion — Texas Grano 502",    "PlantType": "Vegetable",    "Variety": "Texas Grano", "CropNumber": "ZM-PT-014", "StartSeeds": 5, "DaysToEmerge": 10, "DaysToMature": 120, "PlantSpacing": 10,  "RowSpacing": 30,  "PlantingDepth": 2  },
+    { "Id": 15, "PlantTypeId": 15, "Name": "Rape (Kale) — Robina",       "PlantType": "Vegetable",    "Variety": "Robina",      "CropNumber": "ZM-PT-015", "StartSeeds": 4, "DaysToEmerge": 5,  "DaysToMature": 45,  "PlantSpacing": 30,  "RowSpacing": 45,  "PlantingDepth": 1  },
+    { "Id": 16, "PlantTypeId": 16, "Name": "Tobacco — KRK26",            "PlantType": "Cash Crop",    "Variety": "KRK26",       "CropNumber": "ZM-PT-016", "StartSeeds": 4, "DaysToEmerge": 8,  "DaysToMature": 90,  "PlantSpacing": 50,  "RowSpacing": 120, "PlantingDepth": 1  },
+    { "Id": 17, "PlantTypeId": 17, "Name": "Cotton — Chureza",           "PlantType": "Cash Crop",    "Variety": "Chureza",     "CropNumber": "ZM-PT-017", "StartSeeds": 1, "DaysToEmerge": 7,  "DaysToMature": 160, "PlantSpacing": 30,  "RowSpacing": 90,  "PlantingDepth": 4  },
+    { "Id": 18, "PlantTypeId": 18, "Name": "Sunflower — Agsun 8251",     "PlantType": "Cash Crop",    "Variety": "Agsun 8251",  "CropNumber": "ZM-PT-018", "StartSeeds": 1, "DaysToEmerge": 7,  "DaysToMature": 100, "PlantSpacing": 30,  "RowSpacing": 75,  "PlantingDepth": 4  }
+  ]
+}

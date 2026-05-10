@@ -1,0 +1,294 @@
+{
+  "Summary": {
+    "TotalFields": 15,
+    "TotalAnimals": 1248,
+    "ActiveCrops": 42,
+    "FarmEquipment": 28,
+    "PendingTasks": 8,
+    "CompletedActivities": 156,
+    "TotalRevenue": 125000.0,
+    "TotalExpenses": 85000.0,
+    "NetProfit": 40000.0
+  },
+  "RecentActivities": [
+    {
+      "Date": "2026-05-08T10:00:00",
+      "Type": "Vaccination",
+      "Description": "Vaccinated 50 cattle",
+      "Status": "Completed",
+      "Icon": "medical_services",
+      "Color": "var(--rz-success)"
+    },
+    {
+      "Date": "2026-05-07T14:30:00",
+      "Type": "Harvest",
+      "Description": "Harvested wheat field (Field 3)",
+      "Status": "Completed",
+      "Icon": "grass",
+      "Color": "var(--rz-success)"
+    },
+    {
+      "Date": "2026-05-06T09:15:00",
+      "Type": "Equipment",
+      "Description": "Tractor service due",
+      "Status": "Pending",
+      "Icon": "build",
+      "Color": "var(--rz-warning)"
+    },
+    {
+      "Date": "2026-05-05T08:00:00",
+      "Type": "Field Prep",
+      "Description": "Plowed Field 5 for planting",
+      "Status": "Completed",
+      "Icon": "agriculture",
+      "Color": "var(--rz-success)"
+    },
+    {
+      "Date": "2026-05-04T11:45:00",
+      "Type": "Soil Test",
+      "Description": "Field A analysis results",
+      "Status": "Completed",
+      "Icon": "science",
+      "Color": "var(--rz-success)"
+    },
+    {
+      "Date": "2026-05-03T16:20:00",
+      "Type": "Irrigation",
+      "Description": "Scheduled irrigation for Field 2",
+      "Status": "Scheduled",
+      "Icon": "water_drop",
+      "Color": "var(--rz-info)"
+    },
+    {
+      "Date": "2026-05-02T07:30:00",
+      "Type": "Feeding",
+      "Description": "Distributed feed to livestock",
+      "Status": "Completed",
+      "Icon": "restaurant",
+      "Color": "var(--rz-success)"
+    }
+  ],
+  "QuickActions": [
+    {
+      "Title": "Add Field",
+      "Route": "/field/add",
+      "Icon": "add_circle",
+      "Color": "var(--rz-info)"
+    },
+    {
+      "Title": "Add Animal",
+      "Route": "/animal/add",
+      "Icon": "add_circle",
+      "Color": "var(--rz-primary)"
+    },
+    {
+      "Title": "Add Crop",
+      "Route": "/crop/add",
+      "Icon": "add_circle",
+      "Color": "var(--rz-success)"
+    },
+    {
+      "Title": "Add Equipment",
+      "Route": "/equipment/add",
+      "Icon": "add_circle",
+      "Color": "var(--rz-warning)"
+    },
+    {
+      "Title": "Schedule Task",
+      "Route": "/tasks/schedule",
+      "Icon": "schedule",
+      "Color": "var(--rz-secondary)"
+    },
+    {
+      "Title": "View Reports",
+      "Route": "/reports",
+      "Icon": "analytics",
+      "Color": "var(--rz-complete)"
+    }
+  ],
+  "MonthlyProductionData": [
+    { "Label": "Jan", "Value": 1200, "Color": "#4CAF50" },
+    { "Label": "Feb", "Value": 1800, "Color": "#4CAF50" },
+    { "Label": "Mar", "Value": 1500, "Color": "#4CAF50" },
+    { "Label": "Apr", "Value": 2200, "Color": "#4CAF50" },
+    { "Label": "May", "Value": 2800, "Color": "#4CAF50" },
+    { "Label": "Jun", "Value": 3200, "Color": "#4CAF50" },
+    { "Label": "Jul", "Value": 3800, "Color": "#4CAF50" },
+    { "Label": "Aug", "Value": 4200, "Color": "#4CAF50" },
+    { "Label": "Sep", "Value": 3600, "Color": "#4CAF50" },
+    { "Label": "Oct", "Value": 4000, "Color": "#4CAF50" },
+    { "Label": "Nov", "Value": 3500, "Color": "#4CAF50" },
+    { "Label": "Dec", "Value": 3000, "Color": "#4CAF50" }
+  ],
+  "ResourceUtilization": [
+    { "Label": "Fields", "Value": 85, "Color": "#2196F3" },
+    { "Label": "Equipment", "Value": 65, "Color": "#FF9800" },
+    { "Label": "Labor", "Value": 78, "Color": "#4CAF50" },
+    { "Label": "Water", "Value": 92, "Color": "#03A9F4" },
+    { "Label": "Feed", "Value": 88, "Color": "#8BC34A" },
+    { "Label": "Energy", "Value": 72, "Color": "#FFC107" }
+  ],
+  "FinancialOverview": [
+    { "Label": "Income", "Value": 125000, "Color": "#4CAF50" },
+    { "Label": "Expenses", "Value": 85000, "Color": "#F44336" },
+    { "Label": "Equipment", "Value": 25000, "Color": "#FF9800" },
+    { "Label": "Labor", "Value": 35000, "Color": "#2196F3" },
+    { "Label": "Supplies", "Value": 15000, "Color": "#9C27B0" },
+    { "Label": "Utilities", "Value": 10000, "Color": "#607D8B" },
+    { "Label": "Seeds/Plants", "Value": 8000, "Color": "#8BC34A" },
+    { "Label": "Fuel", "Value": 5000, "Color": "#FF5722" },
+    { "Label": "Maintenance", "Value": 7000, "Color": "#795548" },
+    { "Label": "Insurance", "Value": 3000, "Color": "#607D8B" }
+  ],
+  "RecentAlerts": [
+    {
+      "Date": "2026-05-09T07:00:00",
+      "Type": "Equipment",
+      "Message": "Tractor #5 requires maintenance - oil change due",
+      "Severity": "Warning",
+      "IsRead": false
+    },
+    {
+      "Date": "2026-05-09T04:00:00",
+      "Type": "Inventory",
+      "Message": "Animal feed stock is low (only 3 days supply remaining)",
+      "Severity": "Warning",
+      "IsRead": true
+    },
+    {
+      "Date": "2026-05-09T01:00:00",
+      "Type": "Weather",
+      "Message": "Heavy rain forecast for tomorrow - consider delaying field work",
+      "Severity": "Info",
+      "IsRead": true
+    },
+    {
+      "Date": "2026-05-08T09:00:00",
+      "Type": "Crop",
+      "Message": "Wheat field in North section ready for harvest",
+      "Severity": "Info",
+      "IsRead": false
+    },
+    {
+      "Date": "2026-05-08T09:00:00",
+      "Type": "Animal",
+      "Message": "Vaccination due for cattle group B - schedule vet visit",
+      "Severity": "Warning",
+      "IsRead": false
+    },
+    {
+      "Date": "2026-05-07T09:00:00",
+      "Type": "Irrigation",
+      "Message": "Low water pressure detected in irrigation system A",
+      "Severity": "Error",
+      "IsRead": false
+    },
+    {
+      "Date": "2026-05-07T09:00:00",
+      "Type": "Financial",
+      "Message": "Quarterly tax payment due in 7 days",
+      "Severity": "Warning",
+      "IsRead": true
+    },
+    {
+      "Date": "2026-05-06T09:00:00",
+      "Type": "Soil",
+      "Message": "Soil test results available for Field C - pH levels optimal",
+      "Severity": "Info",
+      "IsRead": true
+    },
+    {
+      "Date": "2026-05-06T09:00:00",
+      "Type": "Equipment",
+      "Message": "Harvester #2 scheduled for annual service next week",
+      "Severity": "Info",
+      "IsRead": false
+    },
+    {
+      "Date": "2026-05-05T09:00:00",
+      "Type": "Crop",
+      "Message": "Pest activity detected in corn field - recommend treatment",
+      "Severity": "Error",
+      "IsRead": false
+    },
+    {
+      "Date": "2026-05-04T09:00:00",
+      "Type": "Weather",
+      "Message": "Frost warning for tonight - protect sensitive crops",
+      "Severity": "Critical",
+      "IsRead": true
+    }
+  ],
+  "WeatherForecast": [
+    {
+      "Date": "2026-05-09T00:00:00",
+      "Temperature": 72,
+      "Condition": "Sunny",
+      "Precipitation": 0,
+      "WindSpeed": 8,
+      "Humidity": 45,
+      "Sunrise": "6:15 AM",
+      "Sunset": "8:30 PM"
+    },
+    {
+      "Date": "2026-05-10T00:00:00",
+      "Temperature": 68,
+      "Condition": "Partly Cloudy",
+      "Precipitation": 10,
+      "WindSpeed": 12,
+      "Humidity": 55,
+      "Sunrise": "6:16 AM",
+      "Sunset": "8:29 PM"
+    },
+    {
+      "Date": "2026-05-11T00:00:00",
+      "Temperature": 65,
+      "Condition": "Rain",
+      "Precipitation": 80,
+      "WindSpeed": 15,
+      "Humidity": 85,
+      "Sunrise": "6:17 AM",
+      "Sunset": "8:28 PM"
+    },
+    {
+      "Date": "2026-05-12T00:00:00",
+      "Temperature": 70,
+      "Condition": "Mostly Sunny",
+      "Precipitation": 20,
+      "WindSpeed": 10,
+      "Humidity": 60,
+      "Sunrise": "6:18 AM",
+      "Sunset": "8:27 PM"
+    },
+    {
+      "Date": "2026-05-13T00:00:00",
+      "Temperature": 75,
+      "Condition": "Sunny",
+      "Precipitation": 5,
+      "WindSpeed": 7,
+      "Humidity": 50,
+      "Sunrise": "6:19 AM",
+      "Sunset": "8:26 PM"
+    },
+    {
+      "Date": "2026-05-14T00:00:00",
+      "Temperature": 78,
+      "Condition": "Clear",
+      "Precipitation": 0,
+      "WindSpeed": 6,
+      "Humidity": 40,
+      "Sunrise": "6:20 AM",
+      "Sunset": "8:25 PM"
+    },
+    {
+      "Date": "2026-05-15T00:00:00",
+      "Temperature": 76,
+      "Condition": "Partly Cloudy",
+      "Precipitation": 15,
+      "WindSpeed": 9,
+      "Humidity": 55,
+      "Sunrise": "6:21 AM",
+      "Sunset": "8:24 PM"
+    }
+  ]
+}

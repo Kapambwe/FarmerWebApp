@@ -1,0 +1,47 @@
+{
+  "Harvests": [
+    {
+      "CropHarvestId": 1,
+      "CropAssetId": 101,
+      "CropName": "Maize",
+      "FieldName": "North Field",
+      "DateRecorded": "2026-04-09T10:00:00",
+      "QuantityProduced": 1500.0,
+      "UnitOfMeasure": "kg",
+      "EstimatedRevenue": 4500.0,
+      "Grade": "Grade A",
+      "HarvestMethod": "Machine",
+      "HarvestDuration": 8.5,
+      "NumberOfPeople": 0,
+      "EquipmentUsed": "Combine Harvester",
+      "EnteredBy": "John Doe",
+      "YieldPerAcre": 250.0,
+      "YieldPerHour": 176.47,
+      "RevenuePerHour": 529.41,
+      "Notes": "Excellent yield this season. Weather conditions were perfect.",
+      "CreatedDate": "2026-04-09T10:00:00",
+      "ModifiedDate": "2026-04-09T10:00:00"
+    },
+    {
+      "CropHarvestId": 2,
+      "CropAssetId": 102,
+      "CropName": "Wheat",
+      "FieldName": "South Field",
+      "DateRecorded": "2026-04-24T10:00:00",
+      "QuantityProduced": 800.0,
+      "UnitOfMeasure": "kg",
+      "EstimatedRevenue": 3200.0,
+      "Grade": "Grade B",
+      "HarvestMethod": "Manual",
+      "HarvestDuration": 12.0,
+      "NumberOfPeople": 8,
+      "EnteredBy": "Jane Smith",
+      "YieldPerAcre": 180.0,
+      "YieldPerHour": 66.67,
+      "RevenuePerHour": 266.67,
+      "Notes": "Manual harvest due to uneven terrain. Good quality wheat.",
+      "CreatedDate": "2026-04-24T10:00:00",
+      "ModifiedDate": "2026-04-24T10:00:00"
+    }
+  ]
+}

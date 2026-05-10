@@ -1,0 +1,35 @@
+{
+  "Animals": [
+    { "AssetId": 1, "Name": "Daisy", "Breed": "Holstein", "Species": "Cattle", "Sex": "Female" },
+    { "AssetId": 2, "Name": "Bella", "Breed": "Jersey", "Species": "Cattle", "Sex": "Female" },
+    { "AssetId": 3, "Name": "Molly", "Breed": "Angus", "Species": "Cattle", "Sex": "Female" },
+    { "AssetId": 101, "Name": "Thor", "Breed": "Holstein", "Species": "Cattle", "Sex": "Male" },
+    { "AssetId": 102, "Name": "Max", "Breed": "Jersey", "Species": "Cattle", "Sex": "Male" }
+  ],
+  "BreedingMethods": [ "Natural Mating", "Artificial Insemination", "Embryo Transfer" ],
+  "StatusOptions": [ "Pending", "Confirmed", "Failed", "Completed" ],
+  "BreedingRecords": [
+    {
+      "Id": 1,
+      "AnimalId": 1,
+      "AnimalName": "Daisy",
+      "Breed": "Holstein",
+      "BreedingMethod": "Artificial Insemination",
+      "BreedingDate": "2026-04-09T10:00:00",
+      "ExpectedBirthDate": "2026-11-05T10:00:00",
+      "SireId": 101,
+      "Status": "Confirmed"
+    },
+    {
+      "Id": 2,
+      "AnimalId": 2,
+      "AnimalName": "Bella",
+      "Breed": "Jersey",
+      "BreedingMethod": "Natural Mating",
+      "BreedingDate": "2026-04-24T10:00:00",
+      "ExpectedBirthDate": "2027-01-31T10:00:00",
+      "SireId": 102,
+      "Status": "Pending"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "PlanningEntries": [
+    {
+      "Id": 1,
+      "CropName": "Maize",
+      "FieldName": "North Field",
+      "AreaInHectares": 12.5,
+      "PlantingDate": "2026-05-15T00:00:00",
+      "EstimatedHarvestDate": "2026-09-12T00:00:00",
+      "GrowingDaysEstimate": 120,
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "CropVariety": "SC513 Hybrid",
+      "Status": "Planned",
+      "OptimalPlantingStart": "2026-05-01T00:00:00",
+      "OptimalPlantingEnd": "2026-05-30T00:00:00",
+      "Notes": "Main crop for summer season"
+    },
+    {
+      "Id": 2,
+      "CropName": "Wheat",
+      "FieldName": "South Field",
+      "AreaInHectares": 8.0,
+      "PlantingDate": "2026-06-01T00:00:00",
+      "EstimatedHarvestDate": "2026-09-19T00:00:00",
+      "GrowingDaysEstimate": 110,
+      "Season": "2026-Winter",
+      "Year": 2026,
+      "CropVariety": "Kanchan",
+      "Status": "Planned",
+      "OptimalPlantingStart": "2026-05-20T00:00:00",
+      "OptimalPlantingEnd": "2026-06-15T00:00:00",
+      "Notes": "Winter wheat rotation"
+    }
+  ],
+  "RotationRecommendations": [
+    {
+      "FieldName": "North Field",
+      "CurrentCrop": "Maize",
+      "RecommendedNextCrop": "Soybeans",
+      "Reason": "Soybeans fix nitrogen in soil, improving soil health for next maize crop",
+      "RotationYear": 2027,
+      "CropHistory": [ "Maize", "Maize", "Wheat" ],
+      "BenefitDescription": "Nitrogen fixation, reduced pest pressure, improved soil structure",
+      "SoilHealthImpact": "High positive impact - adds 40-60 kg N/ha",
+      "ExpectedYieldImprovement": 15.5,
+      "AlternativeOptions": [ "Groundnuts", "Green beans", "Cowpeas" ]
+    }
+  ]
+}

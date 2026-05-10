@@ -1,0 +1,22 @@
+{
+  "Details": [
+    {
+      "Id": 1,
+      "ContractDocumentUrl": "/sample-data/contracts/beef-export-drc-2025.pdf",
+      "KeyTerms": "The farmer/cooperative agrees to supply 500 metric tons of Grade A beef to Democratic Republic of Congo (DRC) markets over 12 months.\n• Unit Price: $4,500 per metric ton FOB\n• Total Contract Value: $2,250,000 USD\n• Payment Terms: 30% advance, 40% upon delivery, 30% within 15 days\n• Quality Standard: Must meet DRC Ministry of Agriculture standards and international halal certification\n• Delivery Schedule: Monthly shipments of 40-45 metric tons\n• Inspection: Pre-shipment veterinary inspection required",
+      "Duration": "12 months (January 2025 - December 2025), with option to renew for 24 additional months",
+      "Obligations": "Farmer Obligations:\n• Maintain herd health records and vaccination certificates\n• Ensure cattle are grass-fed with no growth hormones\n• Provide 14 days advance notice before each shipment\n• Arrange transport to designated collection point\n• Maintain cold chain requirements (-2°C to +2°C)\n• Comply with all export regulations and documentation\n• Obtain halal certification from approved certifying body",
+      "Benefits": "Farmer Benefits:\n• Guaranteed minimum purchase of 500 metric tons\n• Premium pricing 15% above local market rates\n• Technical support for herd improvement\n• Access to veterinary services at subsidized rates\n• Training in international quality standards\n• Advance payment to cover operational costs\n• Potential for contract expansion based on performance",
+      "Penalties": "Penalties and Dispute Resolution:\n• Late delivery (>7 days): 2% deduction per week, maximum 10%\n• Quality failure: Rejection of shipment, cost of return transport borne by supplier\n• Under-supply: 5% penalty on shortfall value\n• Contract breach: Forfeiture of performance bond ($50,000)\n• Force majeure: Disease outbreak, natural disasters (with proper documentation)\n• Disputes resolved through arbitration in accordance with COMESA trade rules"
+    },
+    {
+      "Id": 2,
+      "ContractDocumentUrl": "/sample-data/contracts/goat-export-saudi-2025.pdf",
+      "KeyTerms": "Supply of 10,000 live goats annually to Kingdom of Saudi Arabia for Hajj season and general consumption.\n• Unit Price: $180-$220 per head (based on weight category)\n• Total Contract Value: Approximately $2,000,000 USD\n• Payment Terms: Letter of Credit (LC) with 100% payment upon shipment\n• Quality Standard: Saudi Food & Drug Authority (SFDA) standards\n• Age Requirement: 12-24 months\n• Weight Range: 35-50 kg live weight\n• Breed Preference: Indigenous hardy breeds\n• Health Certification: Required from Ministry of Agriculture",
+      "Duration": "24 months (March 2025 - February 2027), renewable based on performance",
+      "Obligations": "Supplier Obligations:\n• Maintain quarantine facilities for 21 days pre-export\n• Ensure all animals are healthy, disease-free with vaccination records\n• Provide halal certification from recognized Islamic authority\n• Arrange air freight logistics to Jeddah or Riyadh\n• Comply with Saudi import regulations and veterinary requirements\n• Maintain breeding program to ensure continuous supply\n• Submit monthly supply forecasts\n• Ensure animal welfare during transport per international standards",
+      "Benefits": "Supplier Benefits:\n• Premium export pricing (40% above domestic market)\n• Advance deposit of 20% upon contract signing\n• Access to breeding stock improvement program\n• Veterinary and logistics support\n• Training in international export standards\n• Insurance coverage for shipment losses\n• Preferential supplier status for future Saudi contracts\n• Technical assistance in goat farming best practices",
+      "Penalties": "Penalties and Risk Mitigation:\n• Rejection at destination: Full cost recovery from supplier\n• Under-supply (<90% of committed volume): 10% penalty on shortfall\n• Quality non-compliance: $50 per rejected animal\n• Late shipment: $5,000 per day delay during Hajj season\n• Disease outbreak: Contract suspension until clearance\n• Insurance: Mandatory livestock transport insurance\n• Arbitration: Disputes governed by Saudi Arabian commercial law\n• Performance bond: $100,000 refundable upon contract completion"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "WaterUseByCrop": [
+    { "CropName": "Maize", "WaterUsedMm": 520.0, "AreaHectares": 18500.0, "Year": 2026, "Season": "Summer", "Region": "Lusaka" },
+    { "CropName": "Wheat", "WaterUsedMm": 480.0, "AreaHectares": 4200.0, "Year": 2026, "Season": "Winter", "Region": "Southern" }
+  ],
+  "WaterUseEfficiency": [
+    { "SchemeOrDistrict": "Kafue Irrigation Scheme", "WaterDeliveredMcm": 8.5, "WaterUsedMcm": 7.2, "Year": 2026, "Season": "Summer", "Region": "Lusaka" }
+  ],
+  "IrrigatedDistricts": [
+    { "District": "Mazabuka", "Province": "Southern", "IrrigatedAreaHectares": 42000, "Rank": 1, "Year": 2026 }
+  ],
+  "YieldComparisons": [
+    { "CropName": "Maize", "YieldTonsPerHectare": 5.8, "NationalAverageTonsPerHectare": 2.1, "RegionalAverageTonsPerHectare": 3.4, "Year": 2026, "Region": "Central" }
+  ],
+  "DamFlows": [
+    { "DamName": "Kariba Dam", "InflowMcm": 4200.0, "OutflowMcm": 3800.0, "StorageMcm": 130032.0, "CapacityMcm": 180600.0, "Year": 2026, "Month": "January" }
+  ]
+}

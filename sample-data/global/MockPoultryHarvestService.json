@@ -1,0 +1,5 @@
+{
+  "Harvests": [
+    { "Id": 1, "PoultryType": "Chicken", "HarvestDate": "2026-04-29T10:00:00", "Quantity": 100.0, "Unit": "birds", "Weight": 250.0, "QualityGrade": "A", "Status": "Processed", "HarvestCategory": "Meat" }
+  ]
+}

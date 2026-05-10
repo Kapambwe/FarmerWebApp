@@ -1,0 +1,50 @@
+{
+  "Employees": [
+    {
+      "Id": 1, "FirstName": "James", "LastName": "Mulenga", "EmployeeNumber": "EMP001",
+      "Email": "james.mulenga@farm.zm", "Phone": "+260 97 111 2222",
+      "Address": "Chisamba, Central Province", "DateOfBirth": "1985-05-15T00:00:00",
+      "Department": "Field Operations", "JobTitle": "Field Supervisor",
+      "EmploymentType": "FullTime", "HireDate": "2018-03-01T00:00:00",
+      "HourlyRate": 45.0, "Status": "Active",
+      "Skills": "Tractor Operation, Crop Management, Team Leadership",
+      "Certifications": "Pesticide Application License"
+    },
+    {
+      "Id": 2, "FirstName": "Mary", "LastName": "Chanda", "EmployeeNumber": "EMP002",
+      "Email": "mary.chanda@farm.zm", "Phone": "+260 96 222 3333",
+      "Address": "Mkushi, Central Province", "DateOfBirth": "1990-08-22T00:00:00",
+      "Department": "Livestock", "JobTitle": "Livestock Manager",
+      "EmploymentType": "FullTime", "HireDate": "2019-06-15T00:00:00",
+      "HourlyRate": 50.0, "Status": "Active",
+      "Skills": "Animal Health, Breeding Management, Veterinary First Aid"
+    }
+  ],
+  "TimeEntries": [
+    {
+      "Id": 1, "EmployeeId": 1, "EmployeeName": "James Mulenga",
+      "Date": "2026-05-08T00:00:00", "ClockIn": "07:00:00", "ClockOut": "17:00:00",
+      "BreakDuration": "01:00:00", "TotalHours": 9.0, "RegularHours": 8.0, "OvertimeHours": 1.0,
+      "TaskDescription": "Irrigation", "FieldOrLocation": "Field A", "ActivityType": "Irrigation",
+      "Status": "Approved"
+    }
+  ],
+  "PayrollRecords": [
+    {
+      "Id": 1, "EmployeeId": 1, "EmployeeName": "James Mulenga",
+      "PayPeriodStart": "2026-04-01T00:00:00", "PayPeriodEnd": "2026-04-30T00:00:00",
+      "RegularHours": 176.0, "OvertimeHours": 12.0, "HourlyRate": 45.0,
+      "Deductions": 250.0, "TaxWithheld": 1188.0, "NapsaContribution": 396.0,
+      "Status": "Paid", "PaidDate": "2026-05-05T00:00:00", "PaymentMethod": "Bank Transfer"
+    }
+  ],
+  "TrainingRecords": [
+    {
+      "Id": 1, "EmployeeId": 1, "EmployeeName": "James Mulenga",
+      "TrainingName": "Pesticide Application Safety", "Type": "Chemical",
+      "TrainingDate": "2023-06-15T00:00:00", "ExpirationDate": "2025-06-15T00:00:00",
+      "Provider": "Ministry of Agriculture", "CertificateNumber": "PST-2023-001",
+      "Status": "Completed"
+    }
+  ]
+}

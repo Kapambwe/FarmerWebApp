@@ -1,0 +1,6 @@
+{
+  "Companies": [
+    { "HospitalId": 1, "Name": "Chisamba Main Farm", "Street": "Farm Plot 22", "Address": "Chisamba, Central Province", "Email": "chisamba@greenvale.zm", "MobilePhone": "+260 97 111 2233", "CountryId": 263 },
+    { "HospitalId": 2, "Name": "Kafue Riverside Unit", "Street": "Stand 5B", "Address": "Kafue, Lusaka Province", "Email": "kafue@greenvale.zm", "MobilePhone": "+260 97 111 2244", "CountryId": 263 }
+  ]
+}

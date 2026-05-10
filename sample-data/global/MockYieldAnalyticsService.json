@@ -1,0 +1,9 @@
+{
+  "HistoricalData": [
+    {
+      "Year": 2025, "Season": "Summer", "CropName": "Maize", "FieldName": "North Field",
+      "YieldPerHectare": 5200.0, "Rainfall": 650.0, "AverageTemperature": 24.5,
+      "FertilizerApplied": 220.0, "PestIncidence": 2
+    }
+  ]
+}

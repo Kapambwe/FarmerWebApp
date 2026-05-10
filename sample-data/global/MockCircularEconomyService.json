@@ -1,0 +1,40 @@
+{
+  "WasteStreams": [
+    { "Id": 1, "Name": "Crop Residue - Maize Stalks", "Type": "OrganicCropResidue", "QuantityKg": 1500, "RecordedDate": "2026-05-04T10:00:00", "Source": "Field A", "DisposalMethod": "Composting", "Notes": "Post-harvest maize stalks" },
+    { "Id": 2, "Name": "Cattle Manure", "Type": "OrganicManure", "QuantityKg": 800, "RecordedDate": "2026-05-06T10:00:00", "Source": "Cattle Barn", "DisposalMethod": "BiogasDigestion", "Notes": "Daily collection from barn" }
+  ],
+  "CompostBatches": [
+    {
+      "Id": 1,
+      "BatchNumber": "CB-2026-001",
+      "StartDate": "2026-03-09T10:00:00",
+      "CompletionDate": "2026-04-29T10:00:00",
+      "Status": "Ready",
+      "InputWeightKg": 2000,
+      "OutputWeightKg": 800,
+      "TemperatureCelsius": 25,
+      "MoisturePercent": 45,
+      "Location": "Compost Yard North",
+      "Inputs": [
+        { "Id": 1, "Material": "Crop Residue", "WeightKg": 1200, "Source": "Field A" },
+        { "Id": 2, "Material": "Animal Manure", "WeightKg": 600, "Source": "Livestock" }
+      ],
+      "Notes": "High quality compost ready for field application"
+    }
+  ],
+  "BiogasProductions": [
+    { "Id": 1, "RecordDate": "2026-05-08T10:00:00", "DigesterId": "Digester-01", "ManureInputKg": 100, "CropResidueInputKg": 50, "BiogasOutputCubicMeters": 12, "EnergyGeneratedKwh": 24, "TemperatureCelsius": 35, "PH": 7.2, "Notes": "Optimal performance" }
+  ],
+  "WaterRecyclings": [
+    { "Id": 1, "RecordDate": "2026-05-08T10:00:00", "Source": "Rainwater", "VolumeCollectedLiters": 5000, "VolumeUsedLiters": 4500, "UseType": "Irrigation", "Quality": "Potable", "Location": "Rainwater Harvesting Tank 1", "Notes": "Heavy rainfall last week" }
+  ],
+  "RenewableEnergies": [
+    { "Id": 1, "RecordDate": "2026-05-08T10:00:00", "Type": "Solar", "SystemId": "Solar-Array-01", "EnergyProducedKwh": 45, "EnergyConsumedKwh": 60, "EnergyExportedKwh": 0, "CostSavings": 18, "CarbonOffsetKg": 35, "Notes": "Sunny day, good production" }
+  ],
+  "NutrientCyclings": [
+    { "Id": 1, "RecordDate": "2026-04-29T10:00:00", "FieldId": "Field-A", "Source": "Compost", "NitrogenKg": 12, "PhosphorusKg": 8, "PotassiumKg": 10, "OrganicMatterKg": 800, "ApplicationMethod": "Broadcast and incorporated", "Notes": "Applied before planting" }
+  ],
+  "ByProducts": [
+    { "Id": 1, "Name": "Premium Organic Compost", "Type": "Compost", "QuantityAvailableKg": 500, "PricePerKg": 0.5, "Description": "High-quality aged compost, rich in nutrients", "Status": "Available", "ListedDate": "2026-05-04T10:00:00", "Location": "Farm Office", "ContactInfo": "contact@farm.com" }
+  ]
+}

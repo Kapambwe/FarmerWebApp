@@ -1,0 +1,6 @@
+{
+  "Billings": [
+    { "BillingId": 1, "Amount": 4500.0, "CategoryName": "Seed Purchase", "Status": "Paid", "BillingPeriod": "2026-01", "TransactionNumber": "TXN-2026-001", "PaymentStatus": "Completed" },
+    { "BillingId": 2, "Amount": 12000.0, "CategoryName": "Fertiliser & Chemicals", "Status": "Paid", "BillingPeriod": "2026-01", "TransactionNumber": "TXN-2026-002", "PaymentStatus": "Completed" }
+  ]
+}

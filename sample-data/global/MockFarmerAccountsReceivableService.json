@@ -1,0 +1,104 @@
+{
+  "Receivables": [
+    {
+      "ARId": 1,
+      "CustomerId": 1,
+      "CustomerName": "Local Grain Mill",
+      "InvoiceNumber": "INV-2026-001",
+      "InvoiceDate": "2026-04-14T10:00:00",
+      "DueDate": "2026-04-29T10:00:00",
+      "Amount": 15000.0,
+      "ReceivedAmount": 0.0,
+      "Status": "Overdue",
+      "ProductOrService": "Wheat",
+      "SalesOrderNumber": "SO-2026-001",
+      "Description": "300 bushels of wheat",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-14T10:00:00",
+      "Payments": []
+    },
+    {
+      "ARId": 2,
+      "CustomerId": 2,
+      "CustomerName": "City Dairy Cooperative",
+      "InvoiceNumber": "INV-2026-002",
+      "InvoiceDate": "2026-04-24T10:00:00",
+      "DueDate": "2026-05-24T10:00:00",
+      "Amount": 8500.0,
+      "ReceivedAmount": 4000.0,
+      "Status": "PartiallyPaid",
+      "ProductOrService": "Milk",
+      "Description": "Fresh milk - 1000 liters",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-24T10:00:00",
+      "LastPaymentDate": "2026-05-02T10:00:00",
+      "Payments": [
+        {
+          "PaymentId": 1,
+          "PaymentDate": "2026-05-02T10:00:00",
+          "PaymentAmount": 4000.0,
+          "PaymentMethod": "Bank Transfer",
+          "ReferenceNumber": "TXN-20260502-002"
+        }
+      ]
+    },
+    {
+      "ARId": 3,
+      "CustomerId": 3,
+      "CustomerName": "Fresh Produce Market",
+      "InvoiceNumber": "INV-2026-003",
+      "InvoiceDate": "2026-04-29T10:00:00",
+      "DueDate": "2026-05-29T10:00:00",
+      "Amount": 3200.0,
+      "ReceivedAmount": 0.0,
+      "Status": "Open",
+      "ProductOrService": "Vegetables",
+      "Description": "Mixed vegetables - tomatoes, onions, cabbage",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-29T10:00:00",
+      "Payments": []
+    },
+    {
+      "ARId": 4,
+      "CustomerId": 4,
+      "CustomerName": "Restaurant Supply Co.",
+      "InvoiceNumber": "INV-2026-004",
+      "InvoiceDate": "2026-05-04T10:00:00",
+      "DueDate": "2026-06-03T10:00:00",
+      "Amount": 2400.0,
+      "ReceivedAmount": 0.0,
+      "Status": "Open",
+      "ProductOrService": "Eggs",
+      "Description": "Free-range eggs - 200 dozen",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-05-04T10:00:00",
+      "Payments": []
+    },
+    {
+      "ARId": 5,
+      "CustomerId": 5,
+      "CustomerName": "Livestock Auction House",
+      "InvoiceNumber": "INV-2026-005",
+      "InvoiceDate": "2026-04-19T10:00:00",
+      "DueDate": "2026-05-04T10:00:00",
+      "Amount": 12000.0,
+      "ReceivedAmount": 12000.0,
+      "Status": "Paid",
+      "ProductOrService": "Cattle",
+      "Description": "5 head of cattle",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-19T10:00:00",
+      "LastPaymentDate": "2026-05-01T10:00:00",
+      "Payments": [
+        {
+          "PaymentId": 2,
+          "PaymentDate": "2026-05-01T10:00:00",
+          "PaymentAmount": 12000.0,
+          "PaymentMethod": "Check",
+          "ReferenceNumber": "CHK-5042",
+          "Notes": "Paid in full"
+        }
+      ]
+    }
+  ]
+}

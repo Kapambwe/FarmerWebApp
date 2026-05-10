@@ -1,0 +1,259 @@
+{
+  "Accounts": [
+    {
+      "AccountId": 1,
+      "AccountCode": "1000",
+      "AccountName": "Cash in Bank",
+      "AccountType": "Asset",
+      "CurrentBalance": 50000.0,
+      "Description": "Primary checking account"
+    },
+    {
+      "AccountId": 2,
+      "AccountCode": "1100",
+      "AccountName": "Cash on Hand",
+      "AccountType": "Asset",
+      "CurrentBalance": 2000.0,
+      "Description": "Petty cash"
+    },
+    {
+      "AccountId": 3,
+      "AccountCode": "1200",
+      "AccountName": "Accounts Receivable",
+      "AccountType": "Asset",
+      "CurrentBalance": 29100.0,
+      "Description": "Money owed by customers"
+    },
+    {
+      "AccountId": 4,
+      "AccountCode": "1300",
+      "AccountName": "Inventory - Crops",
+      "AccountType": "Asset",
+      "CurrentBalance": 15000.0,
+      "Description": "Harvested crops in storage",
+      "FarmingCategory": "Crop Production"
+    },
+    {
+      "AccountId": 5,
+      "AccountCode": "1310",
+      "AccountName": "Inventory - Livestock",
+      "AccountType": "Asset",
+      "CurrentBalance": 45000.0,
+      "Description": "Live animals",
+      "FarmingCategory": "Livestock"
+    },
+    {
+      "AccountId": 6,
+      "AccountCode": "1500",
+      "AccountName": "Equipment",
+      "AccountType": "Asset",
+      "CurrentBalance": 120000.0,
+      "Description": "Tractors, harvesters, and farm equipment"
+    },
+    {
+      "AccountId": 7,
+      "AccountCode": "1510",
+      "AccountName": "Accumulated Depreciation - Equipment",
+      "AccountType": "Asset",
+      "CurrentBalance": -24000.0,
+      "Description": "Accumulated depreciation on equipment"
+    },
+    {
+      "AccountId": 8,
+      "AccountCode": "1600",
+      "AccountName": "Land",
+      "AccountType": "Asset",
+      "CurrentBalance": 500000.0,
+      "Description": "Farm land"
+    },
+    {
+      "AccountId": 9,
+      "AccountCode": "1700",
+      "AccountName": "Buildings",
+      "AccountType": "Asset",
+      "CurrentBalance": 150000.0,
+      "Description": "Barns, storage facilities, and other structures"
+    },
+    {
+      "AccountId": 10,
+      "AccountCode": "2100",
+      "AccountName": "Accounts Payable",
+      "AccountType": "Liability",
+      "CurrentBalance": 22450.0,
+      "Description": "Money owed to suppliers"
+    },
+    {
+      "AccountId": 11,
+      "AccountCode": "2200",
+      "AccountName": "Short-term Loans",
+      "AccountType": "Liability",
+      "CurrentBalance": 25000.0,
+      "Description": "Operating loans"
+    },
+    {
+      "AccountId": 12,
+      "AccountCode": "2300",
+      "AccountName": "Long-term Debt",
+      "AccountType": "Liability",
+      "CurrentBalance": 200000.0,
+      "Description": "Mortgage and equipment loans"
+    },
+    {
+      "AccountId": 13,
+      "AccountCode": "3000",
+      "AccountName": "Owner's Equity",
+      "AccountType": "Equity",
+      "CurrentBalance": 615650.0,
+      "Description": "Owner's investment in the farm"
+    },
+    {
+      "AccountId": 14,
+      "AccountCode": "3100",
+      "AccountName": "Retained Earnings",
+      "AccountType": "Equity",
+      "CurrentBalance": 0.0,
+      "Description": "Accumulated profits"
+    },
+    {
+      "AccountId": 15,
+      "AccountCode": "4100",
+      "AccountName": "Crop Sales Revenue",
+      "AccountType": "Revenue",
+      "CurrentBalance": 0.0,
+      "Description": "Income from crop sales",
+      "FarmingCategory": "Crop Production"
+    },
+    {
+      "AccountId": 16,
+      "AccountCode": "4200",
+      "AccountName": "Livestock Sales Revenue",
+      "AccountType": "Revenue",
+      "CurrentBalance": 0.0,
+      "Description": "Income from livestock sales",
+      "FarmingCategory": "Livestock"
+    },
+    {
+      "AccountId": 17,
+      "AccountCode": "4300",
+      "AccountName": "Dairy Sales Revenue",
+      "AccountType": "Revenue",
+      "CurrentBalance": 0.0,
+      "Description": "Income from milk sales",
+      "FarmingCategory": "Dairy"
+    },
+    {
+      "AccountId": 18,
+      "AccountCode": "4400",
+      "AccountName": "Other Farm Income",
+      "AccountType": "Revenue",
+      "CurrentBalance": 0.0,
+      "Description": "Government subsidies, grants, and other income"
+    },
+    {
+      "AccountId": 19,
+      "AccountCode": "5100",
+      "AccountName": "Seed Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Cost of seeds",
+      "FarmingCategory": "Crop Production",
+      "SubCategory": "Seeds"
+    },
+    {
+      "AccountId": 20,
+      "AccountCode": "5110",
+      "AccountName": "Fertilizer Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Cost of fertilizers",
+      "FarmingCategory": "Crop Production",
+      "SubCategory": "Fertilizer"
+    },
+    {
+      "AccountId": 21,
+      "AccountCode": "5120",
+      "AccountName": "Pesticide Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Cost of pesticides and herbicides",
+      "FarmingCategory": "Crop Production",
+      "SubCategory": "Pesticides"
+    },
+    {
+      "AccountId": 22,
+      "AccountCode": "5200",
+      "AccountName": "Feed Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Cost of animal feed",
+      "FarmingCategory": "Livestock",
+      "SubCategory": "Feed"
+    },
+    {
+      "AccountId": 23,
+      "AccountCode": "5210",
+      "AccountName": "Veterinary Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Veterinary services and medications",
+      "FarmingCategory": "Livestock",
+      "SubCategory": "Veterinary"
+    },
+    {
+      "AccountId": 24,
+      "AccountCode": "5300",
+      "AccountName": "Depreciation Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Depreciation of equipment and buildings"
+    },
+    {
+      "AccountId": 25,
+      "AccountCode": "5400",
+      "AccountName": "Fuel and Oil Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Fuel and lubricants for equipment"
+    },
+    {
+      "AccountId": 26,
+      "AccountCode": "5500",
+      "AccountName": "Repairs and Maintenance",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Equipment and facility repairs"
+    },
+    {
+      "AccountId": 27,
+      "AccountCode": "5600",
+      "AccountName": "Labor Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Wages and salaries"
+    },
+    {
+      "AccountId": 28,
+      "AccountCode": "5700",
+      "AccountName": "Utilities Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Electricity, water, and other utilities"
+    },
+    {
+      "AccountId": 29,
+      "AccountCode": "5800",
+      "AccountName": "Insurance Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Farm insurance premiums"
+    },
+    {
+      "AccountId": 30,
+      "AccountCode": "5900",
+      "AccountName": "Interest Expense",
+      "AccountType": "Expense",
+      "CurrentBalance": 0.0,
+      "Description": "Interest on loans"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "Schemes": [
+    { "Id": "1", "Name": "Kafue Flats Irrigation Scheme", "Location": "Kafue, Lusaka Province", "Type": "Surface", "Status": "Active", "AreaHectares": 28000, "Description": "Large-scale gravity-fed surface irrigation serving smallholders and commercial blocks along the Kafue River floodplain." }
+  ],
+  "Submissions": [
+    { "Id": "1", "FieldId": "1", "FieldName": "North Field (Block A)", "SubmittedBy": "Mwewa Kabwe", "SubmittedAt": "2026-05-06T10:00:00", "ObservationType": "Pest Sighting", "Notes": "Fall armyworm egg masses on 8% of maize plants in rows 1–40. Recommend spray within 48 hrs." }
+  ]
+}

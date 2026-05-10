@@ -1,0 +1,97 @@
+{
+  "Suppliers": [
+    {
+      "Id": 1,
+      "Name": "Zambia Seed Company",
+      "CompanyName": "Zambia Seed Company Ltd",
+      "ContactPerson": "John Mwanza",
+      "Email": "orders@zambiaseed.com",
+      "Phone": "+260 211 123456",
+      "Address": "Plot 123, Great East Road",
+      "City": "Lusaka",
+      "Province": "Lusaka",
+      "Country": "Zambia",
+      "ProductCategories": "Seeds, Fertilizers",
+      "PaymentTerms": "Net 30",
+      "AverageDeliveryDays": 7.0,
+      "Rating": 4.5,
+      "IsActive": true,
+      "CreatedDate": "2025-05-09T10:00:00"
+    },
+    {
+      "Id": 2,
+      "Name": "AgriChem Zambia",
+      "CompanyName": "AgriChem Zambia Limited",
+      "ContactPerson": "Mary Banda",
+      "Email": "sales@agrichem.zm",
+      "Phone": "+260 211 234567",
+      "Address": "Industrial Area, Kabwe Road",
+      "City": "Ndola",
+      "Province": "Copperbelt",
+      "Country": "Zambia",
+      "ProductCategories": "Pesticides, Herbicides, Fungicides",
+      "PaymentTerms": "Net 45",
+      "AverageDeliveryDays": 10.0,
+      "Rating": 4.2,
+      "IsActive": true,
+      "CreatedDate": "2025-07-09T10:00:00"
+    },
+    {
+      "Id": 3,
+      "Name": "Farm Equipment Supply",
+      "CompanyName": "Farm Equipment Supply Co.",
+      "ContactPerson": "Peter Chanda",
+      "Email": "info@farmequip.zm",
+      "Phone": "+260 212 345678",
+      "Address": "Mumbwa Road",
+      "City": "Lusaka",
+      "Province": "Lusaka",
+      "Country": "Zambia",
+      "ProductCategories": "Tools, Parts, Equipment",
+      "PaymentTerms": "Net 30",
+      "AverageDeliveryDays": 5.0,
+      "Rating": 4.8,
+      "IsActive": true,
+      "CreatedDate": "2025-09-09T10:00:00"
+    }
+  ],
+  "PurchaseOrders": [
+    {
+      "Id": 1,
+      "PONumber": "PO-2026-001",
+      "OrderDate": "2026-04-29T10:00:00",
+      "ExpectedDeliveryDate": "2026-05-16T10:00:00",
+      "SupplierId": 1,
+      "SupplierName": "Zambia Seed Company",
+      "SupplierContact": "John Mwanza",
+      "SupplierEmail": "orders@zambiaseed.com",
+      "SupplierPhone": "+260 211 123456",
+      "Status": "Approved",
+      "RequestedBy": "Farm Manager",
+      "ApprovedBy": "Farm Owner",
+      "ApprovedDate": "2026-05-01T10:00:00",
+      "SubTotal": 15000.0,
+      "TaxAmount": 2400.0,
+      "ShippingCost": 500.0,
+      "Currency": "ZMW",
+      "PaymentTerms": "Net 30",
+      "Notes": "Urgent order for planting season",
+      "CreatedDate": "2026-04-29T10:00:00"
+    }
+  ],
+  "Items": [
+    {
+      "Id": 1,
+      "PurchaseOrderId": 1,
+      "ItemName": "Maize Seed - SC627",
+      "ItemDescription": "Hybrid maize seed, high yield variety",
+      "Category": "Seed",
+      "Quantity": 100.0,
+      "QuantityReceived": 0.0,
+      "Unit": "kg",
+      "UnitPrice": 120.0,
+      "ExpectedDeliveryDate": "2026-05-16T10:00:00"
+    }
+  ],
+  "Receipts": []
+}

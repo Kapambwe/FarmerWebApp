@@ -1,0 +1,17 @@
+{
+  "CommodityPrices": [
+    { "CommodityCode": "MAIZE", "CommodityName": "Maize", "CurrentPrice": 3200.0, "LastPrice": 3150.0, "Change": 50.0, "ChangePercentage": 1.59, "Unit": "MT", "Currency": "ZMW", "MarketName": "Lusaka Commodities Exchange", "LastUpdated": "2026-05-08T10:00:00" },
+    { "CommodityCode": "WHEAT", "CommodityName": "Wheat", "CurrentPrice": 4800.0, "LastPrice": 4850.0, "Change": -50.0, "ChangePercentage": -1.03, "Unit": "MT", "Currency": "ZMW", "MarketName": "Lusaka Commodities Exchange", "LastUpdated": "2026-05-08T10:00:00" },
+    { "CommodityCode": "SOYA", "CommodityName": "Soybeans", "CurrentPrice": 4500.0, "LastPrice": 4400.0, "Change": 100.0, "ChangePercentage": 2.27, "Unit": "MT", "Currency": "ZMW", "MarketName": "Lusaka Commodities Exchange", "LastUpdated": "2026-05-08T10:00:00" }
+  ],
+  "Buyers": [
+    { "Id": 1, "Name": "National Mills Ltd", "Type": "Processor", "Phone": "+260 211 123456", "Email": "contracts@nationalmills.zm" },
+    { "Id": 2, "Name": "Export Trading Company", "Type": "Exporter", "Phone": "+260 211 234567", "Email": "procurement@exporttrading.zm" }
+  ],
+  "Sales": [
+    { "Id": 1, "SaleDate": "2026-05-04T10:00:00", "CommodityName": "Maize", "Quantity": 25.0, "Unit": "MT", "PricePerUnit": 3150.0, "TotalAmount": 78750.0, "Currency": "ZMW", "BuyerId": 1, "BuyerName": "National Mills Ltd", "Status": "Completed", "PaymentStatus": "Paid", "CreatedDate": "2026-05-04T10:00:00" }
+  ],
+  "PriceAlerts": [
+    { "Id": 1, "CommodityCode": "MAIZE", "TargetPrice": 3500.0, "AlertType": "Above", "IsActive": true, "CreatedDate": "2026-05-01T10:00:00" }
+  ]
+}

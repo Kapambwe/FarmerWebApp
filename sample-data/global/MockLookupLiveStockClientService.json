@@ -1,0 +1,33 @@
+{
+  "LivestockTypes": [
+    { "Id": "1", "Name": "Cattle" },
+    { "Id": "2", "Name": "Sheep" },
+    { "Id": "3", "Name": "Goat" },
+    { "Id": "4", "Name": "Chicken" },
+    { "Id": "5", "Name": "Pig" }
+  ],
+  "FieldCategoryTypes": [
+    { "Id": "1", "Name": "Grazing" },
+    { "Id": "2", "Name": "Barn" },
+    { "Id": "3", "Name": "Pasture" }
+  ],
+  "AnimalTypes": [
+    { "Id": "1", "Name": "Cattle" },
+    { "Id": "2", "Name": "Sheep" },
+    { "Id": "3", "Name": "Goat" }
+  ],
+  "Breeds": [
+    { "Id": "b1", "Name": "Holstein" },
+    { "Id": "b2", "Name": "Jersey" },
+    { "Id": "b3", "Name": "Angus" }
+  ],
+  "Enclosures": [
+    { "FieldId": 1, "AssetId": 1, "AssetName": "North Barn", "FieldType": "Barn", "FieldArea": "1 ha" },
+    { "FieldId": 2, "AssetId": 2, "AssetName": "South Paddock", "FieldType": "Pasture", "FieldArea": "8.3 ha" }
+  ],
+  "FeedTypes": [
+    { "Id": "f1", "Name": "Hay" },
+    { "Id": "f2", "Name": "Silage" },
+    { "Id": "f3", "Name": "Grain" }
+  ]
+}

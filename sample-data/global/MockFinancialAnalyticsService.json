@@ -1,0 +1,25 @@
+{
+  "CostAnalyses": [
+    {
+      "FieldOrCropName": "Maize", "AreaInHectares": 12.5, "CropType": "Maize", "Season": "2026-Summer", "Year": 2026,
+      "SeedsCost": 12500.0, "FertilizerCost": 10000.0, "PesticidesCost": 7500.0, "LaborCost": 18750.0, "FuelCost": 6250.0,
+      "EquipmentCost": 5000.0, "IrrigationCost": 3750.0, "OtherCosts": 2500.0, "TotalCost": 66250.0
+    }
+  ],
+  "RevenueAnalyses": [
+    {
+      "FieldOrCropName": "Maize", "AreaInHectares": 12.5, "YieldInKg": 50000.0, "PricePerKg": 4.5, "CropType": "Maize",
+      "Season": "2026-Summer", "Year": 2026, "HarvestDate": "2026-04-15T00:00:00", "PreviousYearRevenue": 210000.0
+    }
+  ],
+  "ROIAnalyses": [
+    { "ItemName": "Irrigation System", "InitialInvestment": 150000.0, "TotalEarnings": 250000.0, "PeriodMonths": 36 }
+  ],
+  "BreakEvenAnalyses": [
+    { "CropType": "Maize", "FixedCosts": 25000.0, "VariableCostPerUnit": 1.5, "PricePerUnit": 4.5 }
+  ],
+  "BudgetForecasts": [
+    { "Category": "Seeds", "BudgetAmount": 50000.0, "ActualAmount": 45000.0, "ForecastAmount": 55000.0, "Year": 2026 }
+  ],
+  "Invoices": []
+}

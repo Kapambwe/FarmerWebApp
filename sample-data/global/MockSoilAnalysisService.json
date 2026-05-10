@@ -1,0 +1,16 @@
+{
+  "Fields": [
+    { "FieldId": 1, "Name": "North Field" },
+    { "FieldId": 2, "Name": "South Field" },
+    { "FieldId": 3, "Name": "East Pasture" }
+  ],
+  "AnalysisTypes": [ "Routine", "Pre-Planting", "Post-Harvest", "Problem Diagnosis" ],
+  "Analyses": [
+    {
+      "Id": 1, "FieldId": 1, "FieldName": "North Field", "SampleDate": "2026-04-09T10:00:00",
+      "AnalysisType": "Pre-Planting", "LabReference": "SL-2026-001", "PhLevel": 6.5,
+      "OrganicMatter": 3.2, "Nitrogen": 25.0, "Phosphorus": 15.0, "Potassium": 120.0,
+      "Status": "Optimal", "Recommendations": "Apply 50kg/ha of NPK 15-15-15 fertilizer before planting."
+    }
+  ]
+}

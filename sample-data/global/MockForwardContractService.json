@@ -1,0 +1,18 @@
+{
+  "Buyers": [
+    { "Id": 1, "Name": "National Mills Ltd", "Type": "Processor", "Phone": "+260 211 123456", "Email": "contracts@nationalmills.zm" },
+    { "Id": 2, "Name": "Export Trading Company", "Type": "Exporter", "Phone": "+260 211 234567", "Email": "procurement@exporttrading.zm" }
+  ],
+  "Contracts": [
+    {
+      "Id": 1, "ContractNumber": "FC-2026-001", "ContractDate": "2026-03-09T10:00:00",
+      "CommodityCategory": "Grain", "CommodityName": "Maize", "CommodityGrade": "Grade 1",
+      "Quantity": 500.0, "Unit": "MT", "PricePerUnit": 3200.0, "Currency": "ZMW",
+      "DeliveryStartDate": "2026-06-08T10:00:00", "DeliveryEndDate": "2026-07-08T10:00:00",
+      "DeliveryLocation": "Lusaka Depot", "BuyerId": 1, "BuyerName": "National Mills Ltd",
+      "BuyerContact": "+260 211 123456", "Status": "Active", "ContractType": "FixedPrice",
+      "QuantityFulfilled": 0.0, "CreatedDate": "2026-03-09T10:00:00"
+    }
+  ],
+  "Deliveries": []
+}

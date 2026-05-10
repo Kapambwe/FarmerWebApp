@@ -1,0 +1,104 @@
+{
+  "Entries": [
+    {
+      "JournalEntryId": 1,
+      "EntryNumber": "JE-20260504-0001",
+      "EntryDate": "2026-05-04T10:00:00",
+      "Description": "Purchase of seed corn",
+      "Status": "Posted",
+      "Reference": "PO-2026-001",
+      "TotalDebit": 5000.0,
+      "TotalCredit": 5000.0,
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-05-04T10:00:00",
+      "PostedBy": "John Farmer",
+      "PostedDate": "2026-05-04T10:00:00",
+      "Lines": [
+        {
+          "LineId": 1,
+          "AccountCode": "5100",
+          "AccountName": "Seed Expense",
+          "DebitAmount": 5000.0,
+          "CreditAmount": 0.0,
+          "Description": "Hybrid corn seed - 50 bags",
+          "FarmActivity": "Crop Production",
+          "CropOrLivestock": "Corn"
+        },
+        {
+          "LineId": 2,
+          "AccountCode": "2100",
+          "AccountName": "Accounts Payable",
+          "DebitAmount": 0.0,
+          "CreditAmount": 5000.0,
+          "Description": "Vendor: AgriSupply Co."
+        }
+      ]
+    },
+    {
+      "JournalEntryId": 2,
+      "EntryNumber": "JE-20260506-0002",
+      "EntryDate": "2026-05-06T14:30:00",
+      "Description": "Sale of wheat harvest",
+      "Status": "Posted",
+      "Reference": "INV-2026-045",
+      "TotalDebit": 15000.0,
+      "TotalCredit": 15000.0,
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-05-06T14:30:00",
+      "PostedBy": "John Farmer",
+      "PostedDate": "2026-05-06T14:30:00",
+      "Lines": [
+        {
+          "LineId": 3,
+          "AccountCode": "1200",
+          "AccountName": "Accounts Receivable",
+          "DebitAmount": 15000.0,
+          "CreditAmount": 0.0,
+          "Description": "Customer: Local Grain Mill",
+          "CropOrLivestock": "Wheat"
+        },
+        {
+          "LineId": 4,
+          "AccountCode": "4100",
+          "AccountName": "Crop Sales Revenue",
+          "DebitAmount": 0.0,
+          "CreditAmount": 15000.0,
+          "Description": "Wheat harvest - 300 bushels",
+          "FarmActivity": "Crop Sales",
+          "CropOrLivestock": "Wheat"
+        }
+      ]
+    },
+    {
+      "JournalEntryId": 3,
+      "EntryNumber": "JE-20260508-0003",
+      "EntryDate": "2026-05-08T09:15:00",
+      "Description": "Monthly depreciation - Tractor",
+      "Status": "Posted",
+      "TotalDebit": 500.0,
+      "TotalCredit": 500.0,
+      "CreatedBy": "System",
+      "CreatedDate": "2026-05-08T09:15:00",
+      "PostedBy": "System",
+      "PostedDate": "2026-05-08T09:15:00",
+      "Lines": [
+        {
+          "LineId": 5,
+          "AccountCode": "5300",
+          "AccountName": "Depreciation Expense",
+          "DebitAmount": 500.0,
+          "CreditAmount": 0.0,
+          "Description": "Monthly depreciation on John Deere 6120"
+        },
+        {
+          "LineId": 6,
+          "AccountCode": "1510",
+          "AccountName": "Accumulated Depreciation - Equipment",
+          "DebitAmount": 0.0,
+          "CreditAmount": 500.0,
+          "Description": "Accumulated depreciation"
+        }
+      ]
+    }
+  ]
+}

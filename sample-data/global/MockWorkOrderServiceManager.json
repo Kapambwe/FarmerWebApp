@@ -1,0 +1,14 @@
+{
+  "Categories": [
+    { "WorkOrderCategoryId": 1, "Name": "Equipment Maintenance", "Description": "Scheduled and breakdown repairs for machinery" },
+    { "WorkOrderCategoryId": 2, "Name": "Irrigation Repairs", "Description": "Drip lines, pivot arms, pump faults" }
+  ],
+  "WorkOrders": [
+    {
+      "WorkOrderId": 1, "Name": "JD 5075E 250-hr Service", "Description": "Oil, filter, belts — 250-hour scheduled service",
+      "PriorityId": 2, "WorkOrderCategoryId": 1, "WorkOrderStatusId": 3,
+      "StartDate": "2026-05-04T10:00:00", "EndDate": "2026-05-06T10:00:00",
+      "WorkOrderNumber": "WO-2026-001", "HospitalId": 1
+    }
+  ]
+}

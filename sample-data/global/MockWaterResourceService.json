@@ -1,0 +1,11 @@
+{
+  "DistrictsByProvince": {
+    "Lusaka": [ "Lusaka", "Kafue", "Luangwa", "Chongwe", "Chilanga" ],
+    "Copperbelt": [ "Kitwe", "Ndola", "Mufulira", "Chingola", "Kalulushi", "Luanshya" ],
+    "Southern": [ "Choma", "Livingstone", "Mazabuka", "Monze", "Gwembe", "Namwala" ]
+  },
+  "Resources": [
+    { "Id": 1, "Name": "Kariba Dam", "Type": "Dam", "Province": "Southern", "District": "Gwembe", "Latitude": -16.521, "Longitude": 28.771, "CapacityMcm": 180600.0, "CurrentLevelPercent": 72, "Status": "Active", "LastUpdated": "2026-05-08T10:00:00" },
+    { "Id": 3, "Name": "Kafue Gorge Dam", "Type": "Dam", "Province": "Lusaka", "District": "Kafue", "Latitude": -15.882, "Longitude": 28.430, "CapacityMcm": 740.0, "CurrentLevelPercent": 81, "Status": "Active", "LastUpdated": "2026-05-08T10:00:00" }
+  ]
+}

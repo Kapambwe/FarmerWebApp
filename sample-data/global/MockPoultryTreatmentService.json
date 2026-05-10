@@ -1,0 +1,10 @@
+{
+  "Treatments": [
+    {
+      "AssetId": 1, "PoultryTreatmentId": 1, "TreatmentDate": "2026-03-01T10:00:00",
+      "TreatmentType": "Vaccination", "Product": "Marek's Disease Vaccine (HVT)",
+      "Dosage": "0.2 ml/bird SC", "AdministeredBy": "Dr. Chilufya Phiri",
+      "Notes": "Day-1 vaccination on arrival — whole flock 500 birds", "Cost": 250.0
+    }
+  ]
+}

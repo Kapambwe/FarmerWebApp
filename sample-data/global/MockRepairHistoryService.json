@@ -1,0 +1,5 @@
+{
+  "RepairRecords": [
+    { "Id": 1, "EquipmentId": 1, "EquipmentName": "Tractor", "RepairDate": "2026-03-09T10:00:00", "Description": "Engine overhaul", "Cost": 1500.0, "PerformedBy": "Local Mechanic", "Status": "Completed" }
+  ]
+}
