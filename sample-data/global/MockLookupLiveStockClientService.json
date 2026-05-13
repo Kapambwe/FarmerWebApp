@@ -7,27 +7,27 @@
     { "Id": "5", "Name": "Pig" }
   ],
   "FieldCategoryTypes": [
-    { "Id": "1", "Name": "Grazing" },
-    { "Id": "2", "Name": "Barn" },
-    { "Id": "3", "Name": "Pasture" }
+    { "FieldTypeId": 1, "Name": "Grazing", "Description": "Open grazing area" },
+    { "FieldTypeId": 2, "Name": "Barn", "Description": "Covered livestock housing" },
+    { "FieldTypeId": 3, "Name": "Pasture", "Description": "Managed pasture enclosure" }
   ],
   "AnimalTypes": [
-    { "Id": "1", "Name": "Cattle" },
-    { "Id": "2", "Name": "Sheep" },
-    { "Id": "3", "Name": "Goat" }
+    { "AnimalTypeId": 1, "Name": "Cattle", "Category": "Ruminant" },
+    { "AnimalTypeId": 2, "Name": "Sheep", "Category": "Ruminant" },
+    { "AnimalTypeId": 3, "Name": "Goat", "Category": "Ruminant" }
   ],
   "Breeds": [
-    { "Id": "b1", "Name": "Holstein" },
-    { "Id": "b2", "Name": "Jersey" },
-    { "Id": "b3", "Name": "Angus" }
+    { "BreedTypeId": 1, "Breed": "Holstein", "Name": "Holstein", "Category": "Dairy", "Description": "High-yield dairy cattle breed" },
+    { "BreedTypeId": 2, "Breed": "Jersey", "Name": "Jersey", "Category": "Dairy", "Description": "Efficient dairy cattle breed" },
+    { "BreedTypeId": 3, "Breed": "Angus", "Name": "Angus", "Category": "Beef", "Description": "Popular beef cattle breed" }
   ],
   "Enclosures": [
     { "FieldId": 1, "AssetId": 1, "AssetName": "North Barn", "FieldType": "Barn", "FieldArea": "1 ha" },
     { "FieldId": 2, "AssetId": 2, "AssetName": "South Paddock", "FieldType": "Pasture", "FieldArea": "8.3 ha" }
   ],
   "FeedTypes": [
-    { "Id": "f1", "Name": "Hay" },
-    { "Id": "f2", "Name": "Silage" },
-    { "Id": "f3", "Name": "Grain" }
+    { "Id": 1, "FeedTypeId": 1, "Name": "Hay", "Category": "Forage", "Description": "Dried grass forage", "StandardUnitCost": 2.50 },
+    { "Id": 2, "FeedTypeId": 2, "Name": "Silage", "Category": "Forage", "Description": "Fermented forage feed", "StandardUnitCost": 1.80 },
+    { "Id": 3, "FeedTypeId": 3, "Name": "Grain", "Category": "Concentrate", "Description": "Energy-rich grain feed", "StandardUnitCost": 3.20 }
   ]
 }

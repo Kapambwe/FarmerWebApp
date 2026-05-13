@@ -1,14 +1,14 @@
 {
   "Crews": [
-    { "Id": 1, "CrewName": "Planting Crew A", "CrewLeader": "John Banda", "CrewType": "Planting", "MaximumCapacity": 10, "CurrentCapacity": 8, "IsAvailable": true },
-    { "Id": 2, "CrewName": "Harvest Crew B", "CrewLeader": "Mary Phiri", "CrewType": "Harvesting", "MaximumCapacity": 12, "CurrentCapacity": 12, "IsAvailable": false }
+    { "Id": 1, "CrewName": "Planting Crew A", "CrewLeader": "John Banda", "CrewType": 0, "MaximumCapacity": 10, "CurrentCapacity": 8, "IsAvailable": true },
+    { "Id": 2, "CrewName": "Harvest Crew B", "CrewLeader": "Mary Phiri", "CrewType": 1, "MaximumCapacity": 12, "CurrentCapacity": 12, "IsAvailable": false }
   ],
   "Assignments": [
     {
       "Id": 1, "CrewId": 1, "CrewName": "Planting Crew A", "TaskId": 1, "TaskName": "Plant Maize - Field 5",
       "TaskDescription": "Plant hybrid maize seeds in Field 5", "AssignmentDate": "2026-05-02T10:00:00",
       "EstimatedStartDate": "2026-05-09T10:00:00", "EstimatedEndDate": "2026-05-12T10:00:00",
-      "Status": "InProgress", "FieldName": "Field 5 - North", "Priority": "High",
+      "Status": 1, "FieldName": "Field 5 - North", "Priority": 2,
       "EstimatedHours": 32.0, "ActualHours": 16.0, "RequiredWorkers": 8, "AssignedWorkers": 8,
       "CompletionPercentage": 50, "AssignedBy": "Farm Manager"
     }

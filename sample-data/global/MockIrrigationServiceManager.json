@@ -1,7 +1,13 @@
 {
   "WaterSources": [
     { "WaterSourceId": 1, "Name": "Main Borehole — North Field", "SourceName": "Main Borehole — North Field", "Type": "Borehole", "SourceType": "Borehole", "Location": "North Field, -15.4123, 28.2891", "Latitude": -15.4123, "Longitude": 28.2891, "Capacity": 50000.0, "CostPerLiter": 0.05, "CostPerUnit": 0.05, "Status": "Active", "WaterQuality": "Good", "Ownership": "Farm-owned", "Description": "150m deep borehole, submersible pump 3.5 kW, yield 5 L/s" },
-    { "WaterSourceId": 2, "Name": "South Reservoir — Earthen Dam", "SourceName": "South Reservoir — Earthen Dam", "Type": "Dam", "SourceType": "Dam", "Location": "South Paddock, -15.4287, 28.2756", "Latitude": -15.4287, "Longitude": 28.2756, "Capacity": 800000.0, "CostPerLiter": 0.02, "CostPerUnit": 0.02, "Status": "Active", "WaterQuality": "Moderate", "Ownership": "Farm-owned", "Description": "Earthen dam, 800 kL capacity, fed by seasonal stream — used in rainy season" }
+    { "WaterSourceId": 2, "Name": "South Reservoir — Earthen Dam", "SourceName": "South Reservoir — Earthen Dam", "Type": "Dam", "SourceType": "Dam", "Location": "South Paddock, -15.4287, 28.2756", "Latitude": -15.4287, "Longitude": 28.2756, "Capacity": 800000.0, "CostPerLiter": 0.02, "CostPerUnit": 0.02, "Status": "Active", "WaterQuality": "Moderate", "Ownership": "Farm-owned", "Description": "Earthen dam, 800 kL capacity, fed by seasonal stream — used in rainy season" },
+    { "WaterSourceId": 3, "Name": "Kafue Intake Pump", "SourceName": "Kafue Intake Pump", "Type": "River", "SourceType": "River", "Location": "Riverbank Block, -15.4398, 28.2614", "Latitude": -15.4398, "Longitude": 28.2614, "Capacity": 140.0, "CostPerLiter": 0.01, "CostPerUnit": 0.01, "Status": "Active", "WaterQuality": "Moderate", "Ownership": "Leased abstraction permit", "Description": "Floating river intake with diesel booster pump used during peak dry-season demand." },
+    { "WaterSourceId": 4, "Name": "West Nursery Header Tank", "SourceName": "West Nursery Header Tank", "Type": "Tank", "SourceType": "Tank", "Location": "West Nursery, -15.4189, 28.2832", "Latitude": -15.4189, "Longitude": 28.2832, "Capacity": 5000.0, "CostPerLiter": 0.08, "CostPerUnit": 0.08, "Status": "Active", "WaterQuality": "Good", "Ownership": "Farm-owned", "Description": "Elevated 5,000L tank supplying greenhouse foggers and nursery drip lines." },
+    { "WaterSourceId": 5, "Name": "East Orchard Pond", "SourceName": "East Orchard Pond", "Type": "Pond", "SourceType": "Pond", "Location": "East Orchard, -15.4075, 28.3018", "Latitude": -15.4075, "Longitude": 28.3018, "Capacity": 125000.0, "CostPerLiter": 0.03, "CostPerUnit": 0.03, "Status": "Maintenance", "WaterQuality": "Fair", "Ownership": "Farm-owned", "Description": "Clay-lined balancing pond currently undergoing desilting and embankment repair." },
+    { "WaterSourceId": 6, "Name": "Municipal Backup Feed", "SourceName": "Municipal Backup Feed", "Type": "Municipal", "SourceType": "Municipal", "Location": "Main Yard Connection, -15.4201, 28.2867", "Latitude": -15.4201, "Longitude": 28.2867, "Capacity": 35000.0, "CostPerLiter": 0.12, "CostPerUnit": 0.12, "Status": "Inactive", "WaterQuality": "Good", "Ownership": "Utility contract", "Description": "Emergency municipal connection reserved for nursery and livestock water during prolonged outages." },
+    { "WaterSourceId": 7, "Name": "Solar Borehole — Demo Plot Alpha", "SourceName": "Solar Borehole — Demo Plot Alpha", "Type": "Borehole", "SourceType": "Borehole", "Location": "Demo Plot Alpha, -15.4011, 28.3099", "Latitude": -15.4011, "Longitude": 28.3099, "Capacity": 22000.0, "CostPerLiter": 0.04, "CostPerUnit": 0.04, "Status": "Active", "WaterQuality": "Good", "Ownership": "Farm-owned", "Description": "Solar-powered borehole dedicated to low-pressure demonstration drip kits and research plots." },
+    { "WaterSourceId": 8, "Name": "Livestock Washdown Tank", "SourceName": "Livestock Washdown Tank", "Type": "Tank", "SourceType": "Tank", "Location": "Service Yard, -15.4244, 28.2788", "Latitude": -15.4244, "Longitude": 28.2788, "Capacity": 12000.0, "CostPerLiter": 0.06, "CostPerUnit": 0.06, "Status": "Low", "WaterQuality": "Moderate", "Ownership": "Farm-owned", "Description": "Auxiliary tank shared with washdown operations; flagged low after recent dry wind conditions." }
   ],
   "Setups": [
     {
@@ -16,9 +22,83 @@
       "AutomationLevel": "Fully Automated — remote phone control",
       "Status": "Active",
       "Notes": "Covers 54 ha maize block. Rotation speed 100% = 8 hr cycle. Speed reduced to 70% during critical pollination."
+    },
+    {
+      "IrrigationSetupId": 2, "FieldId": 2, "FieldName": "South Paddock",
+      "SetupName": "South Paddock — Drip Lines",
+      "Method": "Drip Irrigation",
+      "PrimaryWaterSourceId": 2, "WaterSourceName": "South Reservoir — Earthen Dam",
+      "EquipmentUsed": "Jain inline drip tape with sand media filter station",
+      "CoverageArea": 18.5, "FlowRate": 22.0, "OperatingPressure": 1.8,
+      "WateringDuration": 210, "FrequencyDays": 1,
+      "PreferredStartTime": "04:30:00",
+      "AutomationLevel": "Semi-Automatic — timer and manual zone switching",
+      "Status": "Active",
+      "Notes": "Used for high-value vegetable blocks and seedling hardening. Fertigation venturi installed on main header."
+    },
+    {
+      "IrrigationSetupId": 3, "FieldId": 3, "FieldName": "East Orchard",
+      "SetupName": "East Orchard — Micro Sprinklers",
+      "Method": "Micro Sprinkler",
+      "PrimaryWaterSourceId": 1, "WaterSourceName": "Main Borehole — North Field",
+      "EquipmentUsed": "Netafim micro-sprinklers with orchard risers",
+      "CoverageArea": 12.0, "FlowRate": 18.0, "OperatingPressure": 2.2,
+      "WateringDuration": 160, "FrequencyDays": 2,
+      "PreferredStartTime": "06:00:00",
+      "AutomationLevel": "Automatic valves with manual scheduling",
+      "Status": "Maintenance",
+      "Notes": "Zone 3 pressure regulator due for replacement; temporary pressure drop around citrus row 8."
+    },
+    {
+      "IrrigationSetupId": 4, "FieldId": 4, "FieldName": "West Nursery",
+      "SetupName": "West Nursery — Greenhouse Fog & Drip",
+      "Method": "Fogging + Drip",
+      "PrimaryWaterSourceId": 1, "WaterSourceName": "Main Borehole — North Field",
+      "EquipmentUsed": "Low-pressure foggers, drip spaghetti lines, 5,000L header tank",
+      "CoverageArea": 4.2, "FlowRate": 9.0, "OperatingPressure": 1.5,
+      "WateringDuration": 90, "FrequencyDays": 1,
+      "PreferredStartTime": "05:30:00",
+      "AutomationLevel": "Fully Automatic climate-linked controller",
+      "Status": "Active",
+      "Notes": "Nursery house setup linked to humidity sensor logic for tomato and cabbage transplants."
+    },
+    {
+      "IrrigationSetupId": 5, "FieldId": 5, "FieldName": "Riverbank Block",
+      "SetupName": "Riverbank Block — Portable Rain Gun",
+      "Method": "Rain Gun",
+      "PrimaryWaterSourceId": 2, "WaterSourceName": "South Reservoir — Earthen Dam",
+      "EquipmentUsed": "Travelling rain gun cart with 110mm layflat hose",
+      "CoverageArea": 26.0, "FlowRate": 47.0, "OperatingPressure": 4.1,
+      "WateringDuration": 300, "FrequencyDays": 4,
+      "PreferredStartTime": "19:00:00",
+      "AutomationLevel": "Manual repositioning, automatic shutoff cannon",
+      "Status": "Planned",
+      "Notes": "Expansion setup for dry-season cabbage and sunflower demonstrations near the riverbank."
+    },
+    {
+      "IrrigationSetupId": 6, "FieldId": 6, "FieldName": "Demo Plot Alpha",
+      "SetupName": "Demo Plot Alpha — Solar Pump Drip Kit",
+      "Method": "Solar Drip",
+      "PrimaryWaterSourceId": 1, "WaterSourceName": "Main Borehole — North Field",
+      "EquipmentUsed": "2.2 kW solar pump, elevated tank, low-pressure drip manifold",
+      "CoverageArea": 6.8, "FlowRate": 12.0, "OperatingPressure": 1.2,
+      "WateringDuration": 150, "FrequencyDays": 2,
+      "PreferredStartTime": "08:00:00",
+      "AutomationLevel": "Basic Automatic timer",
+      "Status": "Inactive",
+      "Notes": "Pilot setup paused pending replacement of cracked emitter laterals and additional solar storage."
     }
   ],
   "Sessions": [
-    { "WateringSessionId": 1, "IrrigationSetupId": 1, "SetupName": "North Field — Centre Pivot", "SessionDate": "2026-05-07T10:00:00", "WaterSourceId": 1, "WaterSourceName": "Main Borehole", "DurationMinutes": 480, "FlowRate": 55.0, "WaterUsed": 15840.0, "WaterVolume": 15840.0, "PreMoisture": 28.0, "PostMoisture": 42.0, "TargetMoisture": 40.0, "Temperature": 31.0, "Humidity": 45.0, "WindSpeed": 12.0, "Efficiency": 88.5, "TotalCost": 792.0, "CropId": 1, "Notes": "Smooth run — no stoppages. Soil moisture sensor triggered auto-stop at 42%." }
+    { "WateringSessionId": 1, "IrrigationSetupId": 1, "SetupName": "North Field — Centre Pivot", "SessionDate": "2026-05-07T10:00:00", "WaterSourceId": 1, "WaterSourceName": "Main Borehole", "DurationMinutes": 480, "FlowRate": 55.0, "WaterUsed": 15840.0, "WaterVolume": 15840.0, "PreMoisture": 28.0, "PostMoisture": 42.0, "TargetMoisture": 40.0, "Temperature": 31.0, "Humidity": 45.0, "WindSpeed": 12.0, "Efficiency": 88.5, "TotalCost": 792.0, "CropId": 1, "Notes": "Smooth run — no stoppages. Soil moisture sensor triggered auto-stop at 42%." },
+    { "WateringSessionId": 2, "IrrigationSetupId": 2, "SetupName": "South Paddock — Drip Lines", "SessionDate": "2026-05-08T04:30:00", "WaterSourceId": 2, "WaterSourceName": "South Reservoir — Earthen Dam", "DurationMinutes": 210, "FlowRate": 22.0, "WaterUsed": 4620.0, "WaterVolume": 4620.0, "PreMoisture": 24.0, "PostMoisture": 36.0, "TargetMoisture": 35.0, "Temperature": 24.0, "Humidity": 61.0, "WindSpeed": 6.0, "Efficiency": 91.2, "TotalCost": 92.4, "CropId": 7, "Notes": "Vegetable block fertigated during early-morning cycle." },
+    { "WateringSessionId": 3, "IrrigationSetupId": 4, "SetupName": "West Nursery — Greenhouse Fog & Drip", "SessionDate": "2026-05-08T05:45:00", "WaterSourceId": 4, "WaterSourceName": "West Nursery Header Tank", "DurationMinutes": 90, "FlowRate": 9.0, "WaterUsed": 810.0, "WaterVolume": 810.0, "PreMoisture": 31.0, "PostMoisture": 44.0, "TargetMoisture": 43.0, "Temperature": 22.0, "Humidity": 74.0, "WindSpeed": 2.0, "Efficiency": 94.0, "TotalCost": 64.8, "CropId": 6, "Notes": "Humidity-linked greenhouse irrigation for tomato seedlings." },
+    { "WateringSessionId": 4, "IrrigationSetupId": 3, "SetupName": "East Orchard — Micro Sprinklers", "SessionDate": "2026-05-09T06:10:00", "WaterSourceId": 5, "WaterSourceName": "East Orchard Pond", "DurationMinutes": 160, "FlowRate": 18.0, "WaterUsed": 2880.0, "WaterVolume": 2880.0, "PreMoisture": 26.0, "PostMoisture": 33.0, "TargetMoisture": 34.0, "Temperature": 25.0, "Humidity": 58.0, "WindSpeed": 5.0, "Efficiency": 73.0, "TotalCost": 86.4, "CropId": 3, "Notes": "Pressure loss on Zone 3 reduced uniformity; maintenance flag remains open." },
+    { "WateringSessionId": 5, "IrrigationSetupId": 1, "SetupName": "North Field — Centre Pivot", "SessionDate": "2026-05-10T11:20:00", "WaterSourceId": 1, "WaterSourceName": "Main Borehole", "DurationMinutes": 420, "FlowRate": 55.0, "WaterUsed": 13860.0, "WaterVolume": 13860.0, "PreMoisture": 30.0, "PostMoisture": 39.0, "TargetMoisture": 40.0, "Temperature": 33.0, "Humidity": 39.0, "WindSpeed": 15.0, "Efficiency": 79.0, "TotalCost": 693.0, "CropId": 1, "Notes": "Hot, windy conditions reduced application efficiency by late afternoon." },
+    { "WateringSessionId": 6, "IrrigationSetupId": 5, "SetupName": "Riverbank Block — Portable Rain Gun", "SessionDate": "2026-05-10T19:10:00", "WaterSourceId": 3, "WaterSourceName": "Kafue Intake Pump", "DurationMinutes": 300, "FlowRate": 47.0, "WaterUsed": 14100.0, "WaterVolume": 14100.0, "PreMoisture": 19.0, "PostMoisture": 29.0, "TargetMoisture": 30.0, "Temperature": 21.0, "Humidity": 68.0, "WindSpeed": 4.0, "Efficiency": 84.0, "TotalCost": 141.0, "CropId": 8, "Notes": "First evening run on demo rain gun block after calibration." },
+    { "WateringSessionId": 7, "IrrigationSetupId": 2, "SetupName": "South Paddock — Drip Lines", "SessionDate": "2026-05-11T04:25:00", "WaterSourceId": 2, "WaterSourceName": "South Reservoir — Earthen Dam", "DurationMinutes": 200, "FlowRate": 22.0, "WaterUsed": 4400.0, "WaterVolume": 4400.0, "PreMoisture": 27.0, "PostMoisture": 35.0, "TargetMoisture": 35.0, "Temperature": 23.0, "Humidity": 63.0, "WindSpeed": 5.0, "Efficiency": 90.0, "TotalCost": 88.0, "CropId": 7, "Notes": "Shorter maintenance cycle due to overnight moisture retention." },
+    { "WateringSessionId": 8, "IrrigationSetupId": 6, "SetupName": "Demo Plot Alpha — Solar Pump Drip Kit", "SessionDate": "2026-05-11T08:05:00", "WaterSourceId": 7, "WaterSourceName": "Solar Borehole — Demo Plot Alpha", "DurationMinutes": 150, "FlowRate": 12.0, "WaterUsed": 1800.0, "WaterVolume": 1800.0, "PreMoisture": 18.0, "PostMoisture": 27.0, "TargetMoisture": 28.0, "Temperature": 27.0, "Humidity": 49.0, "WindSpeed": 7.0, "Efficiency": 86.0, "TotalCost": 72.0, "CropId": 8, "Notes": "Solar-driven run completed before midday cloud cover reduced pump output." },
+    { "WateringSessionId": 9, "IrrigationSetupId": 4, "SetupName": "West Nursery — Greenhouse Fog & Drip", "SessionDate": "2026-05-12T05:35:00", "WaterSourceId": 4, "WaterSourceName": "West Nursery Header Tank", "DurationMinutes": 75, "FlowRate": 9.0, "WaterUsed": 675.0, "WaterVolume": 675.0, "PreMoisture": 34.0, "PostMoisture": 43.0, "TargetMoisture": 42.0, "Temperature": 21.0, "Humidity": 77.0, "WindSpeed": 1.0, "Efficiency": 95.0, "TotalCost": 54.0, "CropId": 6, "Notes": "Short precision cycle for cabbage trays and nursery transplants." },
+    { "WateringSessionId": 10, "IrrigationSetupId": 1, "SetupName": "North Field — Centre Pivot", "SessionDate": "2026-05-12T14:00:00", "WaterSourceId": 1, "WaterSourceName": "Main Borehole", "DurationMinutes": 360, "FlowRate": 55.0, "WaterUsed": 11880.0, "WaterVolume": 11880.0, "PreMoisture": 32.0, "PostMoisture": 40.0, "TargetMoisture": 40.0, "Temperature": 29.0, "Humidity": 52.0, "WindSpeed": 8.0, "Efficiency": 89.0, "TotalCost": 594.0, "CropId": 1, "Notes": "Mid-cycle top-up irrigation after two dry windy days." }
   ]
 }

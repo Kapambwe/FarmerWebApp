@@ -1,6 +1,6 @@
 {
   "Consents": [
-    { "Id": 1, "Name": "John Doe", "InstititutionType": "Financial Institution", "FinancialInstitution": "ABC Bank", "Status": "Active" },
-    { "Id": 2, "Name": "Jane Smith", "InstititutionType": "NGO", "NGO": "Green Earth", "Status": "Pending" }
+    { "Id": 1, "Name": "John Doe", "InstititutionType": "Financial Institution", "FinancialInstitution": "ABC Bank", "Status": 0 },
+    { "Id": 2, "Name": "Jane Smith", "InstititutionType": "NGO", "NGO": "Green Earth", "Status": 1 }
   ]
 }

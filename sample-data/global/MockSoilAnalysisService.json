@@ -1,16 +1,62 @@
 {
   "Fields": [
     { "FieldId": 1, "Name": "North Field" },
-    { "FieldId": 2, "Name": "South Field" },
-    { "FieldId": 3, "Name": "East Pasture" }
+    { "FieldId": 2, "Name": "South Paddock" },
+    { "FieldId": 3, "Name": "East Orchard" },
+    { "FieldId": 4, "Name": "West Nursery" },
+    { "FieldId": 5, "Name": "Riverbank Block" },
+    { "FieldId": 6, "Name": "Demo Plot Alpha" }
   ],
   "AnalysisTypes": [ "Routine", "Pre-Planting", "Post-Harvest", "Problem Diagnosis" ],
   "Analyses": [
     {
       "Id": 1, "FieldId": 1, "FieldName": "North Field", "SampleDate": "2026-04-09T10:00:00",
       "AnalysisType": "Pre-Planting", "LabReference": "SL-2026-001", "PhLevel": 6.5,
-      "OrganicMatter": 3.2, "Nitrogen": 25.0, "Phosphorus": 15.0, "Potassium": 120.0,
+      "OrganicMatter": 3.2, "Nitrogen": 25, "Phosphorus": 15, "Potassium": 120,
+      "Calcium": 960, "Magnesium": 185, "Sulfur": 18,
       "Status": "Optimal", "Recommendations": "Apply 50kg/ha of NPK 15-15-15 fertilizer before planting."
+    },
+    {
+      "Id": 2, "FieldId": 2, "FieldName": "South Paddock", "SampleDate": "2026-03-28T09:30:00",
+      "AnalysisType": "Routine", "LabReference": "SL-2026-002", "PhLevel": 5.3,
+      "OrganicMatter": 2.4, "Nitrogen": 18, "Phosphorus": 11, "Potassium": 96,
+      "Calcium": 720, "Magnesium": 142, "Sulfur": 12,
+      "Status": "Action Required", "Recommendations": "Apply 1.5 t/ha agricultural lime, follow with basal phosphate, and retest in 6 weeks before the next soybean cycle."
+    },
+    {
+      "Id": 3, "FieldId": 3, "FieldName": "East Orchard", "SampleDate": "2026-02-17T08:45:00",
+      "AnalysisType": "Post-Harvest", "LabReference": "SL-2026-003", "PhLevel": 6.8,
+      "OrganicMatter": 1.7, "Nitrogen": 14, "Phosphorus": 19, "Potassium": 134,
+      "Calcium": 1040, "Magnesium": 210, "Sulfur": 16,
+      "Status": "Needs Amendment", "Recommendations": "Incorporate composted manure at 4 t/ha and establish a winter cover crop to lift organic matter above 2.5%."
+    },
+    {
+      "Id": 4, "FieldId": 4, "FieldName": "West Nursery", "SampleDate": "2026-04-22T11:15:00",
+      "AnalysisType": "Problem Diagnosis", "LabReference": "SL-2026-004", "PhLevel": 7.8,
+      "OrganicMatter": 2.9, "Nitrogen": 31, "Phosphorus": 13, "Potassium": 148,
+      "Calcium": 1280, "Magnesium": 255, "Sulfur": 22,
+      "Status": "Action Required", "Recommendations": "Reduce liming inputs, band phosphorus near root zone, and fertigate with ammonium-based nitrogen to gently lower pH."
+    },
+    {
+      "Id": 5, "FieldId": 1, "FieldName": "North Field", "SampleDate": "2025-11-03T10:10:00",
+      "AnalysisType": "Post-Harvest", "LabReference": "SL-2025-091", "PhLevel": 6.3,
+      "OrganicMatter": 3.6, "Nitrogen": 29, "Phosphorus": 21, "Potassium": 126,
+      "Calcium": 1015, "Magnesium": 198, "Sulfur": 19,
+      "Status": "Optimal", "Recommendations": "Maintain residue retention and split nitrogen application across planting and top dressing for the next maize cycle."
+    },
+    {
+      "Id": 6, "FieldId": 5, "FieldName": "Riverbank Block", "SampleDate": "2026-01-29T07:50:00",
+      "AnalysisType": "Pre-Planting", "LabReference": "SL-2026-005", "PhLevel": 6.1,
+      "OrganicMatter": 2.1, "Nitrogen": 22, "Phosphorus": 9, "Potassium": 88,
+      "Calcium": 810, "Magnesium": 165, "Sulfur": 10,
+      "Status": "Optimal", "Recommendations": "Phosphorus is marginal; place compound fertilizer in banded rows and avoid broadcast application on the sandy section."
+    },
+    {
+      "Id": 7, "FieldId": 6, "FieldName": "Demo Plot Alpha", "SampleDate": "2026-05-06T13:20:00",
+      "AnalysisType": "Routine", "LabReference": "SL-2026-006", "PhLevel": 5.9,
+      "OrganicMatter": 1.4, "Nitrogen": 12, "Phosphorus": 8, "Potassium": 74,
+      "Calcium": 645, "Magnesium": 121, "Sulfur": 9,
+      "Status": "Needs Amendment", "Recommendations": "Apply poultry manure and mulch heavily; low organic matter and low N/P levels make this plot suitable for a soil rehabilitation demo."
     }
   ]
 }

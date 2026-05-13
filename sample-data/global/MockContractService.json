@@ -1,5 +1,5 @@
 {
   "Contracts": [
-    { "Id": 1, "Name": "Beef Export to DRC - 2025", "Type": "Export Contract", "Status": "Active", "Commodity": "Beef", "ContractValue": 2250000.0, "Contractor": "Congo Meat Distributors Ltd" }
+    { "Id": 1, "Name": "Beef Export to DRC - 2025", "Type": "Export Contract", "Status": 0, "Commodity": "Beef", "ContractValue": 2250000.0, "Contractor": "Congo Meat Distributors Ltd" }
   ]
 }

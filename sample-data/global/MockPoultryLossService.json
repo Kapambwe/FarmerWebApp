@@ -1,5 +1,12 @@
 {
   "Losses": [
-    { "Id": 1, "PoultryId": 1, "LossDate": "2026-05-04T10:00:00", "Quantity": 5, "Reason": "Disease", "Description": "High mortality due to avian flu outbreak.", "EstimatedValue": 100.0, "CreatedDate": "2026-05-04T10:00:00" }
+    { "Id": 1, "PoultryId": 1, "LossDate": "2026-05-04T10:00:00", "Quantity": 5, "Reason": "Disease", "Description": "High mortality due to avian flu outbreak.", "EstimatedValue": 100.0, "CreatedDate": "2026-05-04T10:00:00" },
+    { "Id": 2, "PoultryId": 1, "LossDate": "2026-05-06T07:30:00", "Quantity": 3, "Reason": "Heat Stress", "Description": "Three broilers died during an afternoon heat spike before extra ventilation was installed.", "EstimatedValue": 66.0, "CreatedDate": "2026-05-06T08:10:00" },
+    { "Id": 3, "PoultryId": 2, "LossDate": "2026-05-08T06:45:00", "Quantity": 2, "Reason": "Predator", "Description": "Night-time loss from a damaged duck pen fence near the drainage channel.", "EstimatedValue": 90.0, "CreatedDate": "2026-05-08T07:00:00" },
+    { "Id": 4, "PoultryId": 3, "LossDate": "2026-05-10T11:15:00", "Quantity": 7, "Reason": "Disease", "Description": "Suspected coccidiosis in the growers section; treatment started immediately after isolation.", "EstimatedValue": 154.0, "CreatedDate": "2026-05-10T12:05:00" },
+    { "Id": 5, "PoultryId": 1, "LossDate": "2026-04-21T09:20:00", "Quantity": 1, "Reason": "Handling Injury", "Description": "One layer lost during crate transfer for vaccination.", "EstimatedValue": 22.0, "CreatedDate": "2026-04-21T09:40:00" },
+    { "Id": 6, "PoultryId": 4, "LossDate": "2026-03-28T16:30:00", "Quantity": 4, "Reason": "Feed Contamination", "Description": "Spoiled feed in one batch caused losses before the affected stock was discarded.", "EstimatedValue": 120.0, "CreatedDate": "2026-03-28T17:05:00" },
+    { "Id": 7, "PoultryId": 2, "LossDate": "2026-02-14T08:00:00", "Quantity": 2, "Reason": "Natural Death", "Description": "Two older breeder ducks reached end-of-cycle condition and were recorded as natural losses.", "EstimatedValue": 84.0, "CreatedDate": "2026-02-14T08:25:00" },
+    { "Id": 8, "PoultryId": 5, "LossDate": "2026-05-12T05:50:00", "Quantity": 6, "Reason": "Brooder Failure", "Description": "Temporary overnight brooder temperature drop affected the youngest chicks in House B.", "EstimatedValue": 48.0, "CreatedDate": "2026-05-12T06:20:00" }
   ]
 }

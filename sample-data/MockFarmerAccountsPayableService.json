@@ -1,0 +1,103 @@
+{
+  "Payables": [
+    {
+      "APId": 1,
+      "VendorId": 1,
+      "VendorName": "AgriSupply Co.",
+      "InvoiceNumber": "INV-2026-1001",
+      "InvoiceDate": "2026-04-09T10:00:00",
+      "DueDate": "2026-05-04T10:00:00",
+      "Amount": 5000.0,
+      "PaidAmount": 0.0,
+      "Status": 3,
+      "Category": "Seeds",
+      "Description": "Hybrid corn seed - 50 bags",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-09T10:00:00",
+      "Payments": []
+    },
+    {
+      "APId": 2,
+      "VendorId": 2,
+      "VendorName": "FarmTech Equipment",
+      "InvoiceNumber": "INV-2026-2050",
+      "InvoiceDate": "2026-04-19T10:00:00",
+      "DueDate": "2026-05-19T10:00:00",
+      "Amount": 12500.0,
+      "PaidAmount": 5000.0,
+      "Status": 1,
+      "Category": "Equipment",
+      "PurchaseOrderNumber": "PO-2026-050",
+      "Description": "Irrigation system parts and installation",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-19T10:00:00",
+      "LastPaymentDate": "2026-04-29T10:00:00",
+      "Payments": [
+        {
+          "PaymentId": 1,
+          "PaymentDate": "2026-04-29T10:00:00",
+          "PaymentAmount": 5000.0,
+          "PaymentMethod": "Bank Transfer",
+          "ReferenceNumber": "TXN-20260429-001"
+        }
+      ]
+    },
+    {
+      "APId": 3,
+      "VendorId": 3,
+      "VendorName": "GreenField Fertilizers",
+      "InvoiceNumber": "INV-2026-3102",
+      "InvoiceDate": "2026-04-24T10:00:00",
+      "DueDate": "2026-05-24T10:00:00",
+      "Amount": 3200.0,
+      "PaidAmount": 0.0,
+      "Status": 0,
+      "Category": "Fertilizer",
+      "Description": "NPK fertilizer - 20 bags",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-24T10:00:00",
+      "Payments": []
+    },
+    {
+      "APId": 4,
+      "VendorId": 4,
+      "VendorName": "Livestock Feed Co.",
+      "InvoiceNumber": "INV-2026-4025",
+      "InvoiceDate": "2026-04-29T10:00:00",
+      "DueDate": "2026-05-29T10:00:00",
+      "Amount": 1800.0,
+      "PaidAmount": 0.0,
+      "Status": 0,
+      "Category": "Feed",
+      "Description": "Cattle feed - 2 tons",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-04-29T10:00:00",
+      "Payments": []
+    },
+    {
+      "APId": 5,
+      "VendorId": 5,
+      "VendorName": "Veterinary Services Ltd.",
+      "InvoiceNumber": "INV-2026-5012",
+      "InvoiceDate": "2026-05-04T10:00:00",
+      "DueDate": "2026-06-03T10:00:00",
+      "Amount": 450.0,
+      "PaidAmount": 450.0,
+      "Status": 2,
+      "Category": "Veterinary",
+      "Description": "Vaccination and health check - 20 cattle",
+      "CreatedBy": "John Farmer",
+      "CreatedDate": "2026-05-04T10:00:00",
+      "LastPaymentDate": "2026-05-06T10:00:00",
+      "Payments": [
+        {
+          "PaymentId": 2,
+          "PaymentDate": "2026-05-06T10:00:00",
+          "PaymentAmount": 450.0,
+          "PaymentMethod": "Cash",
+          "Notes": "Paid in full"
+        }
+      ]
+    }
+  ]
+}

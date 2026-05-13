@@ -1,56 +1,56 @@
 {
   "Seeds": [
     {
-      "Id": 1, "Name": "Maize Seed (SC513)", "Category": "Seeds", "CategoryType": "Seed",
+      "Id": 1, "Name": "Maize Seed (SC513)", "Category": "Seeds", "CategoryType": 0,
       "Unit": "kg", "Quantity": 500.0, "MinimumQuantity": 100.0, "UnitPrice": 120.0,
       "Supplier": "SeedCo Zambia", "PurchaseDate": "2026-03-09T10:00:00",
       "ExpirationDate": "2027-05-09T10:00:00", "Location": "Seed Store A",
-      "BatchNumber": "SC513-2026-001", "Status": "InStock",
+      "BatchNumber": "SC513-2026-001", "Status": 0,
       "CropType": "Maize", "Variety": "SC513 Hybrid", "GerminationRate": 95.0,
       "IsCertified": true, "CertificationNumber": "CERT-2026-001"
     },
     {
-      "Id": 2, "Name": "Soya Bean Seed (Safari)", "Category": "Seeds", "CategoryType": "Seed",
+      "Id": 2, "Name": "Soya Bean Seed (Safari)", "Category": "Seeds", "CategoryType": 0,
       "Unit": "kg", "Quantity": 80.0, "MinimumQuantity": 100.0, "UnitPrice": 180.0,
       "Supplier": "Zamseed Ltd", "PurchaseDate": "2026-04-09T10:00:00",
       "ExpirationDate": "2027-03-09T10:00:00", "Location": "Seed Store A",
-      "BatchNumber": "SB-SAF-2026-01", "Status": "LowStock",
+      "BatchNumber": "SB-SAF-2026-01", "Status": 1,
       "CropType": "Soya Bean", "Variety": "Safari", "GerminationRate": 92.0,
       "IsCertified": true, "CertificationNumber": "CERT-2026-002"
     },
     {
-      "Id": 3, "Name": "Groundnut Seed (MGV4)", "Category": "Seeds", "CategoryType": "Seed",
+      "Id": 3, "Name": "Groundnut Seed (MGV4)", "Category": "Seeds", "CategoryType": 0,
       "Unit": "kg", "Quantity": 200.0, "MinimumQuantity": 50.0, "UnitPrice": 95.0,
       "Supplier": "ZARI", "PurchaseDate": "2026-02-09T10:00:00",
-      "Location": "Seed Store B", "Status": "InStock",
+      "Location": "Seed Store B", "Status": 0,
       "CropType": "Groundnut", "Variety": "MGV4", "GerminationRate": 88.0
     }
   ],
   "Fertilizers": [
     {
-      "Id": 4, "Name": "Compound D Fertilizer", "Category": "Fertilizers", "CategoryType": "Fertilizer",
+      "Id": 4, "Name": "Compound D Fertilizer", "Category": "Fertilizers", "CategoryType": 1,
       "Unit": "bags (50kg)", "Quantity": 45.0, "MinimumQuantity": 20.0, "UnitPrice": 850.0,
       "Supplier": "Nitrogen Chemicals", "PurchaseDate": "2026-04-09T10:00:00",
-      "Location": "Fertilizer Store", "Status": "InStock",
+      "Location": "Fertilizer Store", "Status": 0,
       "FertilizerType": "Compound", "NitrogenContent": 10.0, "PhosphorusContent": 20.0, "PotassiumContent": 10.0,
       "IsOrganic": false, "ApplicationMethod": "Basal"
     },
     {
-      "Id": 5, "Name": "Urea (46-0-0)", "Category": "Fertilizers", "CategoryType": "Fertilizer",
+      "Id": 5, "Name": "Urea (46-0-0)", "Category": "Fertilizers", "CategoryType": 1,
       "Unit": "bags (50kg)", "Quantity": 60.0, "MinimumQuantity": 30.0, "UnitPrice": 920.0,
       "Supplier": "Nitrogen Chemicals", "PurchaseDate": "2026-04-24T10:00:00",
-      "Location": "Fertilizer Store", "Status": "InStock",
+      "Location": "Fertilizer Store", "Status": 0,
       "FertilizerType": "Nitrogen", "NitrogenContent": 46.0, "PhosphorusContent": 0.0, "PotassiumContent": 0.0,
       "IsOrganic": false, "ApplicationMethod": "Top Dressing"
     }
   ],
   "Pesticides": [
     {
-      "Id": 7, "Name": "Carbaryl 85% WP", "Category": "Pesticides", "CategoryType": "Pesticide",
+      "Id": 7, "Name": "Carbaryl 85% WP", "Category": "Pesticides", "CategoryType": 3,
       "Unit": "kg", "Quantity": 15.0, "MinimumQuantity": 5.0, "UnitPrice": 280.0,
       "Supplier": "Cropserve Zambia", "PurchaseDate": "2026-03-09T10:00:00",
       "ExpirationDate": "2027-11-09T10:00:00", "Location": "Chemical Store",
-      "BatchNumber": "CB-2026-01", "Status": "InStock",
+      "BatchNumber": "CB-2026-01", "Status": 0,
       "ChemicalType": "Insecticide", "ActiveIngredient": "Carbaryl",
       "TargetPest": "Armyworm, Aphids", "PreHarvestInterval": 14, "RestrictedEntryInterval": 12,
       "SignalWord": "Warning", "RequiresLicense": false
@@ -58,20 +58,20 @@
   ],
   "Fuels": [
     {
-      "Id": 10, "Name": "Diesel Fuel", "Category": "Fuel", "CategoryType": "Fuel",
+      "Id": 10, "Name": "Diesel Fuel", "Category": "Fuel", "CategoryType": 6,
       "Unit": "liters", "Quantity": 1200.0, "MinimumQuantity": 500.0, "UnitCost": 28.5,
       "Supplier": "Total Zambia", "PurchaseDate": "2026-05-06T10:00:00",
-      "Location": "Fuel Tank A", "Status": "InStock",
+      "Location": "Fuel Tank A", "Status": 0,
       "FuelType": "Diesel", "StorageTank": "Main Tank", "TankCapacity": 5000.0,
       "CurrentLevel": 1200.0, "UsageThisMonth": 800.0, "AverageMonthlyUsage": 1000.0
     }
   ],
   "Others": [
     {
-      "Id": 12, "Name": "Irrigation Pipes (50mm)", "Category": "Parts", "CategoryType": "Parts",
+      "Id": 12, "Name": "Irrigation Pipes (50mm)", "Category": "Parts", "CategoryType": 5,
       "Unit": "meters", "Quantity": 200.0, "MinimumQuantity": 50.0, "UnitCost": 45.0,
       "Supplier": "Zambia Hardware", "PurchaseDate": "2025-11-09T10:00:00",
-      "Location": "Parts Store", "Status": "InStock"
+      "Location": "Parts Store", "Status": 0
     }
   ]
 }

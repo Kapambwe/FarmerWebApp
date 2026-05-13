@@ -1,0 +1,354 @@
+{
+  "CostAnalyses": [
+    {
+      "FieldOrCropName": "North Field Maize",
+      "AreaInHectares": 12.5,
+      "CropType": "Maize",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "SeedsCost": 12500.0,
+      "FertilizerCost": 18800.0,
+      "PesticidesCost": 6400.0,
+      "LaborCost": 21450.0,
+      "FuelCost": 8900.0,
+      "EquipmentCost": 7200.0,
+      "IrrigationCost": 4100.0,
+      "OtherCosts": 3350.0,
+      "TotalCost": 82700.0
+    },
+    {
+      "FieldOrCropName": "East Block Soybeans",
+      "AreaInHectares": 9.2,
+      "CropType": "Soybeans",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "SeedsCost": 9800.0,
+      "FertilizerCost": 7600.0,
+      "PesticidesCost": 5900.0,
+      "LaborCost": 14350.0,
+      "FuelCost": 6100.0,
+      "EquipmentCost": 5200.0,
+      "IrrigationCost": 2800.0,
+      "OtherCosts": 2250.0,
+      "TotalCost": 54000.0
+    },
+    {
+      "FieldOrCropName": "Garden Tomato Plot",
+      "AreaInHectares": 4.6,
+      "CropType": "Tomatoes",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "SeedsCost": 7200.0,
+      "FertilizerCost": 11800.0,
+      "PesticidesCost": 8700.0,
+      "LaborCost": 19600.0,
+      "FuelCost": 2800.0,
+      "EquipmentCost": 3100.0,
+      "IrrigationCost": 6900.0,
+      "OtherCosts": 2650.0,
+      "TotalCost": 62750.0
+    },
+    {
+      "FieldOrCropName": "South Wheat Section",
+      "AreaInHectares": 15.0,
+      "CropType": "Wheat",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "SeedsCost": 13200.0,
+      "FertilizerCost": 16900.0,
+      "PesticidesCost": 5200.0,
+      "LaborCost": 17900.0,
+      "FuelCost": 9700.0,
+      "EquipmentCost": 8100.0,
+      "IrrigationCost": 3500.0,
+      "OtherCosts": 4400.0,
+      "TotalCost": 78900.0
+    },
+    {
+      "FieldOrCropName": "Dambo Onion Beds",
+      "AreaInHectares": 3.4,
+      "CropType": "Onions",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "SeedsCost": 5600.0,
+      "FertilizerCost": 8400.0,
+      "PesticidesCost": 4100.0,
+      "LaborCost": 12200.0,
+      "FuelCost": 1800.0,
+      "EquipmentCost": 2400.0,
+      "IrrigationCost": 4600.0,
+      "OtherCosts": 1700.0,
+      "TotalCost": 40800.0
+    }
+  ],
+  "RevenueAnalyses": [
+    {
+      "FieldOrCropName": "North Field Maize",
+      "AreaInHectares": 12.5,
+      "YieldInKg": 58200.0,
+      "PricePerKg": 5.1,
+      "CropType": "Maize",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "HarvestDate": "2026-04-15T00:00:00",
+      "PreviousYearRevenue": 255000.0
+    },
+    {
+      "FieldOrCropName": "East Block Soybeans",
+      "AreaInHectares": 9.2,
+      "YieldInKg": 24750.0,
+      "PricePerKg": 9.3,
+      "CropType": "Soybeans",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "HarvestDate": "2026-04-28T00:00:00",
+      "PreviousYearRevenue": 208500.0
+    },
+    {
+      "FieldOrCropName": "Garden Tomato Plot",
+      "AreaInHectares": 4.6,
+      "YieldInKg": 30100.0,
+      "PricePerKg": 7.4,
+      "CropType": "Tomatoes",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "HarvestDate": "2026-03-30T00:00:00",
+      "PreviousYearRevenue": 198200.0
+    },
+    {
+      "FieldOrCropName": "South Wheat Section",
+      "AreaInHectares": 15.0,
+      "YieldInKg": 48600.0,
+      "PricePerKg": 4.2,
+      "CropType": "Wheat",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "HarvestDate": "2026-05-02T00:00:00",
+      "PreviousYearRevenue": 214000.0
+    },
+    {
+      "FieldOrCropName": "Dambo Onion Beds",
+      "AreaInHectares": 3.4,
+      "YieldInKg": 17300.0,
+      "PricePerKg": 8.6,
+      "CropType": "Onions",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "HarvestDate": "2026-04-10T00:00:00",
+      "PreviousYearRevenue": 126500.0
+    }
+  ],
+  "ROIAnalyses": [
+    {
+      "FieldOrCropName": "North Field Maize",
+      "TotalInvestment": 82700.0,
+      "TotalRevenue": 296820.0,
+      "CropType": "Maize",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "ProjectedRevenue": 312500.0
+    },
+    {
+      "FieldOrCropName": "East Block Soybeans",
+      "TotalInvestment": 54000.0,
+      "TotalRevenue": 230175.0,
+      "CropType": "Soybeans",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "ProjectedRevenue": 241600.0
+    },
+    {
+      "FieldOrCropName": "Garden Tomato Plot",
+      "TotalInvestment": 62750.0,
+      "TotalRevenue": 222740.0,
+      "CropType": "Tomatoes",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "ProjectedRevenue": 245300.0
+    },
+    {
+      "FieldOrCropName": "South Wheat Section",
+      "TotalInvestment": 78900.0,
+      "TotalRevenue": 204120.0,
+      "CropType": "Wheat",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "ProjectedRevenue": 218000.0
+    },
+    {
+      "FieldOrCropName": "Dambo Onion Beds",
+      "TotalInvestment": 40800.0,
+      "TotalRevenue": 148780.0,
+      "CropType": "Onions",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "ProjectedRevenue": 159400.0
+    }
+  ],
+  "BreakEvenAnalyses": [
+    {
+      "FieldOrCropName": "North Field Maize",
+      "CropType": "Maize",
+      "FixedCosts": 29100.0,
+      "VariableCostPerUnit": 1.85,
+      "SellingPricePerUnit": 5.10,
+      "CurrentQuantity": 58200.0
+    },
+    {
+      "FieldOrCropName": "East Block Soybeans",
+      "CropType": "Soybeans",
+      "FixedCosts": 18200.0,
+      "VariableCostPerUnit": 2.20,
+      "SellingPricePerUnit": 9.30,
+      "CurrentQuantity": 24750.0
+    },
+    {
+      "FieldOrCropName": "Garden Tomato Plot",
+      "CropType": "Tomatoes",
+      "FixedCosts": 20100.0,
+      "VariableCostPerUnit": 3.10,
+      "SellingPricePerUnit": 7.40,
+      "CurrentQuantity": 30100.0
+    },
+    {
+      "FieldOrCropName": "South Wheat Section",
+      "CropType": "Wheat",
+      "FixedCosts": 26400.0,
+      "VariableCostPerUnit": 2.45,
+      "SellingPricePerUnit": 4.20,
+      "CurrentQuantity": 48600.0
+    },
+    {
+      "FieldOrCropName": "Dambo Onion Beds",
+      "CropType": "Onions",
+      "FixedCosts": 14600.0,
+      "VariableCostPerUnit": 2.80,
+      "SellingPricePerUnit": 8.60,
+      "CurrentQuantity": 17300.0
+    }
+  ],
+  "BudgetForecasts": [
+    {
+      "Category": "Seeds",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "PlannedBudget": 52000.0,
+      "ActualSpending": 48100.0
+    },
+    {
+      "Category": "Fertilizer",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "PlannedBudget": 70000.0,
+      "ActualSpending": 73500.0
+    },
+    {
+      "Category": "Crop Protection",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "PlannedBudget": 29000.0,
+      "ActualSpending": 24300.0
+    },
+    {
+      "Category": "Labor",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "PlannedBudget": 86000.0,
+      "ActualSpending": 85500.0
+    },
+    {
+      "Category": "Fuel and Transport",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "PlannedBudget": 36000.0,
+      "ActualSpending": 39400.0
+    },
+    {
+      "Category": "Irrigation",
+      "Season": "2026-Summer",
+      "Year": 2026,
+      "PlannedBudget": 25000.0,
+      "ActualSpending": 21900.0
+    }
+  ],
+  "Invoices": [
+    {
+      "InvoiceId": 101,
+      "InvoiceNumber": "INV-2026-001",
+      "InvoiceDate": "2026-04-18T00:00:00",
+      "DueDate": "2026-05-18T00:00:00",
+      "CustomerName": "Lusaka Grain Processors",
+      "CustomerAddress": "Plot 88, Great East Road, Lusaka",
+      "CustomerEmail": "procurement@lusakagrain.example",
+      "CustomerPhone": "+260971000111",
+      "LineItems": [
+        {
+          "Description": "Grade A maize delivery",
+          "Quantity": 18000.0,
+          "Unit": "kg",
+          "UnitPrice": 5.15
+        },
+        {
+          "Description": "Moisture handling surcharge",
+          "Quantity": 1.0,
+          "Unit": "lot",
+          "UnitPrice": 3200.0
+        }
+      ],
+      "TaxRate": 16.0,
+      "PaymentTerms": "Net 30",
+      "PaymentStatus": "Paid",
+      "Notes": "Final delivery from North Field harvest."
+    },
+    {
+      "InvoiceId": 102,
+      "InvoiceNumber": "INV-2026-002",
+      "InvoiceDate": "2026-04-30T00:00:00",
+      "DueDate": "2026-05-30T00:00:00",
+      "CustomerName": "Copperbelt Feeds Ltd",
+      "CustomerAddress": "23 Industrial Avenue, Ndola",
+      "CustomerEmail": "accounts@cbfeeds.example",
+      "CustomerPhone": "+260965222333",
+      "LineItems": [
+        {
+          "Description": "Soybean bulk consignment",
+          "Quantity": 12000.0,
+          "Unit": "kg",
+          "UnitPrice": 9.10
+        }
+      ],
+      "TaxRate": 16.0,
+      "PaymentTerms": "Net 21",
+      "PaymentStatus": "Pending",
+      "Notes": "Partial payment expected on confirmation of moisture test."
+    },
+    {
+      "InvoiceId": 103,
+      "InvoiceNumber": "INV-2026-003",
+      "InvoiceDate": "2026-05-05T00:00:00",
+      "DueDate": "2026-05-19T00:00:00",
+      "CustomerName": "FreshMart Produce Hub",
+      "CustomerAddress": "Kafue Road Produce Market, Lusaka",
+      "CustomerEmail": "buying@freshmart.example",
+      "CustomerPhone": "+260977444555",
+      "LineItems": [
+        {
+          "Description": "Crate-packed tomatoes",
+          "Quantity": 8400.0,
+          "Unit": "kg",
+          "UnitPrice": 7.55
+        },
+        {
+          "Description": "Premium onions",
+          "Quantity": 5000.0,
+          "Unit": "kg",
+          "UnitPrice": 8.80
+        }
+      ],
+      "TaxRate": 16.0,
+      "PaymentTerms": "Net 14",
+      "PaymentStatus": "Pending",
+      "Notes": "Produce supplied for retail promotion week."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
   "Harvests": [
-    { "Id": 1, "PoultryType": "Chicken", "HarvestDate": "2026-04-29T10:00:00", "Quantity": 100.0, "Unit": "birds", "Weight": 250.0, "QualityGrade": "A", "Status": "Processed", "HarvestCategory": "Meat" }
+    { "Id": 1, "PoultryId": 1, "PoultryType": "Chicken", "HarvestDate": "2026-04-29T10:00:00", "HarvestType": "Meat Birds", "Quantity": 100, "Unit": "birds", "Weight": 250.0, "QualityGrade": "A", "Status": "Processed", "HarvestCategory": "Meat", "PricePerUnit": 95.0, "TotalValue": 9500.0, "Notes": "Batch processed for weekend market supply.", "CreatedDate": "2026-04-29T12:00:00" }
   ]
 }

@@ -1,0 +1,123 @@
+{
+  "CommodityPrices": [
+    {
+      "Id": 1,
+      "CommodityCode": "MAIZE",
+      "CommodityName": "Maize",
+      "Category": 0,
+      "CurrentPrice": 3200.0,
+      "PreviousPrice": 3150.0,
+      "Unit": "MT",
+      "Currency": "ZMW",
+      "LastUpdated": "2026-05-08T10:00:00",
+      "Exchange": "Lusaka Commodities Exchange",
+      "HighPrice": 3275.0,
+      "LowPrice": 3090.0,
+      "OpenPrice": 3140.0,
+      "Volume": 180
+    },
+    {
+      "Id": 2,
+      "CommodityCode": "WHEAT",
+      "CommodityName": "Wheat",
+      "Category": 0,
+      "CurrentPrice": 4800.0,
+      "PreviousPrice": 4850.0,
+      "Unit": "MT",
+      "Currency": "ZMW",
+      "LastUpdated": "2026-05-08T10:00:00",
+      "Exchange": "Lusaka Commodities Exchange",
+      "HighPrice": 4920.0,
+      "LowPrice": 4760.0,
+      "OpenPrice": 4860.0,
+      "Volume": 95
+    },
+    {
+      "Id": 3,
+      "CommodityCode": "SOYA",
+      "CommodityName": "Soybeans",
+      "Category": 0,
+      "CurrentPrice": 4500.0,
+      "PreviousPrice": 4400.0,
+      "Unit": "MT",
+      "Currency": "ZMW",
+      "LastUpdated": "2026-05-08T10:00:00",
+      "Exchange": "Lusaka Commodities Exchange",
+      "HighPrice": 4560.0,
+      "LowPrice": 4380.0,
+      "OpenPrice": 4425.0,
+      "Volume": 120
+    }
+  ],
+  "Buyers": [
+    {
+      "Id": 1,
+      "Name": "National Mills Ltd",
+      "Type": 3,
+      "CompanyName": "National Mills Ltd",
+      "Email": "contracts@nationalmills.zm",
+      "Phone": "+260 211 123456",
+      "Address": "Plot 15, Kafue Road",
+      "City": "Lusaka",
+      "Province": "Lusaka",
+      "TotalPurchases": 78750.0,
+      "TotalTransactions": 1,
+      "LastPurchaseDate": "2026-05-04T10:00:00",
+      "PaymentTerms": "Net 14",
+      "PreferredProducts": "Maize, Wheat",
+      "IsActive": true,
+      "CreatedDate": "2026-04-15T09:00:00"
+    },
+    {
+      "Id": 2,
+      "Name": "Export Trading Company",
+      "Type": 4,
+      "CompanyName": "Export Trading Company",
+      "Email": "procurement@exporttrading.zm",
+      "Phone": "+260 211 234567",
+      "Address": "Warehouse 7, Export Processing Zone",
+      "City": "Ndola",
+      "Province": "Copperbelt",
+      "TotalPurchases": 0.0,
+      "TotalTransactions": 0,
+      "LastPurchaseDate": null,
+      "PaymentTerms": "Net 30",
+      "PreferredProducts": "Soybeans, Maize",
+      "IsActive": true,
+      "CreatedDate": "2026-04-22T11:30:00"
+    }
+  ],
+  "Sales": [
+    {
+      "Id": 1,
+      "SaleDate": "2026-05-04T10:00:00",
+      "ProductName": "Maize",
+      "ProductCategory": 0,
+      "Quantity": 25.0,
+      "Unit": "MT",
+      "UnitPrice": 3150.0,
+      "BuyerId": 1,
+      "BuyerName": "National Mills Ltd",
+      "BuyerContact": "+260 211 123456",
+      "DeliveryAddress": "Plot 15, Kafue Road, Lusaka",
+      "DeliveryDate": "2026-05-05T08:00:00",
+      "Status": 5,
+      "PaymentStatus": 2,
+      "AmountPaid": 78750.0,
+      "InvoiceNumber": "MKT-2026-001",
+      "Notes": "Full truckload delivered to milling plant.",
+      "CreatedDate": "2026-05-04T10:00:00"
+    }
+  ],
+  "PriceAlerts": [
+    {
+      "Id": 1,
+      "CommodityName": "Maize",
+      "AlertType": 0,
+      "TargetPrice": 3500.0,
+      "CurrentPrice": 3200.0,
+      "IsActive": true,
+      "CreatedDate": "2026-05-01T10:00:00"
+    }
+  ]
+}

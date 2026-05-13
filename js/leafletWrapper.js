@@ -9,8 +9,46 @@ let layerControl = null;
 let currentBaseLayer = 'osm';
 let miniMapControl = null;
 
-function createMap(elementId, lat, lng, zoom) {
-    map = L.map(elementId).setView([lat, lng], zoom);
+function hasActiveMap() {
+    return !!map;
+}
+
+function resetMapState() {
+    baseLayers = {};
+    overlays = {};
+    compareControls = {};
+    layerControl = null;
+    currentBaseLayer = 'osm';
+    miniMapControl = null;
+}
+
+async function waitForElement(elementId, maxAttempts = 20, delayMs = 50) {
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            return element;
+        }
+
+        await new Promise(resolve => window.setTimeout(resolve, delayMs));
+    }
+
+    return null;
+}
+
+async function createMap(elementId, lat, lng, zoom) {
+    const element = await waitForElement(elementId);
+    if (!element) {
+        console.warn(`Leaflet createMap skipped: container '${elementId}' was not found.`);
+        return false;
+    }
+
+    if (map) {
+        map.remove();
+        map = null;
+        resetMapState();
+    }
+
+    map = L.map(element).setView([lat, lng], zoom);
 
     // Create base layers
     baseLayers.osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -24,11 +62,13 @@ function createMap(elementId, lat, lng, zoom) {
     // Add layer control (base + overlays)
     layerControl = L.control.layers(baseLayers, overlays).addTo(map);
 
-    return map;
+    return true;
 }
 
 // Switch between map types
 function setMapType(mapType) {
+    if (!hasActiveMap()) return;
+
     if (baseLayers[currentBaseLayer]) {
         map.removeLayer(baseLayers[currentBaseLayer]);
     }
@@ -41,6 +81,8 @@ function setMapType(mapType) {
 
 // Add a marker
 function addMarker(lat, lng, popupText) {
+    if (!hasActiveMap()) return null;
+
     const marker = L.marker([lat, lng]).addTo(map); // Uses global `map`
     if (popupText) marker.bindPopup(popupText).openPopup();
     return marker;
@@ -48,6 +90,8 @@ function addMarker(lat, lng, popupText) {
 
 // Add a circle (with customizable options)
 function addCircle(lat, lng, radius, options = {}) {
+    if (!hasActiveMap()) return null;
+
     const circle = L.circle([lat, lng], {
         radius: radius,
         color: options.color || 'red',
@@ -61,6 +105,8 @@ function addCircle(lat, lng, radius, options = {}) {
 
 // Add a polygon (accepts array of LatLng points)
 function addPolygon(latLngs, options = {}) {
+    if (!hasActiveMap()) return null;
+
     const polygon = L.polygon(latLngs, {
         color: options.color || 'blue',
         fillColor: options.fillColor || options.color || 'blue',
@@ -73,6 +119,8 @@ function addPolygon(latLngs, options = {}) {
 
 // Add a polyline (accepts array of LatLng points)
 function addPolyline(latLngs, options = {}) {
+    if (!hasActiveMap()) return null;
+
     const polyline = L.polyline(latLngs, {
         color: options.color || 'green',
         weight: options.weight || 3,
@@ -83,6 +131,8 @@ function addPolyline(latLngs, options = {}) {
 
 // Add a structure with customizable color and border width
 function addStructure(latLngs, color = 'blue', borderWidth = 2, options = {}) {
+    if (!hasActiveMap()) return null;
+
     const structure = L.polygon(latLngs, {
         color: color,
         weight: borderWidth,
@@ -97,6 +147,8 @@ function addStructure(latLngs, color = 'blue', borderWidth = 2, options = {}) {
 
 // Add a rectangle structure with customizable color and border width
 function addRectangleStructure(bounds, color = 'blue', borderWidth = 2, options = {}) {
+    if (!hasActiveMap()) return null;
+
     const rectangle = L.rectangle(bounds, {
         color: color,
         weight: borderWidth,
@@ -111,6 +163,8 @@ function addRectangleStructure(bounds, color = 'blue', borderWidth = 2, options 
 
 // Render GeoJSON data
 function addGeoJson(geoJsonData, options = {}) {
+    if (!hasActiveMap()) return null;
+
     //const geoJsonLayer = L.geoJSON(geoJsonData, {
     //    style: options.style || { color: 'purple' },
     //    onEachFeature: options.onEachFeature,
@@ -126,6 +180,8 @@ function addGeoJson(geoJsonData, options = {}) {
 }
 
 function addGeoJsonWithPopup(geoJsonData, popupTemplate) {
+    if (!hasActiveMap()) return null;
+
     return L.geoJSON(geoJsonData, {
         onEachFeature: function (feature, layer) {
             if (feature.properties && popupTemplate) {
@@ -141,11 +197,15 @@ function addGeoJsonWithPopup(geoJsonData, popupTemplate) {
 
 // Remove a layer (marker, circle, polygon, etc.)
 function removeLayer(layer) {
+    if (!hasActiveMap() || !layer) return;
+
     map.removeLayer(layer);
 }
 
 // Clear all layers except base tiles
 function clearMap() {
+    if (!hasActiveMap()) return;
+
     map.eachLayer(layer => {
         if (!layer._url && !baseLayers.osm && !baseLayers.satellite) {
             map.removeLayer(layer);
@@ -159,6 +219,8 @@ let drawEnabled;
 let drawnItems = L.featureGroup();
 
 function initDrawTools(lineColor = '#3388ff', fillColor = '#3388ff', lineWeight = 2) {
+    if (!hasActiveMap()) return;
+
     // Clear existing drawn items if any
     if (drawnItems) {
         map.removeLayer(drawnItems);
@@ -230,6 +292,8 @@ function initDrawTools(lineColor = '#3388ff', fillColor = '#3388ff', lineWeight 
 
 // Advanced configuration function
 function initDrawToolsAdvanced(options) {
+    if (!hasActiveMap()) return;
+
     const defaultOptions = {
         lineColor: '#3388ff',
         fillColor: '#3388ff',
@@ -327,12 +391,14 @@ function initDrawToolsAdvanced(options) {
 }
 
 function updateDrawToolsStyle(lineColor, fillColor, lineWeight, fillOpacity = 0.2) {
+    if (!hasActiveMap()) return;
+
     // Reinitialize with new styles
     initDrawTools(lineColor, fillColor, lineWeight);
 }
 
 function enableDrawing() {
-    if (!drawControl) return;
+    if (!hasActiveMap() || !drawControl) return;
     if (!drawEnabled) {
         drawControl.addTo(map);
         drawEnabled = true;
@@ -340,7 +406,7 @@ function enableDrawing() {
 }
 
 function disableDrawing() {
-    if (!drawControl) return;
+    if (!hasActiveMap() || !drawControl) return;
     if (drawEnabled) {
         drawControl.remove();
         drawEnabled = false;
@@ -348,15 +414,21 @@ function disableDrawing() {
 }
 
 function clearAllDrawn() {
+    if (!drawnItems) return;
+
     drawnItems.clearLayers();
 }
 
 function getDrawnGeoJson() {
+    if (!drawnItems) return JSON.stringify(null);
+
     return JSON.stringify(drawnItems.toGeoJSON());
 }
 
 // Tile overlay management (NDVI etc.)
 function addTileLayer(key, urlTemplate, options = {}) {
+    if (!hasActiveMap()) return null;
+
     if (!overlays) overlays = {};
     if (overlays[key]) {
         if (map.hasLayer(overlays[key])) map.removeLayer(overlays[key]);
@@ -370,6 +442,8 @@ function addTileLayer(key, urlTemplate, options = {}) {
 }
 
 function removeTileLayer(key) {
+    if (!hasActiveMap()) return;
+
     if (overlays && overlays[key]) {
         if (map.hasLayer(overlays[key])) map.removeLayer(overlays[key]);
         delete overlays[key];
@@ -378,6 +452,8 @@ function removeTileLayer(key) {
 }
 
 function setTileLayerVisibility(key, visible) {
+    if (!hasActiveMap()) return;
+
     if (!overlays || !overlays[key]) return;
     const layer = overlays[key];
     if (visible) {
@@ -389,6 +465,8 @@ function setTileLayerVisibility(key, visible) {
 
 // Compare layers: add two tile layers and provide an opacity slider to compare
 function addCompareLayers(keyA, urlA, keyB, urlB, options = {}) {
+    if (!hasActiveMap()) return null;
+
     if (!overlays) overlays = {};
 
     // Remove existing layers with same keys
@@ -453,6 +531,8 @@ function addCompareLayers(keyA, urlA, keyB, urlB, options = {}) {
 }
 
 function removeCompareLayers(keyA, keyB) {
+    if (!hasActiveMap()) return;
+
     if (overlays && overlays[keyA]) {
         if (map.hasLayer(overlays[keyA])) map.removeLayer(overlays[keyA]);
         delete overlays[keyA];
@@ -470,12 +550,16 @@ function removeCompareLayers(keyA, keyB) {
 }
 
 function setCompareOpacity(key, opacity) {
+    if (!hasActiveMap()) return;
+
     if (overlays && overlays[key]) {
         overlays[key].setOpacity(opacity);
     }
 }
 
 function addDrawnFromGeoJson(geoJson) {
+    if (!hasActiveMap() || !drawnItems) return;
+
     L.geoJSON(geoJson, {
         onEachFeature: function (feature, layer) {
             drawnItems.addLayer(layer);
@@ -622,6 +706,8 @@ async function samplePolygonMeanNdvi(polygonCoords, tileTemplate, zoom, options 
 
 // Add MiniMap control
 function addMiniMap(miniMapLayerUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', options = {}) {
+    if (!hasActiveMap()) return null;
+
     // Remove existing miniMap if any
     if (miniMapControl) {
         map.removeControl(miniMapControl);
@@ -658,6 +744,8 @@ function addMiniMap(miniMapLayerUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x
 
 // Remove MiniMap control
 function removeMiniMap() {
+    if (!hasActiveMap()) return;
+
     if (miniMapControl) {
         map.removeControl(miniMapControl);
         miniMapControl = null;
@@ -666,12 +754,16 @@ function removeMiniMap() {
 
 // Toggle MiniMap visibility
 function toggleMiniMap() {
+    if (!hasActiveMap()) return;
+
     if (miniMapControl) {
         miniMapControl._toggleDisplay();
     }
 }
 // Keep the setupMapClick function
 function setupMapClick(dotNetReference) {
+    if (!hasActiveMap()) return;
+
     map.on('click', function (e) {
         const lat = e.latlng.lat;
         const lng = e.latlng.lng;

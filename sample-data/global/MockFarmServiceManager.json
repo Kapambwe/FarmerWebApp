@@ -144,6 +144,49 @@
         { "CropAssetId": 6, "QuantityProduced": 9600,  "UnitOfMeasure": "kg", "Grade": "A", "EstimatedRevenue": 144000.0, "HarvestMethod": "Manual", "EquipmentUsed": "Hand Picking", "NumberOfPeople": 8, "HarvestDuration": 4, "YieldPerAcre": 3200, "DateRecorded": "2025-03-28T00:00:00", "EnteredBy": "Kapambwe Mutale", "FieldName": "West Nursery", "CropName": "Tomato Greenhouse", "Notes": "First pick — premium grade" },
         { "CropAssetId": 6, "QuantityProduced": 7200,  "UnitOfMeasure": "kg", "Grade": "B", "EstimatedRevenue": 86400.0,  "HarvestMethod": "Manual", "EquipmentUsed": "Hand Picking", "NumberOfPeople": 8, "HarvestDuration": 4, "YieldPerAcre": 2400, "DateRecorded": "2025-04-12T00:00:00", "EnteredBy": "Kapambwe Mutale", "FieldName": "West Nursery", "CropName": "Tomato Greenhouse", "Notes": "Second pick" }
       ]
+    },
+    {
+      "AssetId": 7, "AssetNumber": "ZM-CROP-007", "AssetName": "Cabbage Trial Block F — Riverbank Block",
+      "CropType": "Cabbage", "FieldId": 5, "FieldName": "Riverbank Block",
+      "PlantDate": "2025-02-14T00:00:00", "HarvestDate": "2025-06-25T00:00:00",
+      "PlantCount": 18500, "ExpectedHarvest": 16200,
+      "PlantingMethod": "Transplant on Raised Beds", "SeedType": "Pruktor F1",
+      "SeedCompany": "Seed Co Zambia", "SeedOrigin": "Zambia",
+      "SeedStartDateTime": "2025-01-24T00:00:00",
+      "PlantingInstruction": "Transplant at 4-week stage, 45cm in-row spacing, maintain even irrigation after establishment",
+      "MarketValue": 145800.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "90 kg/ha", "Phosphorus": "40 kg/ha", "Potassium": "70 kg/ha", "PH": "6.1", "DateRecorded": "2025-02-14T00:00:00", "EnteredBy": "Bwalya Tembo" },
+        { "Nitrogen": "45 kg/ha", "Phosphorus": "0", "Potassium": "35 kg/ha", "PH": "6.2", "DateRecorded": "2025-03-26T00:00:00", "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [
+        { "TreatmentType": "Pesticide", "ProductUsed": "Karate Zeon", "AmountApplied": "0.3 L/ha", "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-03-19T00:00:00", "EnteredBy": "Kapambwe Mutale", "Comment": "Diamondback moth pressure controlled early" },
+        { "TreatmentType": "Fungicide", "ProductUsed": "Mancozeb 80 WP", "AmountApplied": "2.0 kg/ha", "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-04-09T00:00:00", "EnteredBy": "Kapambwe Mutale", "Comment": "Preventive programme after prolonged humidity" }
+      ],
+      "HarvestViewModels": [
+        { "CropAssetId": 7, "QuantityProduced": 15420, "UnitOfMeasure": "heads", "Grade": "A", "EstimatedRevenue": 138780.0, "HarvestMethod": "Manual", "EquipmentUsed": "Crates + Field Knives", "NumberOfPeople": 10, "HarvestDuration": 6, "YieldPerAcre": 5400, "DateRecorded": "2025-06-22T00:00:00", "EnteredBy": "Kapambwe Mutale", "FieldName": "Riverbank Block", "CropName": "Cabbage Trial Block F", "Notes": "Good head uniformity despite late heatwave" }
+      ]
+    },
+    {
+      "AssetId": 8, "AssetNumber": "ZM-CROP-008", "AssetName": "Sunflower Block G — Demo Plot Alpha",
+      "CropType": "Sunflower", "FieldId": 6, "FieldName": "Demo Plot Alpha",
+      "PlantDate": "2025-01-18T00:00:00", "HarvestDate": "2025-05-30T00:00:00",
+      "PlantCount": 26500, "ExpectedHarvest": 2900,
+      "PlantingMethod": "Precision Planter", "SeedType": "Agsun 8251",
+      "SeedCompany": "Pannar Seed Zambia", "SeedOrigin": "South Africa",
+      "SeedStartDateTime": "2025-01-15T00:00:00",
+      "PlantingInstruction": "Plant at 60cm row spacing and 25cm plant spacing; monitor birds from flowering stage",
+      "MarketValue": 130500.0, "CurrencySymbol": "ZMW",
+      "NutrientsViewModels": [
+        { "Nitrogen": "55 kg/ha", "Phosphorus": "26 kg/ha", "Potassium": "34 kg/ha", "PH": "5.9", "DateRecorded": "2025-01-18T00:00:00", "EnteredBy": "Bwalya Tembo" }
+      ],
+      "CropTreatmentViewModels": [
+        { "TreatmentType": "Herbicide", "ProductUsed": "Dual Gold 960 EC", "AmountApplied": "1.2 L/ha", "TreatmentApplication": "Pre-emergence", "DateRecorded": "2025-01-19T00:00:00", "EnteredBy": "Kapambwe Mutale" },
+        { "TreatmentType": "Pesticide", "ProductUsed": "Lambda-cyhalothrin", "AmountApplied": "0.25 L/ha", "TreatmentApplication": "Foliar spray", "DateRecorded": "2025-03-11T00:00:00", "EnteredBy": "Kapambwe Mutale", "Comment": "Cutworm flare-up around south edge controlled" }
+      ],
+      "HarvestViewModels": [
+        { "CropAssetId": 8, "QuantityProduced": 2760, "UnitOfMeasure": "kg", "Grade": "A", "EstimatedRevenue": 124200.0, "HarvestMethod": "Mechanical", "EquipmentUsed": "Plot Thresher / Sheller", "NumberOfPeople": 5, "HarvestDuration": 10, "YieldPerAcre": 980, "DateRecorded": "2025-05-28T00:00:00", "EnteredBy": "Bwalya Tembo", "FieldName": "Demo Plot Alpha", "CropName": "Sunflower Block G", "Notes": "Demonstration crop with lower fertility baseline" }
+      ]
     }
   ],
   "Equipments": [

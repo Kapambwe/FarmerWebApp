@@ -1,0 +1,215 @@
+{
+  "WasteStreams": [
+    {
+      "Id": 1,
+      "Name": "Crop Residue - Maize Stalks",
+      "Type": 0,
+      "QuantityKg": 1500,
+      "RecordedDate": "2026-05-04T10:00:00",
+      "Source": "Field A",
+      "DisposalMethod": 0,
+      "WorkflowStage": "Collected for composting",
+      "NextProcessReference": "Feeds compost batch CB-2026-001",
+      "Notes": "Post-harvest maize stalks shredded and moved to compost yard."
+    },
+    {
+      "Id": 2,
+      "Name": "Cattle Manure",
+      "Type": 1,
+      "QuantityKg": 800,
+      "RecordedDate": "2026-05-06T10:00:00",
+      "Source": "Cattle Barn",
+      "DisposalMethod": 1,
+      "WorkflowStage": "Sent to anaerobic digester",
+      "NextProcessReference": "Feeds biogas run BG-2026-001",
+      "Notes": "Daily manure collection directed to the biogas system."
+    },
+    {
+      "Id": 3,
+      "Name": "Vegetable Packhouse Trimmings",
+      "Type": 2,
+      "QuantityKg": 420,
+      "RecordedDate": "2026-05-07T10:00:00",
+      "Source": "Packhouse",
+      "DisposalMethod": 0,
+      "WorkflowStage": "Blended into compost feedstock",
+      "NextProcessReference": "Feeds compost batch CB-2026-001",
+      "Notes": "Leafy and vegetable offcuts mixed with dry residue for carbon balance."
+    },
+    {
+      "Id": 4,
+      "Name": "Used Produce Packaging",
+      "Type": 4,
+      "QuantityKg": 160,
+      "RecordedDate": "2026-05-08T10:00:00",
+      "Source": "Market Dispatch Store",
+      "DisposalMethod": 3,
+      "WorkflowStage": "Segregated for third-party recycling",
+      "NextProcessReference": "Collected by recycler on route REC-2026-014",
+      "Notes": "Clean sacks and cartons baled for recycling partner pickup."
+    }
+  ],
+  "CompostBatches": [
+    {
+      "Id": 1,
+      "BatchNumber": "CB-2026-001",
+      "StartDate": "2026-05-05T10:00:00",
+      "CompletionDate": "2026-06-20T10:00:00",
+      "Status": 2,
+      "InputWeightKg": 1920,
+      "OutputWeightKg": 760,
+      "TemperatureCelsius": 28,
+      "MoisturePercent": 42,
+      "Location": "Compost Yard North",
+      "SourceWasteStreamNames": "Waste #1 maize stalks + Waste #3 packhouse trimmings",
+      "NextUse": "Applied to Field-A and bagged for sale as premium compost",
+      "NextOutputReference": "NC-2026-001 / BP-2026-001",
+      "Inputs": [
+        { "Id": 1, "WasteStreamId": 1, "Material": "Crop Residue", "WeightKg": 1500, "Source": "Field A" },
+        { "Id": 2, "WasteStreamId": 3, "Material": "Vegetable Trimmings", "WeightKg": 420, "Source": "Packhouse" }
+      ],
+      "Notes": "Primary compost batch completed and split between field application and market-ready compost."
+    },
+    {
+      "Id": 2,
+      "BatchNumber": "CB-2026-002",
+      "StartDate": "2026-06-01T10:00:00",
+      "CompletionDate": null,
+      "Status": 1,
+      "InputWeightKg": 980,
+      "OutputWeightKg": 0,
+      "TemperatureCelsius": 54,
+      "MoisturePercent": 51,
+      "Location": "Compost Yard South",
+      "SourceWasteStreamNames": "Fresh crop residue and manure blend",
+      "NextUse": "Curing for July vegetable beds",
+      "NextOutputReference": "Planned NC-2026-003",
+      "Inputs": [
+        { "Id": 3, "Material": "Crop Residue", "WeightKg": 620, "Source": "Field B" },
+        { "Id": 4, "Material": "Animal Manure", "WeightKg": 360, "Source": "Goat Unit" }
+      ],
+      "Notes": "Active curing batch for the next planting cycle."
+    }
+  ],
+  "BiogasProductions": [
+    {
+      "Id": 1,
+      "RecordDate": "2026-05-08T10:00:00",
+      "DigesterId": "Digester-01",
+      "ManureInputKg": 100,
+      "CropResidueInputKg": 50,
+      "BiogasOutputCubicMeters": 12,
+      "EnergyGeneratedKwh": 24,
+      "TemperatureCelsius": 35,
+      "PH": 7.2,
+      "FeedstockSources": "Waste #2 cattle manure plus chopped residue from barn cleaning",
+      "EnergyRecordReference": "RE-2026-002",
+      "DigestateApplicationReference": "NC-2026-002",
+      "Notes": "Optimal performance with slurry routed to nutrient recovery."
+    }
+  ],
+  "WaterRecyclings": [
+    {
+      "Id": 1,
+      "RecordDate": "2026-05-08T10:00:00",
+      "Source": 0,
+      "VolumeCollectedLiters": 5000,
+      "VolumeUsedLiters": 4500,
+      "UseType": 0,
+      "Quality": 0,
+      "Location": "Rainwater Harvesting Tank 1",
+      "ReuseTarget": "Drip irrigation for vegetable tunnel block",
+      "Notes": "Heavy rainfall last week captured for direct reuse."
+    }
+  ],
+  "RenewableEnergies": [
+    {
+      "Id": 1,
+      "RecordDate": "2026-05-08T10:00:00",
+      "Type": 0,
+      "SystemId": "Solar-Array-01",
+      "EnergyProducedKwh": 45,
+      "EnergyConsumedKwh": 60,
+      "EnergyExportedKwh": 0,
+      "CostSavings": 18,
+      "CarbonOffsetKg": 35,
+      "SourceProductionReference": "Independent solar generation",
+      "Notes": "Daytime irrigation and packhouse cooling support."
+    },
+    {
+      "Id": 2,
+      "RecordDate": "2026-05-08T10:00:00",
+      "Type": 1,
+      "SystemId": "Biogas-Generator-01",
+      "EnergyProducedKwh": 24,
+      "EnergyConsumedKwh": 22,
+      "EnergyExportedKwh": 0,
+      "CostSavings": 11,
+      "CarbonOffsetKg": 18,
+      "SourceProductionReference": "Powered by BG-2026-001 digester output",
+      "Notes": "Biogas converted to electricity for evening lighting and pumps."
+    }
+  ],
+  "NutrientCyclings": [
+    {
+      "Id": 1,
+      "RecordDate": "2026-06-22T10:00:00",
+      "FieldId": "Field-A",
+      "Source": 0,
+      "NitrogenKg": 12,
+      "PhosphorusKg": 8,
+      "PotassiumKg": 10,
+      "OrganicMatterKg": 420,
+      "ApplicationMethod": "Broadcast and incorporated",
+      "SourceBatchNumber": "CB-2026-001",
+      "SourceWasteStreamNames": "Waste #1 maize stalks + Waste #3 packhouse trimmings",
+      "Notes": "Compost returned to maize ground before winter beans."
+    },
+    {
+      "Id": 2,
+      "RecordDate": "2026-05-10T10:00:00",
+      "FieldId": "Vegetable Block C",
+      "Source": 4,
+      "NitrogenKg": 6,
+      "PhosphorusKg": 3,
+      "PotassiumKg": 4,
+      "OrganicMatterKg": 210,
+      "ApplicationMethod": "Fertigation through slurry injector",
+      "SourceBatchNumber": "BG-2026-001 digestate",
+      "SourceWasteStreamNames": "Waste #2 cattle manure",
+      "Notes": "Digestate from the biogas run applied as recovered nutrient input."
+    }
+  ],
+  "ByProducts": [
+    {
+      "Id": 1,
+      "Name": "Premium Organic Compost",
+      "Type": 0,
+      "QuantityAvailableKg": 340,
+      "PricePerKg": 0.5,
+      "Description": "Aged compost screened and bagged for external sale.",
+      "Status": 0,
+      "ListedDate": "2026-06-23T10:00:00",
+      "Location": "Farm Office",
+      "ContactInfo": "contact@farm.com",
+      "SourceBatchNumber": "CB-2026-001",
+      "SourceWasteStreamNames": "Waste #1 maize stalks + Waste #3 packhouse trimmings",
+      "IntendedUse": "Sale to neighboring horticulture farmers"
+    },
+    {
+      "Id": 2,
+      "Name": "Biogas Slurry Concentrate",
+      "Type": 3,
+      "QuantityAvailableKg": 120,
+      "PricePerKg": 0.35,
+      "Description": "Nutrient-rich digestate concentrate suitable for vegetable plots.",
+      "Status": 1,
+      "ListedDate": "2026-05-11T10:00:00",
+      "Location": "Digester Shed",
+      "ContactInfo": "contact@farm.com",
+      "SourceBatchNumber": "BG-2026-001",
+      "SourceWasteStreamNames": "Waste #2 cattle manure",
+      "IntendedUse": "Reserved for on-farm nutrient cycling and pilot sales"
+    }
+  ]
+}
