@@ -2,6 +2,14 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+@font-face {
+    font-family: "Material Symbols";
+    src: url("../_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
 h1:focus {
     outline: none;
 }
