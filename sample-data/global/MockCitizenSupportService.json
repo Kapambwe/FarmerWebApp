@@ -1,0 +1,268 @@
+{
+  "StarterPacks": [
+    {
+      "StarterPackId": 1,
+      "ContractId": 1,
+      "FarmerName": "Chilanga Cooperative",
+      "Commodity": "Soya Beans",
+      "PackType": "Export Readiness Pack",
+      "Status": "UnderReview",
+      "ReadinessScore": 78,
+      "TargetQuantity": 8000,
+      "CurrentQuantity": 6200,
+      "QuantityUnit": "tonnes",
+      "TargetLabel": "2025/2026 soya bean supply target",
+      "Ministry": "Ministry of Agriculture",
+      "Agency": "Export Support Unit",
+      "Summary": "Cooperative has land, production history, and processing access, but still needs final certification documents.",
+      "CreatedDate": "2026-05-20T08:00:00Z",
+      "SubmittedDate": "2026-05-28T10:30:00Z",
+      "ReviewedDate": null,
+      "Requirements": [
+        { "RequirementId": 1, "Name": "Proof of land access", "Description": "Provide land tenure or lease evidence.", "EvidenceType": "Document", "IsMandatory": true, "IsCompleted": true, "CompletedDate": "2026-05-20T08:00:00Z" },
+        { "RequirementId": 2, "Name": "Production forecast", "Description": "Submit 2025/2026 production forecast.", "EvidenceType": "Form", "IsMandatory": true, "IsCompleted": true, "CompletedDate": "2026-05-21T08:00:00Z" },
+        { "RequirementId": 3, "Name": "Quality certification", "Description": "Attach quality and processing certification.", "EvidenceType": "Certificate", "IsMandatory": true, "IsCompleted": false, "DueDate": "2026-06-20T00:00:00Z" }
+      ],
+      "Notes": [ "Local processor already identified.", "Waiting on final certification upload." ]
+    },
+    {
+      "StarterPackId": 2,
+      "ContractId": 2,
+      "FarmerName": "Mwandi Livestock Hub",
+      "Commodity": "Goats",
+      "PackType": "Livestock Export Pack",
+      "Status": "NeedsFollowUp",
+      "ReadinessScore": 62,
+      "TargetQuantity": 10000,
+      "CurrentQuantity": 6100,
+      "QuantityUnit": "head",
+      "TargetLabel": "2025/2026 goat export target",
+      "Ministry": "Ministry of Agriculture",
+      "Agency": "Veterinary Services",
+      "Summary": "Goat export pack requires veterinary clearance and logistics confirmation.",
+      "CreatedDate": "2026-05-24T09:00:00Z",
+      "SubmittedDate": "2026-06-01T11:15:00Z",
+      "ReviewedDate": null,
+      "Requirements": [
+        { "RequirementId": 1, "Name": "Vaccination records", "Description": "Attach herd vaccination records.", "EvidenceType": "Document", "IsMandatory": true, "IsCompleted": true, "CompletedDate": "2026-05-24T09:00:00Z" },
+        { "RequirementId": 2, "Name": "Quarantine plan", "Description": "Provide quarantine and transport plan.", "EvidenceType": "Plan", "IsMandatory": true, "IsCompleted": false, "DueDate": "2026-06-18T00:00:00Z" },
+        { "RequirementId": 3, "Name": "Halal certification", "Description": "Attach approved certification details.", "EvidenceType": "Certificate", "IsMandatory": true, "IsCompleted": false, "DueDate": "2026-06-18T00:00:00Z" }
+      ],
+      "Notes": [ "High value export case.", "Requires officer escalation if no update by due date." ]
+    }
+  ],
+  "SupportTasks": [
+    {
+      "SupportTaskId": 1,
+      "ContractId": 1,
+      "StarterPackId": 1,
+      "Title": "Request final certification upload",
+      "Description": "Follow up with cooperative on missing quality certification.",
+      "Status": "WaitingOnFarmer",
+      "Priority": "High",
+      "AssignedTo": "Officer A",
+      "OwnerApp": "ExtensionApp",
+      "Category": "Missing Requirement",
+      "CreatedDate": "2026-05-28T10:30:00Z",
+      "DueDate": "2026-06-18T00:00:00Z",
+      "Notes": "Blocking approval until certificate is attached."
+    },
+    {
+      "SupportTaskId": 2,
+      "ContractId": 2,
+      "StarterPackId": 2,
+      "Title": "Confirm veterinary quarantine plan",
+      "Description": "Review quarantine and transport arrangements.",
+      "Status": "Open",
+      "Priority": "Critical",
+      "AssignedTo": "Veterinary Officer",
+      "OwnerApp": "VeterinaryServices",
+      "Category": "Officer Review",
+      "CreatedDate": "2026-06-01T11:15:00Z",
+      "DueDate": "2026-06-18T00:00:00Z",
+      "Notes": "Escalate if not reviewed by next field visit."
+    },
+    {
+      "SupportTaskId": 3,
+      "ContractId": 1,
+      "StarterPackId": 1,
+      "Title": "Review market placement options",
+      "Description": "Check target market demand for soya meal surplus.",
+      "Status": "InProgress",
+      "Priority": "Medium",
+      "AssignedTo": "Market Analyst",
+      "OwnerApp": "MinistryFinance",
+      "Category": "Market Review",
+      "CreatedDate": "2026-06-05T08:00:00Z",
+      "DueDate": "2026-06-20T00:00:00Z",
+      "Notes": "Tie opportunity note to East African demand gap."
+    }
+  ],
+  "Bottlenecks": [
+    {
+      "BottleneckId": 1,
+      "ContractId": 1,
+      "StarterPackId": 1,
+      "Commodity": "Soya Beans",
+      "Category": "Certification",
+      "Title": "Quality certification pending",
+      "Description": "Final certification has not been uploaded.",
+      "ImpactLevel": "High",
+      "Status": "Open",
+      "Owner": "Extension Officer",
+      "RaisedDate": "2026-05-28T10:30:00Z",
+      "ExpectedResolutionDate": "2026-06-18T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T08:00:00Z"
+    },
+    {
+      "BottleneckId": 2,
+      "ContractId": 2,
+      "StarterPackId": 2,
+      "Commodity": "Goats",
+      "Category": "Transport",
+      "Title": "Transport and quarantine gap",
+      "Description": "Transport plan and quarantine facilities are not yet confirmed.",
+      "ImpactLevel": "High",
+      "Status": "Mitigating",
+      "Owner": "Veterinary Services",
+      "RaisedDate": "2026-06-01T11:15:00Z",
+      "ExpectedResolutionDate": "2026-06-18T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T09:00:00Z"
+    },
+    {
+      "BottleneckId": 3,
+      "ContractId": null,
+      "StarterPackId": null,
+      "Commodity": "Maize",
+      "Category": "Storage",
+      "Title": "Regional storage constraint",
+      "Description": "Storage capacity is constraining seasonal maize placement.",
+      "ImpactLevel": "Medium",
+      "Status": "Open",
+      "Owner": "Commercial Desk",
+      "RaisedDate": "2026-05-18T08:00:00Z",
+      "ExpectedResolutionDate": "2026-06-30T00:00:00Z",
+      "LastUpdatedDate": "2026-06-01T08:00:00Z"
+    }
+  ],
+  "Escalations": [
+    {
+      "EscalationRecordId": 1,
+      "ContractId": 2,
+      "StarterPackId": 2,
+      "BottleneckId": 2,
+      "CaseReference": "ESC-2026-0001",
+      "Title": "Delay in livestock export readiness",
+      "Reason": "Requirements are incomplete and approval is delayed.",
+      "RaisedBy": "District Officer",
+      "Owner": "Veterinary Services",
+      "Status": "Open",
+      "RaisedDate": "2026-06-05T09:00:00Z",
+      "DueDate": "2026-06-18T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T09:00:00Z"
+    }
+  ],
+  "MarketOpportunities": [
+    {
+      "MarketOpportunityId": 1,
+      "Commodity": "Soya Beans",
+      "CommodityType": "Crop",
+      "Status": "ExportReady",
+      "Season": "2025/2026",
+      "ProductionEstimateTonnes": 450000,
+      "DomesticRequirementTonnes": 300000,
+      "ProcessingOutputTonnes": 300000,
+      "ExportableSurplusTonnes": 80000,
+      "RegionalDemandTonnes": 370000,
+      "RegionalSupplyTonnes": 240000,
+      "RegionalDemandGapTonnes": 130000,
+      "PrimaryTargetMarket": "East Africa",
+      "Summary": "Zambia's soya bean sector can place export surplus into a structurally undersupplied regional market.",
+      "TargetMarkets": [
+        { "Country": "Tanzania", "AnnualDemandTonnes": 140000, "SupplyGapTonnes": 50000, "Commentary": "Strong demand for meal and protein inputs." },
+        { "Country": "Kenya", "AnnualDemandTonnes": 150000, "SupplyGapTonnes": 50000, "Commentary": "Processors continue to require imported meal." },
+        { "Country": "Rwanda", "AnnualDemandTonnes": 80000, "SupplyGapTonnes": 30000, "Commentary": "Smaller market but consistent shortfall." }
+      ],
+      "Recommendations": [
+        "Prioritise regional trade routing through East African buyers.",
+        "Link cooperative approval to processing and quality certification.",
+        "Track seasonal production and transport costs before shipment."
+      ]
+    },
+    {
+      "MarketOpportunityId": 2,
+      "Commodity": "Beef",
+      "CommodityType": "Livestock",
+      "Status": "Confirmed",
+      "Season": "2025/2026",
+      "ProductionEstimateTonnes": 185000,
+      "DomesticRequirementTonnes": 150000,
+      "ProcessingOutputTonnes": 150000,
+      "ExportableSurplusTonnes": 25000,
+      "RegionalDemandTonnes": 95000,
+      "RegionalSupplyTonnes": 70000,
+      "RegionalDemandGapTonnes": 25000,
+      "PrimaryTargetMarket": "Southern Africa",
+      "Summary": "Beef export capacity exists where veterinary certification and cold-chain logistics are already in place.",
+      "TargetMarkets": [
+        { "Country": "Botswana", "AnnualDemandTonnes": 40000, "SupplyGapTonnes": 10000, "Commentary": "Quality and traceability are decisive." },
+        { "Country": "Namibia", "AnnualDemandTonnes": 30000, "SupplyGapTonnes": 8000, "Commentary": "Competition is stronger but niche supply is viable." }
+      ],
+      "Recommendations": [
+        "Validate cold-chain compliance before allocating volumes.",
+        "Attach veterinary clearances to starter-pack approvals.",
+        "Use export opportunity notes to prioritise district support."
+      ]
+    },
+    {
+      "MarketOpportunityId": 3,
+      "Commodity": "Goats",
+      "CommodityType": "Livestock",
+      "Status": "Emerging",
+      "Season": "2025/2026",
+      "ProductionEstimateTonnes": 120000,
+      "DomesticRequirementTonnes": 95000,
+      "ProcessingOutputTonnes": 95000,
+      "ExportableSurplusTonnes": 10000,
+      "RegionalDemandTonnes": 50000,
+      "RegionalSupplyTonnes": 35000,
+      "RegionalDemandGapTonnes": 15000,
+      "PrimaryTargetMarket": "Middle East",
+      "Summary": "Export placement depends on quarantine facilities, animal health records, and logistics confidence.",
+      "TargetMarkets": [
+        { "Country": "Saudi Arabia", "AnnualDemandTonnes": 30000, "SupplyGapTonnes": 10000, "Commentary": "Requires export-grade compliance." }
+      ],
+      "Recommendations": [
+        "Tie livestock starter packs to quarantine readiness.",
+        "Track certification status in the support dashboard.",
+        "Escalate cases where transport or health clearance is late."
+      ]
+    }
+  ],
+  "EligibilityRules": [
+    {
+      "EligibilityRuleId": 1,
+      "ContractId": 1,
+      "StarterPackId": 1,
+      "RuleName": "Certification required",
+      "Commodity": "Soya Beans",
+      "Category": "Document",
+      "IsSatisfied": false,
+      "Reason": "Quality certification is still missing.",
+      "ThresholdValue": 1,
+      "ObservedValue": 0
+    },
+    {
+      "EligibilityRuleId": 2,
+      "ContractId": 2,
+      "StarterPackId": 2,
+      "RuleName": "Quarantine plan required",
+      "Commodity": "Goats",
+      "Category": "Operations",
+      "IsSatisfied": false,
+      "Reason": "Quarantine and transport plan is still missing.",
+      "ThresholdValue": 1,
+      "ObservedValue": 0
+    }
+  ]
+}

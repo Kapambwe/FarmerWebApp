@@ -187,7 +187,63 @@ code {
         align-items: stretch;
     }
 
-    .dialog-actions > * {
+.dialog-actions > * {
+        width: 100%;
+    }
+}
+
+.form-page-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-page-header {
+    padding: 1rem 1.15rem;
+}
+
+.form-page-header__title {
+    margin: 0;
+}
+
+.form-page-header__subtitle {
+    margin: 0;
+    color: var(--rz-text-secondary-color);
+}
+
+.form-section-card {
+    border: 1px solid var(--rz-border-base-300);
+    box-shadow: var(--rz-shadow-0);
+}
+
+.form-section-card + .form-section-card {
+    margin-top: 0;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+    .form-page-header {
+        padding: 0.9rem 1rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-actions > * {
         width: 100%;
     }
 }
