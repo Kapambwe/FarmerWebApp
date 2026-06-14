@@ -1,6 +1,20 @@
 {
   "Consents": [
-    { "Id": 1, "Name": "John Doe", "InstititutionType": "Financial Institution", "FinancialInstitution": "ABC Bank", "Status": 0 },
-    { "Id": 2, "Name": "Jane Smith", "InstititutionType": "NGO", "NGO": "Green Earth", "Status": 1 }
+    {
+      "Id": 1,
+      "Name": "John Doe",
+      "InstititutionType": "Financial Institution",
+      "FinancialInstitution": "ABC Bank",
+      "DataTypes": [ "Farm Size", "Yield History", "Credit History" ],
+      "Status": 0
+    },
+    {
+      "Id": 2,
+      "Name": "Jane Smith",
+      "InstititutionType": "NGO",
+      "NGO": "Green Earth",
+      "DataTypes": [ "Soil Health", "Water Usage" ],
+      "Status": 1
+    }
   ]
 }

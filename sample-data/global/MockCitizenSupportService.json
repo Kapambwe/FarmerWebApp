@@ -49,6 +49,78 @@
         { "RequirementId": 3, "Name": "Halal certification", "Description": "Attach approved certification details.", "EvidenceType": "Certificate", "IsMandatory": true, "IsCompleted": false, "DueDate": "2026-06-18T00:00:00Z" }
       ],
       "Notes": [ "High value export case.", "Requires officer escalation if no update by due date." ]
+    },
+    {
+      "StarterPackId": 3,
+      "ContractId": 3,
+      "FarmerName": "Mkushi Grain Alliance",
+      "Commodity": "Maize",
+      "PackType": "Domestic Supply Pack",
+      "Status": "Approved",
+      "ReadinessScore": 91,
+      "TargetQuantity": 12000,
+      "CurrentQuantity": 11850,
+      "QuantityUnit": "tonnes",
+      "TargetLabel": "2025/2026 maize delivery target",
+      "Ministry": "Ministry of Agriculture",
+      "Agency": "Provincial Support Desk",
+      "Summary": "Pack is complete and ready for local miller allocation.",
+      "CreatedDate": "2026-05-10T08:00:00Z",
+      "SubmittedDate": "2026-05-15T10:00:00Z",
+      "ReviewedDate": "2026-05-22T11:30:00Z",
+      "Requirements": [
+        { "RequirementId": 1, "Name": "Land registry", "Description": "Provide land registry evidence.", "EvidenceType": "Document", "IsMandatory": true, "IsCompleted": true, "CompletedDate": "2026-05-10T08:00:00Z" },
+        { "RequirementId": 2, "Name": "Harvest schedule", "Description": "Submit harvest schedule.", "EvidenceType": "Form", "IsMandatory": true, "IsCompleted": true, "CompletedDate": "2026-05-12T08:00:00Z" }
+      ],
+      "Notes": [ "Ready for contracting." ]
+    },
+    {
+      "StarterPackId": 4,
+      "ContractId": 4,
+      "FarmerName": "Southern Milk Collective",
+      "Commodity": "Milk",
+      "PackType": "Collection Pack",
+      "Status": "Escalated",
+      "ReadinessScore": 58,
+      "TargetQuantity": 5000,
+      "CurrentQuantity": 2600,
+      "QuantityUnit": "kilolitres",
+      "TargetLabel": "Milk collection target",
+      "Ministry": "Ministry of Agriculture",
+      "Agency": "Dairy Board",
+      "Summary": "Collection pack is delayed by cold chain and transport constraints.",
+      "CreatedDate": "2026-05-18T08:00:00Z",
+      "SubmittedDate": "2026-05-25T09:00:00Z",
+      "ReviewedDate": null,
+      "Requirements": [
+        { "RequirementId": 1, "Name": "Cooling plan", "Description": "Provide cooling and storage plan.", "EvidenceType": "Plan", "IsMandatory": true, "IsCompleted": false, "DueDate": "2026-06-22T00:00:00Z" },
+        { "RequirementId": 2, "Name": "Transport agreement", "Description": "Submit logistics contract.", "EvidenceType": "Document", "IsMandatory": true, "IsCompleted": false, "DueDate": "2026-06-22T00:00:00Z" }
+      ],
+      "Notes": [ "Needs escalation to logistics desk." ]
+    },
+    {
+      "StarterPackId": 5,
+      "ContractId": 5,
+      "FarmerName": "Luapula Cassava Producers",
+      "Commodity": "Cassava",
+      "PackType": "Processing Supply Pack",
+      "Status": "UnderReview",
+      "ReadinessScore": 73,
+      "TargetQuantity": 9000,
+      "CurrentQuantity": 6400,
+      "QuantityUnit": "tonnes",
+      "TargetLabel": "2026 cassava processing target",
+      "Ministry": "Ministry of Agriculture",
+      "Agency": "Processing Unit",
+      "Summary": "Awaiting final processing capacity confirmation.",
+      "CreatedDate": "2026-05-30T08:00:00Z",
+      "SubmittedDate": "2026-06-04T10:00:00Z",
+      "ReviewedDate": null,
+      "Requirements": [
+        { "RequirementId": 1, "Name": "Producer list", "Description": "Attach list of participating producers.", "EvidenceType": "Document", "IsMandatory": true, "IsCompleted": true, "CompletedDate": "2026-05-30T08:00:00Z" },
+        { "RequirementId": 2, "Name": "Processing slot", "Description": "Confirm factory slot allocation.", "EvidenceType": "Letter", "IsMandatory": true, "IsCompleted": false, "DueDate": "2026-06-24T00:00:00Z" }
+      ],
+      "Notes": [ "Processing partner pending confirmation." ]
     }
   ],
   "SupportTasks": [
@@ -96,6 +168,36 @@
       "CreatedDate": "2026-06-05T08:00:00Z",
       "DueDate": "2026-06-20T00:00:00Z",
       "Notes": "Tie opportunity note to East African demand gap."
+    },
+    {
+      "SupportTaskId": 4,
+      "ContractId": 3,
+      "StarterPackId": 3,
+      "Title": "Allocate maize delivery route",
+      "Description": "Confirm collection route and miller handover schedule.",
+      "Status": "Open",
+      "Priority": "Medium",
+      "AssignedTo": "Field Logistics",
+      "OwnerApp": "CommercialDesk",
+      "Category": "Logistics",
+      "CreatedDate": "2026-05-22T08:00:00Z",
+      "DueDate": "2026-06-15T00:00:00Z",
+      "Notes": "Supports domestic supply fulfillment."
+    },
+    {
+      "SupportTaskId": 5,
+      "ContractId": 5,
+      "StarterPackId": 5,
+      "Title": "Confirm cassava processing slot",
+      "Description": "Follow up with processor on available factory gate slot.",
+      "Status": "WaitingOnFarmer",
+      "Priority": "High",
+      "AssignedTo": "Processing Officer",
+      "OwnerApp": "ExtensionApp",
+      "Category": "Processing Review",
+      "CreatedDate": "2026-06-04T10:00:00Z",
+      "DueDate": "2026-06-24T00:00:00Z",
+      "Notes": "Pending producer submission update."
     }
   ],
   "Bottlenecks": [
@@ -143,6 +245,36 @@
       "RaisedDate": "2026-05-18T08:00:00Z",
       "ExpectedResolutionDate": "2026-06-30T00:00:00Z",
       "LastUpdatedDate": "2026-06-01T08:00:00Z"
+    },
+    {
+      "BottleneckId": 4,
+      "ContractId": 3,
+      "StarterPackId": 3,
+      "Commodity": "Maize",
+      "Category": "Transport",
+      "Title": "Route congestion during harvest",
+      "Description": "Harvest deliveries face congestion on the main collection route.",
+      "ImpactLevel": "Medium",
+      "Status": "Mitigating",
+      "Owner": "District Transport Unit",
+      "RaisedDate": "2026-05-25T08:00:00Z",
+      "ExpectedResolutionDate": "2026-06-20T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T08:00:00Z"
+    },
+    {
+      "BottleneckId": 5,
+      "ContractId": 5,
+      "StarterPackId": 5,
+      "Commodity": "Cassava",
+      "Category": "Processing",
+      "Title": "Factory slot allocation pending",
+      "Description": "Processing slot confirmation is still open.",
+      "ImpactLevel": "High",
+      "Status": "Open",
+      "Owner": "Processing Unit",
+      "RaisedDate": "2026-06-04T10:00:00Z",
+      "ExpectedResolutionDate": "2026-06-24T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T10:00:00Z"
     }
   ],
   "Escalations": [
@@ -160,6 +292,66 @@
       "RaisedDate": "2026-06-05T09:00:00Z",
       "DueDate": "2026-06-18T00:00:00Z",
       "LastUpdatedDate": "2026-06-05T09:00:00Z"
+    },
+    {
+      "EscalationRecordId": 2,
+      "ContractId": 4,
+      "StarterPackId": 4,
+      "BottleneckId": 4,
+      "CaseReference": "ESC-2026-0002",
+      "Title": "Milk collection logistics delay",
+      "Reason": "Cold chain and route issues are slowing approval.",
+      "RaisedBy": "District Officer",
+      "Owner": "Dairy Board",
+      "Status": "Open",
+      "RaisedDate": "2026-05-25T08:00:00Z",
+      "DueDate": "2026-06-22T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T08:00:00Z"
+    },
+    {
+      "EscalationRecordId": 3,
+      "ContractId": 5,
+      "StarterPackId": 5,
+      "BottleneckId": 5,
+      "CaseReference": "ESC-2026-0003",
+      "Title": "Cassava processing slot pending",
+      "Reason": "Factory allocation remains unresolved.",
+      "RaisedBy": "Extension Officer",
+      "Owner": "Processing Unit",
+      "Status": "Open",
+      "RaisedDate": "2026-06-04T10:00:00Z",
+      "DueDate": "2026-06-24T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T10:00:00Z"
+    },
+    {
+      "EscalationRecordId": 4,
+      "ContractId": 3,
+      "StarterPackId": 3,
+      "BottleneckId": 4,
+      "CaseReference": "ESC-2026-0004",
+      "Title": "Maize route congestion review",
+      "Reason": "Delivery route requires transport coordination.",
+      "RaisedBy": "Commercial Desk",
+      "Owner": "District Transport Unit",
+      "Status": "Open",
+      "RaisedDate": "2026-05-25T08:30:00Z",
+      "DueDate": "2026-06-20T00:00:00Z",
+      "LastUpdatedDate": "2026-06-05T08:30:00Z"
+    },
+    {
+      "EscalationRecordId": 5,
+      "ContractId": 1,
+      "StarterPackId": 1,
+      "BottleneckId": 1,
+      "CaseReference": "ESC-2026-0005",
+      "Title": "Soya certification follow-up",
+      "Reason": "Certification remains the blocking requirement.",
+      "RaisedBy": "Extension Officer",
+      "Owner": "Extension Support Unit",
+      "Status": "Open",
+      "RaisedDate": "2026-06-06T08:00:00Z",
+      "DueDate": "2026-06-18T00:00:00Z",
+      "LastUpdatedDate": "2026-06-06T08:00:00Z"
     }
   ],
   "MarketOpportunities": [
@@ -237,6 +429,55 @@
         "Track certification status in the support dashboard.",
         "Escalate cases where transport or health clearance is late."
       ]
+    },
+    {
+      "MarketOpportunityId": 4,
+      "Commodity": "Maize",
+      "CommodityType": "Crop",
+      "Status": "Confirmed",
+      "Season": "2025/2026",
+      "ProductionEstimateTonnes": 1050000,
+      "DomesticRequirementTonnes": 980000,
+      "ProcessingOutputTonnes": 430000,
+      "ExportableSurplusTonnes": 70000,
+      "RegionalDemandTonnes": 260000,
+      "RegionalSupplyTonnes": 190000,
+      "RegionalDemandGapTonnes": 70000,
+      "PrimaryTargetMarket": "Southern Africa",
+      "Summary": "Maize has modest export headroom where milling demand and storage can be balanced.",
+      "TargetMarkets": [
+        { "Country": "Zimbabwe", "AnnualDemandTonnes": 120000, "SupplyGapTonnes": 35000, "Commentary": "Demand is steady across milling channels." },
+        { "Country": "Malawi", "AnnualDemandTonnes": 90000, "SupplyGapTonnes": 20000, "Commentary": "Shortage windows appear in the lean season." }
+      ],
+      "Recommendations": [
+        "Prioritise storage and grading before release.",
+        "Link transport support to the harvest calendar.",
+        "Use regional market gaps to time sales windows."
+      ]
+    },
+    {
+      "MarketOpportunityId": 5,
+      "Commodity": "Cassava",
+      "CommodityType": "Crop",
+      "Status": "Emerging",
+      "Season": "2026",
+      "ProductionEstimateTonnes": 210000,
+      "DomesticRequirementTonnes": 160000,
+      "ProcessingOutputTonnes": 120000,
+      "ExportableSurplusTonnes": 40000,
+      "RegionalDemandTonnes": 110000,
+      "RegionalSupplyTonnes": 85000,
+      "RegionalDemandGapTonnes": 25000,
+      "PrimaryTargetMarket": "Regional Processors",
+      "Summary": "Cassava can move into starch and flour markets if processing slots are confirmed.",
+      "TargetMarkets": [
+        { "Country": "DRC", "AnnualDemandTonnes": 60000, "SupplyGapTonnes": 15000, "Commentary": "Opportunities depend on transport and processing capacity." }
+      ],
+      "Recommendations": [
+        "Confirm processor allocation before expanding production.",
+        "Support farmer groups with delivery aggregation.",
+        "Track quality and moisture requirements closely."
+      ]
     }
   ],
   "EligibilityRules": [
@@ -261,6 +502,42 @@
       "Category": "Operations",
       "IsSatisfied": false,
       "Reason": "Quarantine and transport plan is still missing.",
+      "ThresholdValue": 1,
+      "ObservedValue": 0
+    },
+    {
+      "EligibilityRuleId": 3,
+      "ContractId": 3,
+      "StarterPackId": 3,
+      "RuleName": "Delivery route confirmed",
+      "Commodity": "Maize",
+      "Category": "Logistics",
+      "IsSatisfied": true,
+      "Reason": "Delivery route and miller handover are already scheduled.",
+      "ThresholdValue": 1,
+      "ObservedValue": 1
+    },
+    {
+      "EligibilityRuleId": 4,
+      "ContractId": 4,
+      "StarterPackId": 4,
+      "RuleName": "Cooling plan required",
+      "Commodity": "Milk",
+      "Category": "Operations",
+      "IsSatisfied": false,
+      "Reason": "Cooling plan still needs approval.",
+      "ThresholdValue": 1,
+      "ObservedValue": 0
+    },
+    {
+      "EligibilityRuleId": 5,
+      "ContractId": 5,
+      "StarterPackId": 5,
+      "RuleName": "Processing slot required",
+      "Commodity": "Cassava",
+      "Category": "Processing",
+      "IsSatisfied": false,
+      "Reason": "Factory slot allocation is still pending.",
       "ThresholdValue": 1,
       "ObservedValue": 0
     }
