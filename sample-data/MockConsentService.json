@@ -15,6 +15,70 @@
       "NGO": "Green Earth",
       "DataTypes": [ "Soil Health", "Water Usage" ],
       "Status": 1
+    },
+    {
+      "Id": 3,
+      "Name": "Moses Banda",
+      "InstititutionType": "Private Sector",
+      "PrivateSector": "AgriSeed Zambia Ltd",
+      "DataTypes": [ "Seed Orders", "Planting Dates", "Farm Location" ],
+      "Status": 0
+    },
+    {
+      "Id": 4,
+      "Name": "Grace Tembo",
+      "InstititutionType": "Researcher",
+      "Researcher": "Zambia Agricultural Research Institute",
+      "DataTypes": [ "Yield History", "Soil Health", "Weather Exposure" ],
+      "Status": 1
+    },
+    {
+      "Id": 5,
+      "Name": "Mulenga Cooperative",
+      "InstititutionType": "Financial Institution",
+      "FinancialInstitution": "First Farmer Bank",
+      "DataTypes": [ "Loan History", "Repayment Status", "Farm Size" ],
+      "Status": 0
+    },
+    {
+      "Id": 6,
+      "Name": "Chola Youth Group",
+      "InstititutionType": "NGO",
+      "NGO": "Harvest Hope",
+      "DataTypes": [ "Training Records", "Input Support", "Attendance" ],
+      "Status": 2
+    },
+    {
+      "Id": 7,
+      "Name": "Peter Mwale",
+      "InstititutionType": "Private Sector",
+      "PrivateSector": "ZamProtein Foods Plc",
+      "DataTypes": [ "Harvest Forecast", "Quality Grades", "Delivery Schedule" ],
+      "Status": 0
+    },
+    {
+      "Id": 8,
+      "Name": "Noreen Phiri",
+      "InstititutionType": "Researcher",
+      "Researcher": "University of Zambia",
+      "DataTypes": [ "Field Notes", "Yield History", "Pest Incidents" ],
+      "Status": 3
+    },
+    {
+      "Id": 9,
+      "Name": "Kafue Farmers Union",
+      "InstititutionType": "Financial Institution",
+      "FinancialInstitution": "Zed Finance",
+      "DataTypes": [ "Account Activity", "Crop Area", "Input Purchases" ],
+      "Status": 1
+    },
+    {
+      "Id": 10,
+      "Name": "Twalumba Produce Network",
+      "InstititutionType": "NGO",
+      "NGO": "Community Growth Trust",
+      "DataTypes": [ "Membership", "Production Records", "Transport Requests" ],
+      "Status": 0
     }
   ]
 }

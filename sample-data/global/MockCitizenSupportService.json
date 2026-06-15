@@ -478,6 +478,126 @@
         "Support farmer groups with delivery aggregation.",
         "Track quality and moisture requirements closely."
       ]
+    },
+    {
+      "MarketOpportunityId": 6,
+      "Commodity": "Cotton",
+      "CommodityType": "Crop",
+      "Status": "Seasonal",
+      "Season": "2026",
+      "ProductionEstimateTonnes": 98000,
+      "DomesticRequirementTonnes": 42000,
+      "ProcessingOutputTonnes": 36000,
+      "ExportableSurplusTonnes": 56000,
+      "RegionalDemandTonnes": 120000,
+      "RegionalSupplyTonnes": 85000,
+      "RegionalDemandGapTonnes": 35000,
+      "PrimaryTargetMarket": "Regional Ginners",
+      "Summary": "Cotton lint can serve regional ginning markets when grade consistency is maintained.",
+      "TargetMarkets": [
+        { "Country": "Zimbabwe", "AnnualDemandTonnes": 45000, "SupplyGapTonnes": 15000, "Commentary": "Demand is concentrated in ginning and textile supply chains." }
+      ],
+      "Recommendations": [
+        "Track grade consistency before aggregation.",
+        "Align market release with ginning schedules.",
+        "Use storage checks to reduce quality loss."
+      ]
+    },
+    {
+      "MarketOpportunityId": 7,
+      "Commodity": "Poultry",
+      "CommodityType": "Livestock",
+      "Status": "Confirmed",
+      "Season": "2026",
+      "ProductionEstimateTonnes": 76000,
+      "DomesticRequirementTonnes": 64000,
+      "ProcessingOutputTonnes": 52000,
+      "ExportableSurplusTonnes": 12000,
+      "RegionalDemandTonnes": 43000,
+      "RegionalSupplyTonnes": 29000,
+      "RegionalDemandGapTonnes": 14000,
+      "PrimaryTargetMarket": "Urban Retail",
+      "Summary": "Poultry supply can expand into urban retail and nearby export pockets if cold chain is reliable.",
+      "TargetMarkets": [
+        { "Country": "Namibia", "AnnualDemandTonnes": 18000, "SupplyGapTonnes": 5000, "Commentary": "Retail and food service demand are stable." }
+      ],
+      "Recommendations": [
+        "Keep cold-chain compliance visible in approvals.",
+        "Tie feed availability to production forecasts.",
+        "Coordinate delivery windows with retailers."
+      ]
+    },
+    {
+      "MarketOpportunityId": 8,
+      "Commodity": "Beef",
+      "CommodityType": "Livestock",
+      "Status": "ExportReady",
+      "Season": "2026",
+      "ProductionEstimateTonnes": 192000,
+      "DomesticRequirementTonnes": 155000,
+      "ProcessingOutputTonnes": 158000,
+      "ExportableSurplusTonnes": 34000,
+      "RegionalDemandTonnes": 102000,
+      "RegionalSupplyTonnes": 76000,
+      "RegionalDemandGapTonnes": 26000,
+      "PrimaryTargetMarket": "East Africa",
+      "Summary": "Beef demand in the region remains open where traceability and certification are strong.",
+      "TargetMarkets": [
+        { "Country": "Kenya", "AnnualDemandTonnes": 42000, "SupplyGapTonnes": 12000, "Commentary": "Premium and certified supply channels are the main entry point." }
+      ],
+      "Recommendations": [
+        "Prioritise traceability and vet clearances.",
+        "Use certified pack approvals for export timing.",
+        "Monitor cold-chain and slaughter compliance."
+      ]
+    },
+    {
+      "MarketOpportunityId": 9,
+      "Commodity": "Groundnuts",
+      "CommodityType": "Crop",
+      "Status": "Emerging",
+      "Season": "2026",
+      "ProductionEstimateTonnes": 87000,
+      "DomesticRequirementTonnes": 52000,
+      "ProcessingOutputTonnes": 41000,
+      "ExportableSurplusTonnes": 35000,
+      "RegionalDemandTonnes": 78000,
+      "RegionalSupplyTonnes": 52000,
+      "RegionalDemandGapTonnes": 26000,
+      "PrimaryTargetMarket": "Snack Processors",
+      "Summary": "Groundnut supply can support processors where aflatoxin control is consistently managed.",
+      "TargetMarkets": [
+        { "Country": "Tanzania", "AnnualDemandTonnes": 26000, "SupplyGapTonnes": 9000, "Commentary": "Processors are sensitive to quality thresholds." }
+      ],
+      "Recommendations": [
+        "Support grading and moisture control at collection.",
+        "Tie market access to quality testing.",
+        "Reduce contamination risk through handling standards."
+      ]
+    },
+    {
+      "MarketOpportunityId": 10,
+      "Commodity": "Fish",
+      "CommodityType": "Aquaculture",
+      "Status": "Confirmed",
+      "Season": "2026",
+      "ProductionEstimateTonnes": 54000,
+      "DomesticRequirementTonnes": 47000,
+      "ProcessingOutputTonnes": 41000,
+      "ExportableSurplusTonnes": 7000,
+      "RegionalDemandTonnes": 22000,
+      "RegionalSupplyTonnes": 15000,
+      "RegionalDemandGapTonnes": 7000,
+      "PrimaryTargetMarket": "Regional Wholesale",
+      "Summary": "Aquaculture producers can target wholesale buyers once ice and transport are confirmed.",
+      "TargetMarkets": [
+        { "Country": "Botswana", "AnnualDemandTonnes": 12000, "SupplyGapTonnes": 4000, "Commentary": "Cold-chain logistics are critical for market access." }
+      ],
+      "Recommendations": [
+        "Keep ice and transport requirements in the support queue.",
+        "Check feed conversion against target margins.",
+        "Use wholesale routes for early export placement."
+      ]
     }
   ],
   "EligibilityRules": [
